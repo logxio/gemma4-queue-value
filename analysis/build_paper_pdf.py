@@ -86,7 +86,9 @@ PREAMBLE = r'''\documentclass[10pt,a4paper]{article}
 \makeatletter
 \newcommand{\FloatBarrier}{\par\ifx\@deferlist\@empty\else\newpage\fi}
 \makeatother
-\usepackage[hidelinks,unicode]{hyperref}
+\usepackage{xcolor}
+\definecolor{linkblue}{HTML}{1E3A8A}
+\usepackage[colorlinks=true,urlcolor=linkblue,linkcolor=linkblue,citecolor=linkblue,unicode]{hyperref}
 \urlstyle{same}
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}

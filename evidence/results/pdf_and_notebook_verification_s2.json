@@ -1,7 +1,7 @@
 {
   "schema": "pdf_and_notebook_verification_s2.v1",
-  "pdf_sha256": "853bf34afad05ad7b1ef761a7f0caca1bfe8e37c3dc5cb6f14eaf42d013d9d51",
-  "tex_sha256": "9426d3315b26e1d11c49d0e4ba133f4313811360017becae8e022a45e7403c21",
+  "pdf_sha256": "207354702de6588b16cd5306cb57eba13d5476b6901828455aa0cc7e87bed127",
+  "tex_sha256": "513c8c04011cdc4f0ab1d90303ebd8d82497758162dea9e29d3ded90b23e68c6",
   "source_sha256": {
     "paper/writeup.md": "6b81c1b0c81551cfc535294b3b622ba8b98729a15373f0ddc981a0e9f325316d"
   },
@@ -40,7 +40,7 @@
     "last_page_fill_minimum": 0.78,
     "last_page_fill_maximum": 0.94,
     "visual_review": "All six pages inspected in rendered contact sheet, final reference page inspected at full page scale",
-    "pdfinfo": "Custom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       987314 bytes\nOptimized:       no\nPDF version:     1.3\n",
+    "pdfinfo": "Custom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       987507 bytes\nOptimized:       no\nPDF version:     1.3\n",
     "passed": true
   },
   "notebook": {
