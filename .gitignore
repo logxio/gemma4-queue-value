@@ -1,7 +1,6 @@
 /data/
 /results/
 *.zip
-*.pdf
 .ai/
 __pycache__/
 .DS_Store
