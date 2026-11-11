@@ -1,7 +1,7 @@
 {
   "schema": "pdf_and_notebook_verification_s2.v1",
-  "pdf_sha256": "207354702de6588b16cd5306cb57eba13d5476b6901828455aa0cc7e87bed127",
-  "tex_sha256": "513c8c04011cdc4f0ab1d90303ebd8d82497758162dea9e29d3ded90b23e68c6",
+  "pdf_sha256": "3da6eccdd1f3a8592962d7cf9f1fffaaa57858ef5948937278f7f03ecd31e9fe",
+  "tex_sha256": "a38884f8f8b2fde133518b849ddc912ed60992a5017861da8b3bffd394716d13",
   "source_sha256": {
     "paper/writeup.md": "6b81c1b0c81551cfc535294b3b622ba8b98729a15373f0ddc981a0e9f325316d"
   },
@@ -21,7 +21,7 @@
   },
   "pdf": {
     "pages": 6,
-    "words_before_references_whitespace": 2991,
+    "words_before_references_whitespace": 2992,
     "word_limit": 3000,
     "within_word_limit": true,
     "word_scope": "Title, subtitle, abstract, prose, tables and all three captions; vector figure glyphs outlined; References and page footers excluded",

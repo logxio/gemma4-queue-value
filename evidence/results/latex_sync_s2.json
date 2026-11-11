@@ -23,11 +23,11 @@
     "figures/fig3_stopping_value_manifold.png": "91beb5e4a81a25d35cc06ce883cb81a20e2d627263b61ed4ac0e06ced513e92d"
   },
   "embedded_figures": {
-    ".build/outlined/fig1_persistence_and_queue_crossing.pdf": "761acf4fc1045898039b030b077cadc51a36867569c111c3f0f61cc24ac70a7c",
-    ".build/outlined/fig2_gemma_xray_and_sandbox_waterline.pdf": "b4a87f0121cbcfb644112a332eea83c53ca10430f99ecc48157884617727aac1",
-    ".build/outlined/fig3_stopping_value_manifold.pdf": "b42b22658148d9a86542788a73111d166b8396de9f0a4dba7b89f07c6fb0d233"
+    ".build/outlined/fig1_persistence_and_queue_crossing.pdf": "0b5cbbc4d278dbfb63c6c0b305f7f49e4e6a753a9a8d6e32a182dbcf8a20f1c8",
+    ".build/outlined/fig2_gemma_xray_and_sandbox_waterline.pdf": "25153f041298d4eedb30c70b53038b06323f44d7f315b79591998a4d1c0c8222",
+    ".build/outlined/fig3_stopping_value_manifold.pdf": "681d94595794d80f54b91b3e86e4e3e9d053e931a08edca595821e2ddcb1457c"
   },
   "figure_text_policy": "Vector figure text is outlined without rasterization so pdftotext counts only title, abstract, prose, tables and captions; original editable vector PDFs retained",
-  "pdf_sha256": "207354702de6588b16cd5306cb57eba13d5476b6901828455aa0cc7e87bed127",
-  "tex_sha256": "513c8c04011cdc4f0ab1d90303ebd8d82497758162dea9e29d3ded90b23e68c6"
+  "pdf_sha256": "3da6eccdd1f3a8592962d7cf9f1fffaaa57858ef5948937278f7f03ecd31e9fe",
+  "tex_sha256": "a38884f8f8b2fde133518b849ddc912ed60992a5017861da8b3bffd394716d13"
 }

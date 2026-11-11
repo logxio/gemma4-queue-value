@@ -99,8 +99,8 @@ PREAMBLE = r'''\documentclass[10pt,a4paper]{article}
 \setlength{\textfloatsep}{12pt plus 1pt minus 1pt}
 \setlength{\floatsep}{10pt plus 1pt minus 1pt}
 \setlength{\intextsep}{10pt plus 1pt minus 1pt}
-\setlength{\parindent}{1em}
-\setlength{\parskip}{2pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3.5pt plus 1pt minus 0.5pt}
 \setlist{nosep,leftmargin=1.6em,topsep=4pt}
 \setcounter{topnumber}{3}
 \setcounter{bottomnumber}{2}
@@ -157,7 +157,7 @@ def synchronize():
             level = 'section' if content[0] == 2 else 'subsection'
             if title == 'References':
                 out += [r'\clearpage', r'\section*{References}', r'\begingroup\small',
-                        r'\setlength{\baselineskip}{12pt}']
+                        r'\setlength{\baselineskip}{12pt}', r'\setlength{\parskip}{2pt}']
             else:
                 out.append('\\' + level + '*{' + title + '}')
         elif kind == 'Para' and index+1 < len(blocks) and blocks[index+1]['t'] == 'Table':
