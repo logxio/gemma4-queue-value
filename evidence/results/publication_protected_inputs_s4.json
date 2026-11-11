@@ -1,0 +1,18 @@
+{
+  "README.md": "51f670a5cc4c54477317ab79a2ef9e3edd8ea40d1cb4a8de5048b75c2ec5c8d0",
+  "paper/writeup.md": "e4a6148e8b1eca5fe27eac62f52ae36c1823c67af043c38392f8f78625bc966d",
+  "analysis/build_publication_figures.py": "352fd07b1a9b5969853a0b74de0967eece7643c554a556d625d865a55fb38338",
+  "paper/figures/fig1_persistence_and_queue_crossing.pdf": "edd6faf6bdd3ebf5105d18e1f68222c9ff28669685ac50cd8ecdbcb5fd9e2909",
+  "paper/figures/fig1_persistence_and_queue_crossing.png": "28b63273e77c066d33859e8f24fd46fa5758f0d82b2a73a9903ce8d8ded652ee",
+  "paper/figures/fig1_schedule_and_persistence.pdf": "edd6faf6bdd3ebf5105d18e1f68222c9ff28669685ac50cd8ecdbcb5fd9e2909",
+  "paper/figures/fig1_schedule_and_persistence.png": "28b63273e77c066d33859e8f24fd46fa5758f0d82b2a73a9903ce8d8ded652ee",
+  "paper/figures/fig2_gemma_xray_and_sandbox_waterline.pdf": "11a8c5e6b8d48a3ee6188228b319134b6b6608fe24e5064e94f3b7e94d2ab1ef",
+  "paper/figures/fig2_gemma_xray_and_sandbox_waterline.png": "cb0df6ac978b0414745af23fa73b81703c468982c27b6438045ebede7ea5180d",
+  "paper/figures/fig2_value_identity_and_gemma_audit.pdf": "11a8c5e6b8d48a3ee6188228b319134b6b6608fe24e5064e94f3b7e94d2ab1ef",
+  "paper/figures/fig2_value_identity_and_gemma_audit.png": "cb0df6ac978b0414745af23fa73b81703c468982c27b6438045ebede7ea5180d",
+  "paper/figures/fig3_stopping_value_manifold.pdf": "06bab9b175ba6b30e2b8ca5cd47e583392c582f54c480a4d9996f599e7e8a4c5",
+  "paper/figures/fig3_stopping_value_manifold.png": "8e067418e249b1ceabcc8a10fb3f967e27a0095410db58dc67f43e2e45132606",
+  "paper/figures/figure_provenance.json": "0c3ab36ff318140b6adf5023692bf000d4d1d0e805e357493ae2df88c0063b37",
+  "paper/figures/publication_figures_provenance.json": "0c3ab36ff318140b6adf5023692bf000d4d1d0e805e357493ae2df88c0063b37",
+  "paper/figures/queue_crossing.png": "a2ca4276c1857b01b44a6febaa3ab181d318a86f019201dfb7aa048a98878012"
+}

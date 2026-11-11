@@ -1,0 +1,42 @@
+{
+  "command": [
+    "jupyter",
+    "nbconvert",
+    "--to",
+    "notebook",
+    "--execute",
+    "--inplace",
+    "--ExecutePreprocessor.timeout=60",
+    "paper/reproduce.ipynb"
+  ],
+  "returncode": 0,
+  "wall_seconds": 1.8348055419046432,
+  "kernel": {
+    "elapsed_seconds": 0.8425104999914765,
+    "table_seconds": 0.812479916960001,
+    "kernel_peak_rss_bytes": 202620928,
+    "model_configurations": 6,
+    "attempts_total": 162506,
+    "numeric_cells_checked": 158,
+    "all_numeric_cells_match": true,
+    "mismatch_count": 0,
+    "figure_returncode": 0,
+    "execution_checks": "passed",
+    "publication_checks": "passed"
+  },
+  "code_cells_executed": 7,
+  "error_outputs": 0,
+  "notebook_sha256": "9cc221bdd534eef292f2a38ad051cc5a49e96462426c24781a3634ddffa42cad",
+  "versions": {
+    "numpy": "2.5.3",
+    "pandas": "3.1.1",
+    "pyarrow": "26.0.1",
+    "duckdb": "2.0.0",
+    "nbconvert": "7.17.2",
+    "ipykernel": "7.4.0",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0"
+  },
+  "passed": true,
+  "scope": "Four publication tables; per-cell comparison with the locked manuscript; compact attempt and saved-draw validation; three vector figure builds and checks. Full scheduling draw generation is a separate build."
+}

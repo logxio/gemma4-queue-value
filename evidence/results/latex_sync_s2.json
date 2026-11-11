@@ -1,0 +1,33 @@
+{
+  "source_sha256": "6b81c1b0c81551cfc535294b3b622ba8b98729a15373f0ddc981a0e9f325316d",
+  "tables": 4,
+  "figures": [
+    "figures/fig1_persistence_and_queue_crossing.pdf",
+    "figures/fig2_gemma_xray_and_sandbox_waterline.pdf",
+    "figures/fig3_stopping_value_manifold.pdf"
+  ],
+  "source_blocks": 53,
+  "text_sync": "All blocks converted in source order using Pandoc AST; captions and table cells retained verbatim; range glyphs use ASCII hyphens",
+  "template_basis": "single-column A4 Times/NewTX template",
+  "figure_sha256": {
+    "figures/fig1_persistence_and_queue_crossing.pdf": "972847eefaa4f995d8b706c217b6ec3669ba76ba1965d5fef67a66e6b79a08e1",
+    "figures/fig2_gemma_xray_and_sandbox_waterline.pdf": "ee4ce2303bc1303b39fde5d6603f7b2e458fb2bbc0f2a0445c9979cee4973d2d",
+    "figures/fig3_stopping_value_manifold.pdf": "518cb58d96efc5cdc8f93e325825096e75175d70ba2e2d5b9f7875dd2092da60"
+  },
+  "locked_figure_sha256": {
+    "figures/fig1_persistence_and_queue_crossing.pdf": "972847eefaa4f995d8b706c217b6ec3669ba76ba1965d5fef67a66e6b79a08e1",
+    "figures/fig1_persistence_and_queue_crossing.png": "4828d932ff33bf20e8ba1f56ddbf4da7268a036fecc56fc8fe0d5b846af14bac",
+    "figures/fig2_gemma_xray_and_sandbox_waterline.pdf": "ee4ce2303bc1303b39fde5d6603f7b2e458fb2bbc0f2a0445c9979cee4973d2d",
+    "figures/fig2_gemma_xray_and_sandbox_waterline.png": "2d7d13dc7a709f9e514e48c1cb3326603308c4b9f22c063efe96676819e199ef",
+    "figures/fig3_stopping_value_manifold.pdf": "518cb58d96efc5cdc8f93e325825096e75175d70ba2e2d5b9f7875dd2092da60",
+    "figures/fig3_stopping_value_manifold.png": "91beb5e4a81a25d35cc06ce883cb81a20e2d627263b61ed4ac0e06ced513e92d"
+  },
+  "embedded_figures": {
+    ".build/outlined/fig1_persistence_and_queue_crossing.pdf": "845adb0d536627cc06c04276dc838c55860fb5bbbc3c2ae0064e0af14587fdb6",
+    ".build/outlined/fig2_gemma_xray_and_sandbox_waterline.pdf": "745df97de87677fe6116001901f0f796bd35922edbb358019bf36a0246e558e4",
+    ".build/outlined/fig3_stopping_value_manifold.pdf": "2c1c1ecd7c9a688d744c779d1f7d9f2476866cacab02cc33e05bcab1ce4106b4"
+  },
+  "figure_text_policy": "Vector figure text is outlined without rasterization so pdftotext counts only title, abstract, prose, tables and captions; original editable vector PDFs retained",
+  "pdf_sha256": "853bf34afad05ad7b1ef761a7f0caca1bfe8e37c3dc5cb6f14eaf42d013d9d51",
+  "tex_sha256": "9426d3315b26e1d11c49d0e4ba133f4313811360017becae8e022a45e7403c21"
+}

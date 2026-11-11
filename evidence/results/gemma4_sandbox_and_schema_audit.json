@@ -1,0 +1,2916 @@
+{
+  "schema_version": 1,
+  "seed": 20261109,
+  "bootstrap_replicates": 1000,
+  "percentile_definition": "Linear interpolation: h=(n-1)*p, quantile=x[floor(h)]+(h-floor(h))*(x[ceil(h)]-x[floor(h)]), p=0.025 and 0.975; NumPy percentile method=linear.",
+  "bootstrap_unit": "task: preserve all three rounds; resample 76 task clusters with replacement",
+  "sources": {
+    "reference_patch_check_129.json": {
+      "sha256": "3e859857c17823c07556053ab1eb804b74fd1656ceede98a31bdef91509a2c48"
+    },
+    "full76_official.jsonl": {
+      "sha256": "2f88d720c3cb08b206bb1e8db3fa2f2ca968aeaabb05fee9e63372c3264331d5"
+    },
+    "summary.json": {
+      "sha256": "0b60112b6643c0a72010a20bab6b9a0f855b23d47c3c401dd26df87590ad2d10"
+    },
+    "attempts.json": {
+      "sha256": "ad60c1904f8db07ac9eaaf5fa43d9c211e30b995700d678a40516696e44581b1"
+    },
+    "analyze_stability.py": {
+      "sha256": "f9e90bb4f6c43f1174dd33f508e0ec4c48667c17e489fb0acb2d6fb604c6d588"
+    },
+    "gemma_case_study.py": {
+      "sha256": "1b2b091418cd819b3839b6925c0fd8ff07bfee146ee201ee7738d91240b2bdb6"
+    },
+    "gemma_rollouts.py": {
+      "sha256": "bdb31d5f147258590f7d715aef7ab1569e342843a96dab0262505b7c06743ef8"
+    },
+    "gemma4_sandbox_and_schema_audit.py": {
+      "sha256": "45b677ac31287534391c232cac1eac047b972041abf1b40e27461ceaf0eb280c"
+    }
+  },
+  "trace_manifest": [
+    {
+      "task": "fastapi_15661",
+      "round": 1,
+      "sha256": "607ffd1bc852b5eba2bc4e13ef031f3360ced43647f501be6db3af70957d9dfb"
+    },
+    {
+      "task": "rich_4079",
+      "round": 1,
+      "sha256": "6f26106ffa3be1abf35a0daa20d03a796edcc2f4e82be639343f7f2e07500dcc"
+    },
+    {
+      "task": "fastapi_14794",
+      "round": 1,
+      "sha256": "938b17a2a861611ba80fbb6c741a1efacc1fc9d9f1a5840a18db4f57e526136e"
+    },
+    {
+      "task": "fastapi_14458",
+      "round": 1,
+      "sha256": "a74b04c94322e4e8284cc5c3453cefd834af055be15cbaaf3c6aec4b2ffe0785"
+    },
+    {
+      "task": "fastapi_9425",
+      "round": 1,
+      "sha256": "2420d541bf16f5ba511fd824242ed808f80eff934e2843b8797bd44c890314d7"
+    },
+    {
+      "task": "rich_3882",
+      "round": 1,
+      "sha256": "5aa1953cbd8d4933a859865f8b8735e6b5fcd03539c7eaacac0fbfa2eba93132"
+    },
+    {
+      "task": "fastapi_11194",
+      "round": 1,
+      "sha256": "2dd8d6df6f2db2e3cf8848dcda56ed29e6a93800f69a358466918d8e2c7ec98a"
+    },
+    {
+      "task": "rich_3676",
+      "round": 1,
+      "sha256": "9cf6f6df0c462fe003bfb45d85b9cd37b99f6b820a2da88d7a5a9171d5f22ced"
+    },
+    {
+      "task": "rich_3471",
+      "round": 1,
+      "sha256": "9bbba1a4ab5f98519d277c40ade6c0efda0aaf539b56e23d8c9614e09a3dfea2"
+    },
+    {
+      "task": "rich_3067",
+      "round": 1,
+      "sha256": "b3eeb14b41aae248e4da77a467ff815242c20e1a4974f6cbe700550c55c74c76"
+    },
+    {
+      "task": "fastapi_15588",
+      "round": 1,
+      "sha256": "15158d3b96ffd3a4e939b938d1934b4cf7b735e041150c091742dc833c0296c2"
+    },
+    {
+      "task": "rich_4076",
+      "round": 1,
+      "sha256": "ec129122e294ddd3d8566b8e26af79dfaf61df45c7f9a24562098486851ff619"
+    },
+    {
+      "task": "fastapi_14786",
+      "round": 1,
+      "sha256": "adf0ed5efac4611bc4d7bc1778656b23fb9741ffecc9d01b986f68ec3e04cb7a"
+    },
+    {
+      "task": "fastapi_14448",
+      "round": 1,
+      "sha256": "1683c07c36823c33362993f9d0080d1aad5d918279f2967962354123df19e82b"
+    },
+    {
+      "task": "fastapi_14077",
+      "round": 1,
+      "sha256": "379ce059e1cfbafaf0f33acd6e639e327dbcb87ebe37da5131d0095e23630923"
+    },
+    {
+      "task": "rich_3894",
+      "round": 1,
+      "sha256": "6a0201ad703fea1eb8e82e13f7fc8df0fea77224699642a21e394e44decc1d9e"
+    },
+    {
+      "task": "requests_6644",
+      "round": 1,
+      "sha256": "d484575f0f8ae750f5b295a01211aeb25ebcb78d417ffb19d7c5d8a7e9927fcf"
+    },
+    {
+      "task": "rich_3518",
+      "round": 1,
+      "sha256": "59116c77be765526e23a6948f933a066e5dc2569897c420cbdbd0d605e17d9d1"
+    },
+    {
+      "task": "rich_3470",
+      "round": 1,
+      "sha256": "74eb5db6c80d7f347cfbdfe05db3477bae8efa7a1c0b5717bac2eea3e4f79908"
+    },
+    {
+      "task": "rich_3006",
+      "round": 1,
+      "sha256": "01f25610f0aa6da2cc43ebab2852f15b854f49a41b27cb68370b0b0d27e0ad34"
+    },
+    {
+      "task": "fastapi_15589",
+      "round": 1,
+      "sha256": "1c8e39eb35d53f90e1c853abb352e98960a1ea16d89605f55b720448f5f650b0"
+    },
+    {
+      "task": "rich_4075",
+      "round": 1,
+      "sha256": "e40bb23f180ebac044f5de4d8dadb4df5208d06a1c9e1872b7c62605bf4eb128"
+    },
+    {
+      "task": "fastapi_14492",
+      "round": 1,
+      "sha256": "57bc7a53a3a5c71ca113ed132586e18c353693e15cec0305e727eb177cb8f288"
+    },
+    {
+      "task": "fastapi_9753",
+      "round": 1,
+      "sha256": "e337304b0db4c2ae85864c4fb11fc904e7d0d286f9355bd30b6bd9f2c3edb441"
+    },
+    {
+      "task": "rich_3718",
+      "round": 1,
+      "sha256": "90164997e2d3fb886779c04b426d2e9f00036a81cd16155568cf087b37a3c532"
+    },
+    {
+      "task": "rich_3935",
+      "round": 1,
+      "sha256": "18071b8a08a8bffa4adc3fa09ada8b65ca546782fd430578b3b51b50a0653792"
+    },
+    {
+      "task": "rich_3180",
+      "round": 1,
+      "sha256": "dce817b9a41d943d9cc38b074fb64b460b34e3790b039d0f3a193a20c5bca1fd"
+    },
+    {
+      "task": "rich_3535",
+      "round": 1,
+      "sha256": "d4f8f619aa2530c7288697944e70719d5c9e50cd8f94569935eb2bea02c2df68"
+    },
+    {
+      "task": "rich_3052",
+      "round": 1,
+      "sha256": "85686322e00c5cf4dbd41419be493817afd608732a61f40987236a419afad487"
+    },
+    {
+      "task": "rich_3063",
+      "round": 1,
+      "sha256": "36cb6de6d6a48006c3db34ad99dc43388418803186dc9f235433d71a8808c9b0"
+    },
+    {
+      "task": "fastapi_15280",
+      "round": 1,
+      "sha256": "64c710552f9e793d1b89643cff236e6ee105a7e24e1fdab5b159afba6fec4b2d"
+    },
+    {
+      "task": "rich_4006",
+      "round": 1,
+      "sha256": "1f073a56f390e6799f0bf99578be80498c56b0b391898a4533f1d44bb86929bc"
+    },
+    {
+      "task": "fastapi_14479",
+      "round": 1,
+      "sha256": "3c4895679d53dcb990bcd1c47002af2b003820763f1afe823973133a038cbde8"
+    },
+    {
+      "task": "fastapi_5077",
+      "round": 1,
+      "sha256": "e18fe022e8f630b417b5aa0a0eee8bfab0c431bbc065d75fbb4c816e129ddcb2"
+    },
+    {
+      "task": "rich_3934",
+      "round": 1,
+      "sha256": "e8fcf6fac85c29fce10a9a79444baaf0fd2fc9a005ba6126b6705182d81ada7b"
+    },
+    {
+      "task": "rich_3905",
+      "round": 1,
+      "sha256": "6f7eb92c3efe7b1080eb7fa824048f21ac0b42fcd8be9744a1c57736024398c7"
+    },
+    {
+      "task": "rich_3777",
+      "round": 1,
+      "sha256": "0dac7853545f601de52bbed12c7f21331af5d94041baefe3ab92f89906c9e7cc"
+    },
+    {
+      "task": "rich_3521",
+      "round": 1,
+      "sha256": "2de4848312ed9fc1f16db27c1663dd8783742ef6f01088f8fb7f2d33e7320e83"
+    },
+    {
+      "task": "rich_3278",
+      "round": 1,
+      "sha256": "544124c63567c0d3a04c5a141b03fe3de96f0bd10e67cded26ec129859574fb8"
+    },
+    {
+      "task": "rich_3061",
+      "round": 1,
+      "sha256": "87a92021bf22e13e0627087b864d1b51176c8da1eda3a0c71d8cf845c66588ce"
+    },
+    {
+      "task": "fastapi_14986",
+      "round": 1,
+      "sha256": "f763966c24fa7754fb9905f7f9fb6d45ddef3920fe70c460c492df415d380b07"
+    },
+    {
+      "task": "fastapi_14258",
+      "round": 1,
+      "sha256": "5d00608d50ab6e85ad7267b8a5716bb26d5bc9b7a0a5925fb2935ae078da0456"
+    },
+    {
+      "task": "fastapi_14463",
+      "round": 1,
+      "sha256": "5335df83c12e4360a1b414e0929371c07d2d46392b9dc777121129ba15aab4cd"
+    },
+    {
+      "task": "fastapi_9555",
+      "round": 1,
+      "sha256": "e581c2da9a57d1d9df2d0bdf2cc10316d9f9dcad84f6116655c8aa538181ad80"
+    },
+    {
+      "task": "rich_3953",
+      "round": 1,
+      "sha256": "9da4d4ee3dc8feb9847a7e21292f7a496cde6fd8f3dce6150b49a0d40117b124"
+    },
+    {
+      "task": "rich_3930",
+      "round": 1,
+      "sha256": "d5a429a403df1c9e65cb09b79fffbb82bbab629213959af38518623936e8dcd9"
+    },
+    {
+      "task": "rich_3468",
+      "round": 1,
+      "sha256": "fab89c227c9a04622fb18405b0d062dcbb1a44e5d3df3697420524200e401977"
+    },
+    {
+      "task": "rich_3506",
+      "round": 1,
+      "sha256": "5f061140c4cb52c7323cfefc4ba2a6da910e2b92dca85c7e039352aa970ae057"
+    },
+    {
+      "task": "rich_2943",
+      "round": 1,
+      "sha256": "91cdd1a8ce64bae21baafe0fd75afceaf44c712f35620e896627ddf3c1d0f912"
+    },
+    {
+      "task": "requests_7309",
+      "round": 1,
+      "sha256": "c00db945f94bad109eb07e3e204070f3ea51ddeeab7ceddab70b41cba89aa6c3"
+    },
+    {
+      "task": "fastapi_14851",
+      "round": 1,
+      "sha256": "302e14345d0dcaac47cdc286d3860c6033baf023ed13ba9a7f0d3ce31c0e323b"
+    },
+    {
+      "task": "fastapi_14372",
+      "round": 1,
+      "sha256": "f0098e9cda4881ac07b1ade44eacba53345e805d08c84c643a109f1e199731fc"
+    },
+    {
+      "task": "fastapi_5624",
+      "round": 1,
+      "sha256": "c21a32568d7dd9ebddc5efaadde55ea8e095e7671110398131f42c9583a156a3"
+    },
+    {
+      "task": "rich_3944",
+      "round": 1,
+      "sha256": "814e39f456c00de460c3d2b961c8dbccd3640fa87307d785fe609ff454ba5d86"
+    },
+    {
+      "task": "fastapi_15800",
+      "round": 1,
+      "sha256": "b1cc76f85360d378216c4da4cc92dc98ba5ac9a47155eca302f1bd8fe853bcbc"
+    },
+    {
+      "task": "rich_3782",
+      "round": 1,
+      "sha256": "fd8ef72cabf059bfcfb6c7c60b7197e0b356d541c65173c76ceeb2e80f7fba7b"
+    },
+    {
+      "task": "rich_3480",
+      "round": 1,
+      "sha256": "81b67e4c825481e6c2ac49e39b294434d41429fa8deb9bc97b07554fc98398c9"
+    },
+    {
+      "task": "rich_2725",
+      "round": 1,
+      "sha256": "08c59d825adcd458ece4c2b87d6be67b632025a04eaf84e255e00a608e44ea7e"
+    },
+    {
+      "task": "rich_4070",
+      "round": 1,
+      "sha256": "0730355fb657c965ae1b31e3927abd55ec74ff983d7b199c9974c4adff36728f"
+    },
+    {
+      "task": "fastapi_14873",
+      "round": 1,
+      "sha256": "5077b3aab94959ca4ed017e361e1ee3a195934cacfc3509f94a94ef80bff8000"
+    },
+    {
+      "task": "fastapi_14487",
+      "round": 1,
+      "sha256": "d2da7ffa962fca0050b740cb299859f4da832445b19d6bcbba139639fd442b91"
+    },
+    {
+      "task": "fastapi_14419",
+      "round": 1,
+      "sha256": "b8e0e0383119ce9ea8cf0787e48dfcd1885c0aadd966e6a624f33e9371d8fb71"
+    },
+    {
+      "task": "rich_3942",
+      "round": 1,
+      "sha256": "c438b152b82cabaf9f19a29ce6ea53d99d391c8732df79fb6e134cd4a7ea2e27"
+    },
+    {
+      "task": "fastapi_13537",
+      "round": 1,
+      "sha256": "ccde15ad37a4bee3e26c7f95ba56e3996b5a81ec5c79fc81ec8125f8e6437063"
+    },
+    {
+      "task": "rich_3772",
+      "round": 1,
+      "sha256": "e8c7df17e8dff235827350cdeea8553ee0e8506dbaf7f8d4851629022c5c1fd7"
+    },
+    {
+      "task": "rich_3472",
+      "round": 1,
+      "sha256": "c263ea9567c304e911946102d569533e598db0368d20473b1fd3924fc1f2edb3"
+    },
+    {
+      "task": "rich_3105",
+      "round": 1,
+      "sha256": "65b5003ba3d4fa0665d78d79b09af9a6bb7651d3942706e15d939f5d98a6e345"
+    },
+    {
+      "task": "rich_4077",
+      "round": 1,
+      "sha256": "8607ce675a27857e6e6bfbc62b093017b507c2b828902eaa5770e7743ba4cbce"
+    },
+    {
+      "task": "fastapi_13920",
+      "round": 1,
+      "sha256": "b3c5f2ef505f99eb8927013b904770f02b68458e4456c039bbb88719be11bcf9"
+    },
+    {
+      "task": "fastapi_14306",
+      "round": 1,
+      "sha256": "2c984fc06a4c3d61225110654f7b8d422519ec718d671134eec334c8b2544319"
+    },
+    {
+      "task": "fastapi_14301",
+      "round": 1,
+      "sha256": "ecf54a1d117d0c57cc1e509d9069e86f4a9fd8501b1df7e2a88ea957f155d252"
+    },
+    {
+      "task": "rich_3938",
+      "round": 1,
+      "sha256": "4fecf216cb3c51ce855ff523b3e9ae88010a71e9bd1a8900bc1c9342cec487ac"
+    },
+    {
+      "task": "fastapi_14616",
+      "round": 1,
+      "sha256": "fabc6cd50d6a19765a2a3d4f5ab3ca85a5dc854c21697460bcbb080c83f387ec"
+    },
+    {
+      "task": "rich_3675",
+      "round": 1,
+      "sha256": "5c5cc3fedb3c7d3bc5423ab9beebda3eed86e1aa153de2ca23075c3284de896f"
+    },
+    {
+      "task": "rich_3454",
+      "round": 1,
+      "sha256": "5adc15e7ff96677507c10116eac7c99cf9f4b743628fc17827ee5705c8757339"
+    },
+    {
+      "task": "rich_3043",
+      "round": 1,
+      "sha256": "a0c48917de67d762d7cbf791fe87215cad2ce05426e531aa764b023d576d67ff"
+    },
+    {
+      "task": "fastapi_15661",
+      "round": 2,
+      "sha256": "70090495948e8574f50b3647d5785af0144d79c6a8108e72afab5935152cdaa5"
+    },
+    {
+      "task": "rich_4079",
+      "round": 2,
+      "sha256": "30ac5cb264bfcf182b4979ea051d90d043de6fab4f8ebd7cc836b89eb1578d6f"
+    },
+    {
+      "task": "fastapi_14794",
+      "round": 2,
+      "sha256": "aa98b0e9f3f82d248a84b232f1b4b68472c6f900200d12355c67e5916960e758"
+    },
+    {
+      "task": "fastapi_14458",
+      "round": 2,
+      "sha256": "ef44d96ac6fb13852bb5988bf5664b2e5277d87c76891831a6fa9d4159bedb6e"
+    },
+    {
+      "task": "fastapi_9425",
+      "round": 2,
+      "sha256": "cd83e7eb0b94de193e1beb633a182740f8230896e668ad5c8a752054be509b88"
+    },
+    {
+      "task": "rich_3882",
+      "round": 2,
+      "sha256": "21d447d18b0fcb6c50d89e61c1b4ea8b02026c8d8e8902c4c0d1706c77064fec"
+    },
+    {
+      "task": "fastapi_11194",
+      "round": 2,
+      "sha256": "235cd811d0855586c533fc798cf9c7a22f9c4c4f9ccaf971a087440175fd81cf"
+    },
+    {
+      "task": "rich_3676",
+      "round": 2,
+      "sha256": "eab08b50ee393a686338450f2739aa0e324acdae12a38462df708e35028b1f5e"
+    },
+    {
+      "task": "rich_3471",
+      "round": 2,
+      "sha256": "7ff376c8df05a2a27728934549d24b5146a8620836abff8c900f07a9168a5c08"
+    },
+    {
+      "task": "rich_3067",
+      "round": 2,
+      "sha256": "b92156c670be7ef996a32edcf12d667c872bcdebaf53aa8f7ff9388de8ed0631"
+    },
+    {
+      "task": "fastapi_15588",
+      "round": 2,
+      "sha256": "dab020675fb6fa6c81e7a2fdcc33872ba89b382d24c61e2a087a07602d495651"
+    },
+    {
+      "task": "rich_4076",
+      "round": 2,
+      "sha256": "3e0236440760158f13128e1804bc7a1d1f08a2aeebd78174c84afa5ea001c5e6"
+    },
+    {
+      "task": "fastapi_14786",
+      "round": 2,
+      "sha256": "76554775af80dbfaa5effd77d0b7f53a65cb233057e2f80cd1796c1e10945f45"
+    },
+    {
+      "task": "fastapi_14448",
+      "round": 2,
+      "sha256": "101e7a7ed7fa0aa2a7e5c8b30e7a5ceff43b158e3dcfe8b99ad41300452078f2"
+    },
+    {
+      "task": "fastapi_14077",
+      "round": 2,
+      "sha256": "e1ae184cdc33b52735f8f81d0debad36c2d661a4e6c3db73206c3171f6305cc6"
+    },
+    {
+      "task": "rich_3894",
+      "round": 2,
+      "sha256": "f0a46b53bd9fdcdd9fa7c452dea87333828199b18c7dce9f1ac21c5b26e569a8"
+    },
+    {
+      "task": "requests_6644",
+      "round": 2,
+      "sha256": "5248527db9ecfcff1ea7e1cdec78ea0975204d824e73134c37157fa4a297c015"
+    },
+    {
+      "task": "rich_3518",
+      "round": 2,
+      "sha256": "a72e395e3aeba85d92c6f247a6405bbf6a23a504d548a71f4888637ced19d08d"
+    },
+    {
+      "task": "rich_3470",
+      "round": 2,
+      "sha256": "43e05c45de92bac99494058e1df5686145968426e028b6f4d15b492f17ee758d"
+    },
+    {
+      "task": "rich_3006",
+      "round": 2,
+      "sha256": "41e55a297951a2255ebd6abed14b3cf88e75ce16e5236912bbe74dfc038b9104"
+    },
+    {
+      "task": "fastapi_15589",
+      "round": 2,
+      "sha256": "34e879e497ffaa7ec63e78f8ddd655ced0e257531632d39a177cdc9b6ad07859"
+    },
+    {
+      "task": "rich_4075",
+      "round": 2,
+      "sha256": "19e4f47d1862bc345d840cf236d07e3745c1732fdedd51e9198ecc9a2960b473"
+    },
+    {
+      "task": "fastapi_14492",
+      "round": 2,
+      "sha256": "d2665dfce7342de1f23bf7e5a1fd206a6e31ee40a489729c0957d5e35d327be0"
+    },
+    {
+      "task": "fastapi_9753",
+      "round": 2,
+      "sha256": "ae3e4e00734967080c55c31bb3b4238a37cd81b9a4da1fad240969adbfe24916"
+    },
+    {
+      "task": "rich_3718",
+      "round": 2,
+      "sha256": "1165430a5a9223c83ab1d8266f64908fd2411eb4bd28bad704ed11cf7424a78b"
+    },
+    {
+      "task": "rich_3935",
+      "round": 2,
+      "sha256": "7c665a77a0af511eea64807428b1f5642604e6f1ea756e1578b84b5232e7ace4"
+    },
+    {
+      "task": "rich_3180",
+      "round": 2,
+      "sha256": "bfd0a026aa8a269d8d1bd386cc6a95842a48a020a03dffd57f79955e58d5900d"
+    },
+    {
+      "task": "rich_3535",
+      "round": 2,
+      "sha256": "0a57fb8c6c3c99e6d2cf67e565f5b74a5df1b6429fa8810afd4d311dc9598440"
+    },
+    {
+      "task": "rich_3052",
+      "round": 2,
+      "sha256": "5bb8befd5d0fcefe6c371488dfca575fce506fda356fcc986e70578fd9bee6e5"
+    },
+    {
+      "task": "rich_3063",
+      "round": 2,
+      "sha256": "1d9135c035b6a80bb257b890f5dcf013af750b0ee357183e77bf9d26b2ff30c0"
+    },
+    {
+      "task": "fastapi_15280",
+      "round": 2,
+      "sha256": "cb909363b9064bed4c13ddf537139ecd682dde10727d55a6e1f4c5b287d29a78"
+    },
+    {
+      "task": "rich_4006",
+      "round": 2,
+      "sha256": "e9fd1dee20ef71132c2917307cfb1cbe3ae5a5079584187054662ff52a9e3d7d"
+    },
+    {
+      "task": "fastapi_14479",
+      "round": 2,
+      "sha256": "989c480d352f7a3461cdaec1717fa3f44c85ebe01d7459933299cf27510a6c39"
+    },
+    {
+      "task": "fastapi_5077",
+      "round": 2,
+      "sha256": "c78cb53fa5bf064907a45efdfd839dba4bc8fc2169f20f316bfc0eaa01310eaa"
+    },
+    {
+      "task": "rich_3934",
+      "round": 2,
+      "sha256": "fb39d79b822fdffce85fb0d04c7fc7bc2d86318a792ef20a5e11f06a94cbe10c"
+    },
+    {
+      "task": "rich_3905",
+      "round": 2,
+      "sha256": "722bbbf776e5978979331857e1d1741369a90c2fffe1579e4bbf52af1b2fd99a"
+    },
+    {
+      "task": "rich_3777",
+      "round": 2,
+      "sha256": "5866bf69a1ea25f210e9c6e77aefd388ed35a9e50c25bf06729371e7e1e48cfa"
+    },
+    {
+      "task": "rich_3521",
+      "round": 2,
+      "sha256": "68e6c924019e29fe142ebbbbf73d8133e63e295d7dca22d59961979d6594aa75"
+    },
+    {
+      "task": "rich_3278",
+      "round": 2,
+      "sha256": "d4211f079d12ee905697944b732963f7b00a8887ee76867e07bd73fa96b3c3d6"
+    },
+    {
+      "task": "rich_3061",
+      "round": 2,
+      "sha256": "a21d890cb142d02ac962c2ac93e8ddf3f91d16ca64b8d658e15a934ebe992e1b"
+    },
+    {
+      "task": "fastapi_14986",
+      "round": 2,
+      "sha256": "6981122730179f8af1a581f38b26890a90b33da018f85fcfc73eab36ce971314"
+    },
+    {
+      "task": "fastapi_14258",
+      "round": 2,
+      "sha256": "42a9107f7d5389366f898e857054a77beefb6fed95093415e243f2c4cf64e723"
+    },
+    {
+      "task": "fastapi_14463",
+      "round": 2,
+      "sha256": "0cb44c7a80007ced72ec4730599ed63c6a0aca4bab1bef6b2083c43f25db384f"
+    },
+    {
+      "task": "fastapi_9555",
+      "round": 2,
+      "sha256": "d5396a1ad7b05b61c911f123c8959df1b0e899b64e0e01633677caadd53f21f6"
+    },
+    {
+      "task": "rich_3953",
+      "round": 2,
+      "sha256": "ae2055e61b4cfd087a6277e7531764763a500dcf9a2a6211a439ce5d347dc5e6"
+    },
+    {
+      "task": "rich_3930",
+      "round": 2,
+      "sha256": "fda75390fed44e4ad4d3b77c7eca3b0ec3d1130e41c424eeffaab083186c1a7c"
+    },
+    {
+      "task": "rich_3468",
+      "round": 2,
+      "sha256": "fb64ace3565e88d2911a4276c426ce49aba0e82507b67ebe344de42e73803164"
+    },
+    {
+      "task": "rich_3506",
+      "round": 2,
+      "sha256": "ab2f9b848702dd3c257af4ec6fc575ce4919da8044df0282858c09cc4f171e67"
+    },
+    {
+      "task": "rich_2943",
+      "round": 2,
+      "sha256": "a24a8255ac57599283e218462eea320453700035157e9c35b8ab2ceda48028bc"
+    },
+    {
+      "task": "requests_7309",
+      "round": 2,
+      "sha256": "eed73ea28e1de20c9ec7ef42cc69218e7500df2b169b6108ceb6eb6c5161e2aa"
+    },
+    {
+      "task": "fastapi_14851",
+      "round": 2,
+      "sha256": "9d90955c8f9fa1d679ca1768a3d5e4eb22e4a83d9be586c76e3226bd6f68c4e5"
+    },
+    {
+      "task": "fastapi_14372",
+      "round": 2,
+      "sha256": "9f9384d74a07975ef13269bcbed8c3a9c4482f192eead9bd9170071f87d80c52"
+    },
+    {
+      "task": "fastapi_5624",
+      "round": 2,
+      "sha256": "da2e77e5a12d1c42af01e1e056162d50d4568f3511c38c0f955ed2c559e8c81c"
+    },
+    {
+      "task": "rich_3944",
+      "round": 2,
+      "sha256": "dc70b0682fe1b5f26df3d4bad23680a86f8188ef4559b688779642cc1190c5f2"
+    },
+    {
+      "task": "fastapi_15800",
+      "round": 2,
+      "sha256": "f980f7adc7a26e51e0e0d5bfc1b7339c14dd42456b7dc0dd62548d16a4e569cc"
+    },
+    {
+      "task": "rich_3782",
+      "round": 2,
+      "sha256": "9137cc07005bbaa3c1c4e48f52e5b3475f81d2f2af60f8fcd3965977135c5d0e"
+    },
+    {
+      "task": "rich_3480",
+      "round": 2,
+      "sha256": "da84265fb4ac0ed67bcfe35ecce7f3afd1a8dde31d4e0589aefe9dd509dbd117"
+    },
+    {
+      "task": "rich_2725",
+      "round": 2,
+      "sha256": "4e1405fa72c6597f086649c43bdb3b00e188ed9aefe8243c38caa733e9e4e55f"
+    },
+    {
+      "task": "rich_4070",
+      "round": 2,
+      "sha256": "34c9e7efb242cb6aa7aff62c319e1f7bc902b48bba8bb8bc419b8bef4e99f349"
+    },
+    {
+      "task": "fastapi_14873",
+      "round": 2,
+      "sha256": "48f9cdac59fc3614fc16c51400530c969ca82fc8ca3b4700d5f2bd057b3b720c"
+    },
+    {
+      "task": "fastapi_14487",
+      "round": 2,
+      "sha256": "0ef14d6753fad4d7537bce3969004bba11b7744f351edc438656fa150377db38"
+    },
+    {
+      "task": "fastapi_14419",
+      "round": 2,
+      "sha256": "9629bbd1704908de2d444827110d2fbb67d4b3d15315dc372d0832149b67a564"
+    },
+    {
+      "task": "rich_3942",
+      "round": 2,
+      "sha256": "3186d795643404eb1efb3258ece04cae7c9cdefd955bbb2959822c716fb85c9b"
+    },
+    {
+      "task": "fastapi_13537",
+      "round": 2,
+      "sha256": "ce46f73f91a629a9d1a1e03a3ff00c0ce51582733153c3ffc4d80c515bb603be"
+    },
+    {
+      "task": "rich_3772",
+      "round": 2,
+      "sha256": "3a6343521d5d4d129b4026b06d961b33051cb75ea44e3c5665fd1420d378c9e7"
+    },
+    {
+      "task": "rich_3472",
+      "round": 2,
+      "sha256": "7ce0939486ba73bf5631057dc3672511f1eae22047627c7f208e5abfb25f417f"
+    },
+    {
+      "task": "rich_3105",
+      "round": 2,
+      "sha256": "fcbfc4cfe9d62be42d1790be42cd4306ab3c3b30387ce3cef5e1f92a717b6d93"
+    },
+    {
+      "task": "rich_4077",
+      "round": 2,
+      "sha256": "bbcc38826342436cb3585fbce961a1e739c77d7e5ac20bedfd5a2fc16f38c530"
+    },
+    {
+      "task": "fastapi_13920",
+      "round": 2,
+      "sha256": "61a27b8faeebeb867a9b1ee354c661eb82c288ce02dcb9b01c824c541118c6d8"
+    },
+    {
+      "task": "fastapi_14306",
+      "round": 2,
+      "sha256": "a9138766072816729843b82a75ce7b9a01708e18a03fea38634d6e7c6d7faa5c"
+    },
+    {
+      "task": "fastapi_14301",
+      "round": 2,
+      "sha256": "e27068b459ffd3caa8a73b022ae0a2af57ff6ea6400dc164bad56faf2abd54e6"
+    },
+    {
+      "task": "rich_3938",
+      "round": 2,
+      "sha256": "9c9bb5805657139c8e89064146e177ff3155f0f1fef62fea652bfcc23476e6cd"
+    },
+    {
+      "task": "fastapi_14616",
+      "round": 2,
+      "sha256": "1d73495bf39c273ab46d4b2cd4c119cc8a6cee7e9403afd97ea378abe5d5be0c"
+    },
+    {
+      "task": "rich_3675",
+      "round": 2,
+      "sha256": "e974d5e39439fb8a02c8cfb802405834504d6ec7870fdaf7f0d9446fa44d2a73"
+    },
+    {
+      "task": "rich_3454",
+      "round": 2,
+      "sha256": "554b9ded3ac59c336467b247d081df996b78fa9354459ee9156b0ccd260b70d9"
+    },
+    {
+      "task": "rich_3043",
+      "round": 2,
+      "sha256": "f4487fd6db34818460013a9a9639722be1f9298e0b30ad5cad8902fddf0caa20"
+    },
+    {
+      "task": "fastapi_15661",
+      "round": 3,
+      "sha256": "4cbee535d84f91b30390533daf9a009195e4b17f94e1d09d3c67df4d94273ab3"
+    },
+    {
+      "task": "rich_4079",
+      "round": 3,
+      "sha256": "e8b76b9a70ac9bb1b809ff9fb69252a97bc275afa542013debb3f309e8c579a4"
+    },
+    {
+      "task": "fastapi_14794",
+      "round": 3,
+      "sha256": "f392d177cd5baeb6a62ad8897894fc706cbad031cfdf60cbb4dfc7eee7324f57"
+    },
+    {
+      "task": "fastapi_14458",
+      "round": 3,
+      "sha256": "29957a4d70438a187bfaeead4cc96cd4cc6db96ca1b91786e5296c15d9c66e21"
+    },
+    {
+      "task": "fastapi_9425",
+      "round": 3,
+      "sha256": "12c281af3521f856238834b923c22b7db73d2754a70c53151f4f9c27c948de32"
+    },
+    {
+      "task": "rich_3882",
+      "round": 3,
+      "sha256": "a35da04f0343afd014d94843dc24121602015132de6b52c8072a690019f3d1c3"
+    },
+    {
+      "task": "fastapi_11194",
+      "round": 3,
+      "sha256": "21bd10fb44e42e75f20774b7eda8681865fd76dbc5261995d4bd897305988b89"
+    },
+    {
+      "task": "rich_3676",
+      "round": 3,
+      "sha256": "b0d17a2872040d335f1a4290875c4e6017bf4332a30a6fa2a93e4465f2a930e2"
+    },
+    {
+      "task": "rich_3471",
+      "round": 3,
+      "sha256": "487c542712492465950653088808d7fa66e31b31c65fd5d11ee24f283c15f53f"
+    },
+    {
+      "task": "rich_3067",
+      "round": 3,
+      "sha256": "8ebe3afc99170c39f05811e0c29bacc6f9dd0ba1936789384cfc7b415730e303"
+    },
+    {
+      "task": "fastapi_15588",
+      "round": 3,
+      "sha256": "b714200908a114a10431c920c3fd06feec030eeafb3ef30aa89041f4cdd00d25"
+    },
+    {
+      "task": "rich_4076",
+      "round": 3,
+      "sha256": "b60c23b69cecc5cc0cdd50f72db84e01a043818b2f82d46a68d3385b6926f6cd"
+    },
+    {
+      "task": "fastapi_14786",
+      "round": 3,
+      "sha256": "354ea03d29ff91f05de03a5a56a0afaba5fdd4feff5819fbc4352f9d5bba9c55"
+    },
+    {
+      "task": "fastapi_14448",
+      "round": 3,
+      "sha256": "21bd9d07b0a18d5126d6f21c64676c1da25507fb2476afcd4a01f9cad5bc7546"
+    },
+    {
+      "task": "fastapi_14077",
+      "round": 3,
+      "sha256": "2aa4df0d9dedc7abb12bf3950aa08880514c14763dfe07b71fb11acc5df39f03"
+    },
+    {
+      "task": "rich_3894",
+      "round": 3,
+      "sha256": "1f0aa1161455d994b45efb5b1da6db1989680951f5990566abdb06b11fe2cd5f"
+    },
+    {
+      "task": "requests_6644",
+      "round": 3,
+      "sha256": "afa7be75b9885ae3fc75ba7da65e8186c5b437c13f055aea9b92dd12b2d3c157"
+    },
+    {
+      "task": "rich_3518",
+      "round": 3,
+      "sha256": "b14f685e74d081529cd52d4a50832446de36356913dad43c4698b1cb22f4614c"
+    },
+    {
+      "task": "rich_3470",
+      "round": 3,
+      "sha256": "8ed31e8eb9497f9acaea7d57bfa649a27c0e3352410d8422131eb3f2810bbc46"
+    },
+    {
+      "task": "rich_3006",
+      "round": 3,
+      "sha256": "2f4d158f3f2b5648bc1cfd31149bf3dc64c18c89d55f61ebddab8b06f508b597"
+    },
+    {
+      "task": "fastapi_15589",
+      "round": 3,
+      "sha256": "ca4da83db92d7a90fa717d94b717d198bf9ab34af1f3c2cf8663fac8faf5fd61"
+    },
+    {
+      "task": "rich_4075",
+      "round": 3,
+      "sha256": "ca165ecb325f4974d99e54106c03423ecf22b1f571ab34d82ead5b40a6ddb78f"
+    },
+    {
+      "task": "fastapi_14492",
+      "round": 3,
+      "sha256": "9b45a3ae08666aae0fee765b63f934e354a945b3e224e541c0f52b091bb169c9"
+    },
+    {
+      "task": "fastapi_9753",
+      "round": 3,
+      "sha256": "df916e4cab843b1c37cfce9599d81c8674c84368e96c2de13a189f92ae8a0018"
+    },
+    {
+      "task": "rich_3718",
+      "round": 3,
+      "sha256": "f6cff32770d4f22dc2217836ac8f7f34f7f01db468664d19a0cf8927ef2cd391"
+    },
+    {
+      "task": "rich_3935",
+      "round": 3,
+      "sha256": "2d938d1b69f9f54ab53a2d1dfe30edf25c17c179c7b0c91acc63e8fabde4432d"
+    },
+    {
+      "task": "rich_3180",
+      "round": 3,
+      "sha256": "1cd862a3a5e91845d4cd4c0f626109e5a9239617730b3b823995c32349d73b45"
+    },
+    {
+      "task": "rich_3535",
+      "round": 3,
+      "sha256": "7cbd948aa39c97fe8df44a7416246188e16639a40821556e0f6f04ed9343ab81"
+    },
+    {
+      "task": "rich_3052",
+      "round": 3,
+      "sha256": "bc8754d979d8061552ad8f4c4a3ccbca76edf534bd32270c734bd57bd719993c"
+    },
+    {
+      "task": "rich_3063",
+      "round": 3,
+      "sha256": "3622f0174404c389e14b4228020b8dfaa05fd6a0a3180a55f241eebf13e49543"
+    },
+    {
+      "task": "fastapi_15280",
+      "round": 3,
+      "sha256": "7a15afaf951e9ca5484243a37dac85a56385f8c9bf2e9a91d462b1c2a04ed120"
+    },
+    {
+      "task": "rich_4006",
+      "round": 3,
+      "sha256": "7b864dd029d5601d660915ac91a15c488bc1e1c8c891a1e5b3deb8bdaf7d0ded"
+    },
+    {
+      "task": "fastapi_14479",
+      "round": 3,
+      "sha256": "b39d78451a2f79bdfafba0485264e1b21e6d5859a94fb71915e96fbe0d5c19ec"
+    },
+    {
+      "task": "fastapi_5077",
+      "round": 3,
+      "sha256": "4d3c5b1f62b0d07d49bbdd088d679449659c9bc398a026bab2fb0c23011478e6"
+    },
+    {
+      "task": "rich_3934",
+      "round": 3,
+      "sha256": "638b67709cf1df3a0845f8a6738a8c59348a6f338cd16c835c790fe0afbbe471"
+    },
+    {
+      "task": "rich_3905",
+      "round": 3,
+      "sha256": "e70aa6a0f30261eac022805430c49ebc5e5ca665cffc185a04326fa7d3c9700a"
+    },
+    {
+      "task": "rich_3777",
+      "round": 3,
+      "sha256": "a5daaaa8053a3d35912cc4e6efe64a36178d67faf6bff124670e68ef58a74bce"
+    },
+    {
+      "task": "rich_3521",
+      "round": 3,
+      "sha256": "a32811c839f7969f3373789c8fd88455af6ae27c492fdafdd4c97aa7bfa9def2"
+    },
+    {
+      "task": "rich_3278",
+      "round": 3,
+      "sha256": "6060fb57f755ffb124596f818ecef480bd71466c12d36d6010af1d72ae1bba20"
+    },
+    {
+      "task": "rich_3061",
+      "round": 3,
+      "sha256": "e3521f0eb266933dc991008467c423b40b5f411f16079d6f3c5d7aae70c52ef9"
+    },
+    {
+      "task": "fastapi_14986",
+      "round": 3,
+      "sha256": "c411845f1c5f1ec684efe6c8f5a79cc5df8c8a9d4947de2582de62d2ec584063"
+    },
+    {
+      "task": "fastapi_14258",
+      "round": 3,
+      "sha256": "e8fd3a3eed53ea150fbe88e50b58507dca12b48b34d592010ee4d8c292ceb11f"
+    },
+    {
+      "task": "fastapi_14463",
+      "round": 3,
+      "sha256": "cc35a73a5175b9b1022743dadddf91624d8096adf977ca59b230e38d5244dfd8"
+    },
+    {
+      "task": "fastapi_9555",
+      "round": 3,
+      "sha256": "7e9db2081d134747f6a4bc78963f24bedcadadb1206fd5f186f44ddf59899f60"
+    },
+    {
+      "task": "rich_3953",
+      "round": 3,
+      "sha256": "97d17a8895e24f50af0e89032f33a0031432354fdb23d60d9567687849a1d0a1"
+    },
+    {
+      "task": "rich_3930",
+      "round": 3,
+      "sha256": "f569bb5945180155e19ba7a40d530f1901c9d7500abdc37a9d469eea6cb2a59e"
+    },
+    {
+      "task": "rich_3468",
+      "round": 3,
+      "sha256": "33a238b08d91a9cd1ca4bdc3624f45a544c68c2a0942513d72ec93dfc631a780"
+    },
+    {
+      "task": "rich_3506",
+      "round": 3,
+      "sha256": "071406c4e7893276132002c0d146e111edc69d94c14e24ec8ac2cd33b51fc968"
+    },
+    {
+      "task": "rich_2943",
+      "round": 3,
+      "sha256": "43955c3a4e8e422fd9dc331ecfe77948cbf5f21fd5d9e0e7c6f9669da555e538"
+    },
+    {
+      "task": "requests_7309",
+      "round": 3,
+      "sha256": "ee501a5b824366d6905b912bb53f2ef4d5f1ca08a7b92b5f32f79ae948554b8f"
+    },
+    {
+      "task": "fastapi_14851",
+      "round": 3,
+      "sha256": "b7f8f7d1bca6cd6e2d7975ce6058a5298148402d73bcdc29653317d008257415"
+    },
+    {
+      "task": "fastapi_14372",
+      "round": 3,
+      "sha256": "2fbe7cff5d9e1cb9a137a4bd0555ad1951ad59087b725df7b13293c4f53d40b1"
+    },
+    {
+      "task": "fastapi_5624",
+      "round": 3,
+      "sha256": "b72e55b26b2226bfd8517dd6872837bf9a8feeb3f5175d16b4481be935eceae5"
+    },
+    {
+      "task": "rich_3944",
+      "round": 3,
+      "sha256": "9c9055dd5b4a5ed591b08851d424c9411423cb3c4d769615e37fefba836cd97e"
+    },
+    {
+      "task": "fastapi_15800",
+      "round": 3,
+      "sha256": "f690b325899c503938ff2e125d9807ed5a0099265a6f87d5729c778d1795e285"
+    },
+    {
+      "task": "rich_3782",
+      "round": 3,
+      "sha256": "f2ea87b548a27c03798721e3a9aec1fec571143a0ccf24ad05ab10741e05e132"
+    },
+    {
+      "task": "rich_3480",
+      "round": 3,
+      "sha256": "aeba4c888771810cf4d357192b3ebdfffec4c207823e0bd262792800b9330951"
+    },
+    {
+      "task": "rich_2725",
+      "round": 3,
+      "sha256": "414c1d889365ee463ad330303c91ce6ea3662948455abf8d6acf5f2a191a95c2"
+    },
+    {
+      "task": "rich_4070",
+      "round": 3,
+      "sha256": "87b160fd99178e47cb2e3d3e936779a5c1b5c78f65e3d3265561e0a5e896edcc"
+    },
+    {
+      "task": "fastapi_14873",
+      "round": 3,
+      "sha256": "2d8c9e0340d49ae5f2b884b4e93d99b100892b7341b4b142904afc7ba045809c"
+    },
+    {
+      "task": "fastapi_14487",
+      "round": 3,
+      "sha256": "9a544aec9b5f041da60b96859e90694d3e5b824663a062afe13e9fd873ad4e4a"
+    },
+    {
+      "task": "fastapi_14419",
+      "round": 3,
+      "sha256": "0fa32b2bf66e670dfb5b1e0a5a7255f429fe63839059f0608e8bbfa7d22a5797"
+    },
+    {
+      "task": "rich_3942",
+      "round": 3,
+      "sha256": "24bef26867fcf6da46fdb8ed4893e4f43611b0ab2a7b425f28e6c3950e3e31b4"
+    },
+    {
+      "task": "fastapi_13537",
+      "round": 3,
+      "sha256": "065fcd79e265b0c35c232ac8f8082216e3483595e4e5bfe0f29b5e23198d9678"
+    },
+    {
+      "task": "rich_3772",
+      "round": 3,
+      "sha256": "1fc52f86777e8cfc180b7aacb771e37936d13d09d4d7e895c1a2018c59be2cf5"
+    },
+    {
+      "task": "rich_3472",
+      "round": 3,
+      "sha256": "bb10f59c004de6655d16fb7b9a1186260881b42ec47204c064b067f1a4992817"
+    },
+    {
+      "task": "rich_3105",
+      "round": 3,
+      "sha256": "a80f7ed2226a7dd3a90e3527030efaf63781f8bd72f7d1d9350d6ad635948ec9"
+    },
+    {
+      "task": "rich_4077",
+      "round": 3,
+      "sha256": "71ca9115ef97efe85c8fe290f768ecfe34857b3b7017ecc84efd9fb31812231b"
+    },
+    {
+      "task": "fastapi_13920",
+      "round": 3,
+      "sha256": "093f2282d23d818c37273d7b34b96d84a1d3e274a6ca5804fff527655b1efadf"
+    },
+    {
+      "task": "fastapi_14306",
+      "round": 3,
+      "sha256": "42d2c7cafc15d6d0ee4784bb29770d5c597a990f9a5d1ca8a4def6d9f9545fd3"
+    },
+    {
+      "task": "fastapi_14301",
+      "round": 3,
+      "sha256": "223eeb709e2f308fbf4991282a7cffc5ee5a670370f628622acd0a1d9bdc35cc"
+    },
+    {
+      "task": "rich_3938",
+      "round": 3,
+      "sha256": "a95642faf18486682008f9af6df8836dead5c7e5ad987a2c709b047e9c6756f1"
+    },
+    {
+      "task": "fastapi_14616",
+      "round": 3,
+      "sha256": "c43af1c70aa5dc14f9c258e9d44aa3d2c9a791f16622c669934baf0e675bd086"
+    },
+    {
+      "task": "rich_3675",
+      "round": 3,
+      "sha256": "c52994f1ad416eadd24b32459dbc5db19825c38b82ff237d546f1f9438376e80"
+    },
+    {
+      "task": "rich_3454",
+      "round": 3,
+      "sha256": "e57475e6e91b7b47f50921e2bd61f7fa2f35b457ce192cfc9dff5f884027a354"
+    },
+    {
+      "task": "rich_3043",
+      "round": 3,
+      "sha256": "487c5f2084916a6f238133d01966b3ea6d95c51c2648f456545ac0c675171b23"
+    }
+  ],
+  "same_task_success_normal_failure_pairing": {
+    "selection": "Task has at least one resolved attempt and one unresolved attempt with failure_kind == none. Execution-error failures in those tasks are excluded from paired comparison.",
+    "exact_loop_definition": "At least 5 consecutive tool calls with identical function name and complete json.dumps(arguments, sort_keys=True), ordered by call timestamp, across all authors.",
+    "near_loop_definition": "Same as legacy loop_calls: function name plus first 80 characters of sorted JSON arguments; this can group different full arguments.",
+    "tasks": 13,
+    "records": [
+      {
+        "task": "fastapi_13537",
+        "success_rounds": [
+          2
+        ],
+        "normal_failed_rounds": [
+          1
+        ],
+        "excluded_execution_error_rounds": [
+          3
+        ],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "fastapi_14492",
+        "success_rounds": [
+          2
+        ],
+        "normal_failed_rounds": [
+          3
+        ],
+        "excluded_execution_error_rounds": [
+          1
+        ],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 0,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 0
+      },
+      {
+        "task": "fastapi_14873",
+        "success_rounds": [
+          2
+        ],
+        "normal_failed_rounds": [
+          1,
+          3
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "fastapi_5077",
+        "success_rounds": [
+          2,
+          3
+        ],
+        "normal_failed_rounds": [
+          1
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "fastapi_9425",
+        "success_rounds": [
+          2
+        ],
+        "normal_failed_rounds": [
+          1,
+          3
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "fastapi_9753",
+        "success_rounds": [
+          1,
+          2
+        ],
+        "normal_failed_rounds": [
+          3
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "rich_3006",
+        "success_rounds": [
+          2,
+          3
+        ],
+        "normal_failed_rounds": [
+          1
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "rich_3506",
+        "success_rounds": [
+          1,
+          2
+        ],
+        "normal_failed_rounds": [
+          3
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 1,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "rich_3521",
+        "success_rounds": [
+          1,
+          3
+        ],
+        "normal_failed_rounds": [
+          2
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "rich_3718",
+        "success_rounds": [
+          1,
+          3
+        ],
+        "normal_failed_rounds": [
+          2
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 0,
+        "near_success_flagged_attempts": 1,
+        "near_failure_flagged_attempts": 0
+      },
+      {
+        "task": "rich_3777",
+        "success_rounds": [
+          1,
+          2
+        ],
+        "normal_failed_rounds": [
+          3
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 0,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 0
+      },
+      {
+        "task": "rich_3894",
+        "success_rounds": [
+          1,
+          3
+        ],
+        "normal_failed_rounds": [
+          2
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 1,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 1
+      },
+      {
+        "task": "rich_4077",
+        "success_rounds": [
+          2,
+          3
+        ],
+        "normal_failed_rounds": [
+          1
+        ],
+        "excluded_execution_error_rounds": [],
+        "exact_success_flagged_attempts": 0,
+        "exact_failure_flagged_attempts": 0,
+        "near_success_flagged_attempts": 0,
+        "near_failure_flagged_attempts": 0
+      }
+    ],
+    "success_attempts": 22,
+    "normal_failure_attempts": 15,
+    "requested_13_9_0": {
+      "tasks": 13,
+      "exact_failure_flagged_attempts": 9,
+      "exact_success_flagged_attempts": 0
+    },
+    "recomputed": {
+      "exact_success_flagged_attempts": 0,
+      "exact_failure_flagged_attempts": 9,
+      "near_success_flagged_attempts": 2,
+      "near_failure_flagged_attempts": 9
+    },
+    "near_only_success_records": [
+      {
+        "task": "rich_3506",
+        "round": 2,
+        "longest_exact_repeat": 1,
+        "longest_near_repeat": 6
+      },
+      {
+        "task": "rich_3718",
+        "round": 1,
+        "longest_exact_repeat": 1,
+        "longest_near_repeat": 9
+      }
+    ],
+    "exact_task_matched_sign_test": {
+      "positive_tasks": 0,
+      "negative_tasks": 9,
+      "ties": 4,
+      "two_sided_sign_p": 0.00390625
+    }
+  },
+  "reference_environment": "vllm/vllm-openai:v0.19.1 image (Python 3.12) + competition wheelhouse + Dockerfile.sandbox base test tools; subprocess sandbox; checked 2026-09-29",
+  "reference_audit": {
+    "fastapi": {
+      "total": 67,
+      "reference_pass": 31,
+      "reference_fail": 36,
+      "pass_fraction": 0.4626865671641791,
+      "failed_with_missing_module": 23,
+      "failed_without_listed_missing_module": 13,
+      "missing_module_counts": {
+        "inline_snapshot": 17,
+        "dirty_equals": 6
+      }
+    },
+    "httpx": {
+      "total": 1,
+      "reference_pass": 0,
+      "reference_fail": 1,
+      "pass_fraction": 0.0,
+      "failed_with_missing_module": 0,
+      "failed_without_listed_missing_module": 1,
+      "missing_module_counts": {}
+    },
+    "requests": {
+      "total": 13,
+      "reference_pass": 2,
+      "reference_fail": 11,
+      "pass_fraction": 0.15384615384615385,
+      "failed_with_missing_module": 0,
+      "failed_without_listed_missing_module": 11,
+      "missing_module_counts": {}
+    },
+    "rich": {
+      "total": 48,
+      "reference_pass": 43,
+      "reference_fail": 5,
+      "pass_fraction": 0.8958333333333334,
+      "failed_with_missing_module": 0,
+      "failed_without_listed_missing_module": 5,
+      "missing_module_counts": {}
+    }
+  },
+  "per_repo_observed_rates": {
+    "fastapi": {
+      "p": 0.3870967741935484,
+      "q": 0.17543859649122806,
+      "q_over_p": 0.45321637426900585,
+      "successes": 36,
+      "attempts": 93,
+      "restart_successes": 20,
+      "restart_pairs": 114
+    },
+    "requests": {
+      "p": 0.8333333333333334,
+      "q": 1.0,
+      "q_over_p": 1.2,
+      "successes": 5,
+      "attempts": 6,
+      "restart_successes": 2,
+      "restart_pairs": 2
+    },
+    "rich": {
+      "p": 0.20930232558139536,
+      "q": 0.09803921568627451,
+      "q_over_p": 0.46840958605664484,
+      "successes": 27,
+      "attempts": 129,
+      "restart_successes": 20,
+      "restart_pairs": 204
+    }
+  },
+  "reference_interpretation": "Reference-patch pass/fail in the recorded environment, not proof of intrinsic task solvability or official-server behavior. Missing-module attribution is restricted to listed modules.",
+  "observed": {
+    "tasks": 76,
+    "attempts": 228,
+    "successes": 68,
+    "failures": 160,
+    "union_solved": 32,
+    "rates": {
+      "p": 0.2982456140350877,
+      "q": 0.13125,
+      "q_over_p": 0.44007352941176475,
+      "successes": 68,
+      "attempts": 228,
+      "restart_successes": 42,
+      "restart_pairs": 320
+    },
+    "rate_bootstrap_95ci": {
+      "p": [
+        0.21480263157894738,
+        0.39035087719298245
+      ],
+      "q": [
+        0.08024691358024691,
+        0.19313197717687916
+      ],
+      "q_over_p": [
+        0.294030987394958,
+        0.5921657345776435
+      ]
+    },
+    "error_modalities": {
+      "edit_errors": {
+        "exposed_successes": 21,
+        "exposed_failures": 76,
+        "unexposed_successes": 47,
+        "unexposed_failures": 84,
+        "exposed_success_rate": 0.21649484536082475,
+        "unexposed_success_rate": 0.35877862595419846,
+        "risk_difference": -0.1422837805933737,
+        "attempt_fisher_p_descriptive_only": 0.02769208363785013,
+        "within_task_exposure_discordant_tasks": 46,
+        "within_task_mean_risk_difference": -0.15217391304347827,
+        "within_task_sign_test": {
+          "positive_tasks": 3,
+          "negative_tasks": 11,
+          "ties": 32,
+          "two_sided_sign_p": 0.057373046875
+        },
+        "restart_pairs": 152,
+        "restart_successes": 25,
+        "restart_rate": 0.16447368421052633,
+        "chronological_next_pairs": 50,
+        "chronological_next_successes": 8,
+        "chronological_next_rate": 0.16,
+        "task_bootstrap_95ci": {
+          "risk_difference": [
+            -0.2738488254225848,
+            0.00150375939849623
+          ],
+          "within_task_mean_risk_difference": [
+            -0.27906976744186046,
+            -0.03914992826398858
+          ],
+          "restart_rate": [
+            0.08550354251012146,
+            0.26666666666666666
+          ],
+          "chronological_next_rate": [
+            0.061224489795918366,
+            0.2857142857142857
+          ]
+        }
+      },
+      "schema_errors": {
+        "exposed_successes": 12,
+        "exposed_failures": 38,
+        "unexposed_successes": 56,
+        "unexposed_failures": 122,
+        "exposed_success_rate": 0.24,
+        "unexposed_success_rate": 0.3146067415730337,
+        "risk_difference": -0.07460674157303371,
+        "attempt_fisher_p_descriptive_only": 0.3825393360395346,
+        "within_task_exposure_discordant_tasks": 31,
+        "within_task_mean_risk_difference": -0.14516129032258066,
+        "within_task_sign_test": {
+          "positive_tasks": 2,
+          "negative_tasks": 7,
+          "ties": 22,
+          "two_sided_sign_p": 0.1796875
+        },
+        "restart_pairs": 76,
+        "restart_successes": 15,
+        "restart_rate": 0.19736842105263158,
+        "chronological_next_pairs": 26,
+        "chronological_next_successes": 6,
+        "chronological_next_rate": 0.23076923076923078,
+        "task_bootstrap_95ci": {
+          "risk_difference": [
+            -0.2281723484848485,
+            0.09417334271990868
+          ],
+          "within_task_mean_risk_difference": [
+            -0.32264112903225806,
+            0.0
+          ],
+          "restart_rate": [
+            0.08138749214330611,
+            0.35294117647058826
+          ],
+          "chronological_next_rate": [
+            0.07992307692307693,
+            0.4230769230769231
+          ]
+        }
+      },
+      "other_edit_errors": {
+        "exposed_successes": 13,
+        "exposed_failures": 53,
+        "unexposed_successes": 55,
+        "unexposed_failures": 107,
+        "exposed_success_rate": 0.19696969696969696,
+        "unexposed_success_rate": 0.3395061728395062,
+        "risk_difference": -0.14253647586980922,
+        "attempt_fisher_p_descriptive_only": 0.038074204321765545,
+        "within_task_exposure_discordant_tasks": 41,
+        "within_task_mean_risk_difference": -0.08536585365853659,
+        "within_task_sign_test": {
+          "positive_tasks": 3,
+          "negative_tasks": 8,
+          "ties": 30,
+          "two_sided_sign_p": 0.2265625
+        },
+        "restart_pairs": 106,
+        "restart_successes": 13,
+        "restart_rate": 0.12264150943396226,
+        "chronological_next_pairs": 35,
+        "chronological_next_successes": 2,
+        "chronological_next_rate": 0.05714285714285714,
+        "task_bootstrap_95ci": {
+          "risk_difference": [
+            -0.2707610141879015,
+            -0.013662512364378319
+          ],
+          "within_task_mean_risk_difference": [
+            -0.1912047511312217,
+            0.025
+          ],
+          "restart_rate": [
+            0.045439976689976694,
+            0.2162353391126976
+          ],
+          "chronological_next_rate": [
+            0.0,
+            0.14285714285714285
+          ]
+        }
+      },
+      "timeout": {
+        "exposed_successes": 0,
+        "exposed_failures": 28,
+        "unexposed_successes": 68,
+        "unexposed_failures": 132,
+        "exposed_success_rate": null,
+        "unexposed_success_rate": null,
+        "risk_difference": null,
+        "attempt_fisher_p_descriptive_only": null,
+        "within_task_exposure_discordant_tasks": 19,
+        "within_task_mean_risk_difference": null,
+        "within_task_sign_test": null,
+        "restart_pairs": 56,
+        "restart_successes": 11,
+        "restart_rate": 0.19642857142857142,
+        "chronological_next_pairs": 18,
+        "chronological_next_successes": 4,
+        "chronological_next_rate": 0.2222222222222222,
+        "task_bootstrap_95ci": {
+          "restart_rate": [
+            0.06810770750988142,
+            0.3697010869565216
+          ],
+          "chronological_next_rate": [
+            0.058823529411764705,
+            0.42857142857142855
+          ]
+        },
+        "association_not_tested_reason": "Failure status is outcome-related; retain decomposition and conditional restart estimates only."
+      },
+      "context_window": {
+        "exposed_successes": 0,
+        "exposed_failures": 12,
+        "unexposed_successes": 68,
+        "unexposed_failures": 148,
+        "exposed_success_rate": null,
+        "unexposed_success_rate": null,
+        "risk_difference": null,
+        "attempt_fisher_p_descriptive_only": null,
+        "within_task_exposure_discordant_tasks": 8,
+        "within_task_mean_risk_difference": null,
+        "within_task_sign_test": null,
+        "restart_pairs": 24,
+        "restart_successes": 2,
+        "restart_rate": 0.08333333333333333,
+        "chronological_next_pairs": 8,
+        "chronological_next_successes": 1,
+        "chronological_next_rate": 0.125,
+        "task_bootstrap_95ci": {
+          "restart_rate": [
+            0.0,
+            0.3
+          ],
+          "chronological_next_rate": [
+            0.0,
+            0.4289682539682536
+          ]
+        },
+        "association_not_tested_reason": "Failure status is outcome-related; retain decomposition and conditional restart estimates only."
+      },
+      "early_loop": {
+        "exposed_successes": 4,
+        "exposed_failures": 15,
+        "unexposed_successes": 64,
+        "unexposed_failures": 145,
+        "exposed_success_rate": 0.21052631578947367,
+        "unexposed_success_rate": 0.3062200956937799,
+        "risk_difference": -0.09569377990430622,
+        "attempt_fisher_p_descriptive_only": 0.4453481915728891,
+        "within_task_exposure_discordant_tasks": 17,
+        "within_task_mean_risk_difference": -0.17647058823529413,
+        "within_task_sign_test": {
+          "positive_tasks": 2,
+          "negative_tasks": 5,
+          "ties": 10,
+          "two_sided_sign_p": 0.453125
+        },
+        "restart_pairs": 30,
+        "restart_successes": 9,
+        "restart_rate": 0.3,
+        "chronological_next_pairs": 12,
+        "chronological_next_successes": 3,
+        "chronological_next_rate": 0.25,
+        "task_bootstrap_95ci": {
+          "risk_difference": [
+            -0.28665459344115,
+            0.12951658017628329
+          ],
+          "within_task_mean_risk_difference": [
+            -0.43343750000000003,
+            0.031302083333333286
+          ],
+          "restart_rate": [
+            0.1,
+            0.5626041666666666
+          ],
+          "chronological_next_rate": [
+            0.0,
+            0.5454545454545454
+          ]
+        }
+      },
+      "normal_failure": {
+        "exposed_successes": 68,
+        "exposed_failures": 114,
+        "unexposed_successes": 0,
+        "unexposed_failures": 46,
+        "exposed_success_rate": null,
+        "unexposed_success_rate": null,
+        "risk_difference": null,
+        "attempt_fisher_p_descriptive_only": null,
+        "within_task_exposure_discordant_tasks": 31,
+        "within_task_mean_risk_difference": null,
+        "within_task_sign_test": null,
+        "restart_pairs": 228,
+        "restart_successes": 24,
+        "restart_rate": 0.10526315789473684,
+        "chronological_next_pairs": 75,
+        "chronological_next_successes": 9,
+        "chronological_next_rate": 0.12,
+        "task_bootstrap_95ci": {
+          "restart_rate": [
+            0.05466923336330935,
+            0.17095959595959595
+          ],
+          "chronological_next_rate": [
+            0.05063291139240506,
+            0.20643241167434706
+          ]
+        },
+        "association_not_tested_reason": "Failure status is outcome-related; retain decomposition and conditional restart estimates only."
+      }
+    },
+    "legacy_crosscheck": {
+      "edit_errors": {
+        "recomputed_failed_attempts": 76,
+        "legacy_failed_attempts": 76
+      },
+      "schema_errors": {
+        "recomputed_failed_attempts": 38,
+        "legacy_failed_attempts": 38
+      },
+      "timeout": {
+        "recomputed_failed_attempts": 28,
+        "legacy_failed_attempts": 28
+      },
+      "context_window": {
+        "recomputed_failed_attempts": 12,
+        "legacy_failed_attempts": 12
+      },
+      "early_loop": {
+        "recomputed_failed_attempts": 15,
+        "legacy_failed_attempts": 15
+      },
+      "normal_failure": {
+        "recomputed_failed_attempts": 114,
+        "legacy_failed_attempts": 114
+      }
+    },
+    "successful_edit_error_claim_audit": {
+      "requested_claim": 19,
+      "raw_recomputed": 21,
+      "legacy_attempts_recomputed": 21,
+      "per_attempt_error_count_discrepancies": [],
+      "two_difference_records": null,
+      "identification_reason": "All 228 edit and schema counts agree exactly with legacy attempts.json. Legacy summary only reports failed attempts; no 19-success definition or row set was supplied.",
+      "successful_exposed_records": [
+        {
+          "task": "fastapi_11194",
+          "round": 1,
+          "edit_errors": 32,
+          "schema_errors": 32
+        },
+        {
+          "task": "fastapi_15589",
+          "round": 1,
+          "edit_errors": 3,
+          "schema_errors": 3
+        },
+        {
+          "task": "rich_3905",
+          "round": 1,
+          "edit_errors": 1,
+          "schema_errors": 0
+        },
+        {
+          "task": "rich_3777",
+          "round": 1,
+          "edit_errors": 13,
+          "schema_errors": 0
+        },
+        {
+          "task": "fastapi_14463",
+          "round": 1,
+          "edit_errors": 1,
+          "schema_errors": 0
+        },
+        {
+          "task": "requests_7309",
+          "round": 1,
+          "edit_errors": 2,
+          "schema_errors": 0
+        },
+        {
+          "task": "rich_3454",
+          "round": 1,
+          "edit_errors": 2,
+          "schema_errors": 2
+        },
+        {
+          "task": "fastapi_14794",
+          "round": 2,
+          "edit_errors": 1,
+          "schema_errors": 1
+        },
+        {
+          "task": "fastapi_14458",
+          "round": 2,
+          "edit_errors": 5,
+          "schema_errors": 0
+        },
+        {
+          "task": "fastapi_9425",
+          "round": 2,
+          "edit_errors": 4,
+          "schema_errors": 4
+        },
+        {
+          "task": "fastapi_11194",
+          "round": 2,
+          "edit_errors": 4,
+          "schema_errors": 4
+        },
+        {
+          "task": "rich_3067",
+          "round": 2,
+          "edit_errors": 3,
+          "schema_errors": 2
+        },
+        {
+          "task": "fastapi_14463",
+          "round": 2,
+          "edit_errors": 1,
+          "schema_errors": 0
+        },
+        {
+          "task": "rich_3454",
+          "round": 2,
+          "edit_errors": 1,
+          "schema_errors": 0
+        },
+        {
+          "task": "fastapi_11194",
+          "round": 3,
+          "edit_errors": 5,
+          "schema_errors": 4
+        },
+        {
+          "task": "rich_3067",
+          "round": 3,
+          "edit_errors": 2,
+          "schema_errors": 0
+        },
+        {
+          "task": "fastapi_14077",
+          "round": 3,
+          "edit_errors": 3,
+          "schema_errors": 0
+        },
+        {
+          "task": "rich_3935",
+          "round": 3,
+          "edit_errors": 26,
+          "schema_errors": 26
+        },
+        {
+          "task": "fastapi_9555",
+          "round": 3,
+          "edit_errors": 1,
+          "schema_errors": 1
+        },
+        {
+          "task": "fastapi_14372",
+          "round": 3,
+          "edit_errors": 7,
+          "schema_errors": 1
+        },
+        {
+          "task": "rich_3454",
+          "round": 3,
+          "edit_errors": 44,
+          "schema_errors": 4
+        }
+      ]
+    }
+  },
+  "denominator_distortion": {
+    "observed_judgable": {
+      "p": 0.2982456140350877,
+      "q": 0.13125,
+      "q_over_p": 0.44007352941176475,
+      "successes": 68,
+      "attempts": 228,
+      "restart_successes": 42,
+      "restart_pairs": 320
+    },
+    "zero_imputed_53_unrun_tasks": {
+      "p": 0.17571059431524547,
+      "q": 0.06583072100313479,
+      "q_over_p": 0.3746542504148995,
+      "successes": 68,
+      "attempts": 387,
+      "restart_successes": 42,
+      "restart_pairs": 638
+    },
+    "zero_imputation_is_counterfactual": true,
+    "p_multiplicative_attenuation": 0.5891472868217055,
+    "definition": "p = successes/attempts. q = successes among all ordered distinct attempt pairs whose first attempt failed. No outcomes observed for 53 excluded tasks; zero-imputation illustrates measurement distortion only."
+  },
+  "ghost_costs": {
+    "schema_rejected_calls": 1988,
+    "attempts_with_schema_error": 50,
+    "observed_schema_call_to_observation_latency_seconds": 2.8788411617279053,
+    "missing_latency_events": 0,
+    "preceding_event_intervals_seconds": 7157.377712011337,
+    "causal_schema_wallclock_cost_seconds": null,
+    "causal_cost_identification_reason": "Per-call dispatch and observation timestamps identify response latency; preceding event gaps also include generation, scheduling and intervening work. No no-error counterfactual or generation-start timestamps identify total causal error cost.",
+    "uncounted_schema_calls_direct_counter_proof": null,
+    "all_llm_calls": 15861,
+    "all_counted_tool_calls": 12238,
+    "schema_calls_by_outcome": {
+      "False": 1904,
+      "True": 84
+    },
+    "counter_identification_reason": "Traces expose rejected calls and final counted tool calls but no per-call budget counter transitions. Rejected-call count is observed; counter-exclusion mechanism needs harness source corroboration.",
+    "llm_minus_tool_calls": 3623,
+    "llm_minus_tool_interpretation": "Includes successful delegation and text-only calls; not a ghost-call count."
+  },
+  "cases": [
+    {
+      "task": "rich_3882",
+      "round": 3,
+      "resolved": false,
+      "seconds": 604.9,
+      "tool_calls": 13,
+      "llm_calls": 260,
+      "edit_errors": 242,
+      "schema_errors": 242,
+      "schema_observed_latency_seconds": 0.3348121643066406,
+      "schema_preceding_event_interval_seconds": 510.4391870498657,
+      "fuse_schema_3": 61.861989974975586
+    },
+    {
+      "task": "rich_2943",
+      "round": 3,
+      "resolved": false,
+      "seconds": 604.9,
+      "tool_calls": 69,
+      "llm_calls": 314,
+      "edit_errors": 239,
+      "schema_errors": 238,
+      "schema_observed_latency_seconds": 0.3328549861907959,
+      "schema_preceding_event_interval_seconds": 426.341091632843,
+      "fuse_schema_3": 82.17390608787537
+    },
+    {
+      "task": "rich_2943",
+      "round": 1,
+      "resolved": false,
+      "seconds": 604.9,
+      "tool_calls": 38,
+      "llm_calls": 253,
+      "edit_errors": 209,
+      "schema_errors": 209,
+      "schema_observed_latency_seconds": 0.28072261810302734,
+      "schema_preceding_event_interval_seconds": 441.38956236839294,
+      "fuse_schema_3": 63.05607724189758
+    },
+    {
+      "task": "rich_3882",
+      "round": 1,
+      "resolved": false,
+      "seconds": 605.0,
+      "tool_calls": 22,
+      "llm_calls": 212,
+      "edit_errors": 184,
+      "schema_errors": 184,
+      "schema_observed_latency_seconds": 0.26054906845092773,
+      "schema_preceding_event_interval_seconds": 404.28525471687317,
+      "fuse_schema_3": 77.48697280883789
+    },
+    {
+      "task": "rich_3052",
+      "round": 2,
+      "resolved": false,
+      "seconds": 605.0,
+      "tool_calls": 36,
+      "llm_calls": 165,
+      "edit_errors": 121,
+      "schema_errors": 121,
+      "schema_observed_latency_seconds": 0.23320508003234863,
+      "schema_preceding_event_interval_seconds": 412.3930230140686,
+      "fuse_schema_3": 61.804545640945435
+    },
+    {
+      "task": "rich_4070",
+      "round": 3,
+      "resolved": false,
+      "seconds": 602.4,
+      "tool_calls": 64,
+      "llm_calls": 171,
+      "edit_errors": 112,
+      "schema_errors": 110,
+      "schema_observed_latency_seconds": 0.11720490455627441,
+      "schema_preceding_event_interval_seconds": 260.30617809295654,
+      "fuse_schema_3": 264.1628165245056
+    },
+    {
+      "task": "fastapi_14301",
+      "round": 3,
+      "resolved": false,
+      "seconds": 607.0,
+      "tool_calls": 29,
+      "llm_calls": 138,
+      "edit_errors": 105,
+      "schema_errors": 105,
+      "schema_observed_latency_seconds": 0.14004755020141602,
+      "schema_preceding_event_interval_seconds": 366.8343913555145,
+      "fuse_schema_3": 89.97060346603394
+    },
+    {
+      "task": "rich_3067",
+      "round": 1,
+      "resolved": false,
+      "seconds": 605.0,
+      "tool_calls": 43,
+      "llm_calls": 152,
+      "edit_errors": 104,
+      "schema_errors": 104,
+      "schema_observed_latency_seconds": 0.13695979118347168,
+      "schema_preceding_event_interval_seconds": 414.6813700199127,
+      "fuse_schema_3": 90.25265383720398
+    }
+  ],
+  "queue": {
+    "budget_seconds": 43200,
+    "policy": "Broad-first rounds 1,2,3, skipping solved tasks; bootstrap resamples and permutes task order. Trigger is kth consecutive error-bearing tool step, reset by any nonmatching tool step; text/system steps do not reset. Triggered attempt treated as unsuccessful; final patch at earlier trigger not tested.",
+    "measured_support": "Observed attempts were capped at 600 seconds with termination overhead. Replay truncates overhead to 600. No 60-minute trajectories are observed.",
+    "observed_task_order_point_replay": {
+      "cap_600": {
+        "solved": 30,
+        "completed_attempts": 135,
+        "started_attempts": 136,
+        "seconds_used": 43200.0,
+        "breaker_stops": 0,
+        "distinct_issues_started": 76,
+        "distinct_issues_completed": 76
+      },
+      "fuse_schema_2": {
+        "solved": 29,
+        "completed_attempts": 158,
+        "started_attempts": 159,
+        "seconds_used": 43200.0,
+        "breaker_stops": 31,
+        "distinct_issues_started": 76,
+        "distinct_issues_completed": 76
+      },
+      "fuse_schema_3": {
+        "solved": 29,
+        "completed_attempts": 155,
+        "started_attempts": 156,
+        "seconds_used": 43200.0,
+        "breaker_stops": 28,
+        "distinct_issues_started": 76,
+        "distinct_issues_completed": 76
+      },
+      "fuse_schema_5": {
+        "solved": 31,
+        "completed_attempts": 153,
+        "started_attempts": 154,
+        "seconds_used": 43200.0,
+        "breaker_stops": 19,
+        "distinct_issues_started": 76,
+        "distinct_issues_completed": 76
+      },
+      "fuse_edit_3": {
+        "solved": 29,
+        "completed_attempts": 167,
+        "started_attempts": 168,
+        "seconds_used": 43200.0,
+        "breaker_stops": 45,
+        "distinct_issues_started": 76,
+        "distinct_issues_completed": 76
+      }
+    },
+    "replay_600_and_breakers": {
+      "cap_600": {
+        "solved": {
+          "mean": 29.71,
+          "task_bootstrap_95ci": [
+            20.0,
+            39.0
+          ]
+        },
+        "completed_attempts": {
+          "mean": 134.273,
+          "task_bootstrap_95ci": [
+            121.0,
+            150.0
+          ]
+        },
+        "started_attempts": {
+          "mean": 135.273,
+          "task_bootstrap_95ci": [
+            122.0,
+            151.0
+          ]
+        },
+        "seconds_used": {
+          "mean": 43200.0,
+          "task_bootstrap_95ci": [
+            43200.0,
+            43200.0
+          ]
+        },
+        "breaker_stops": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "distinct_issues_started": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        }
+      },
+      "fuse_schema_2": {
+        "solved": {
+          "mean": 27.836,
+          "task_bootstrap_95ci": [
+            19.0,
+            36.02499999999998
+          ]
+        },
+        "completed_attempts": {
+          "mean": 155.911,
+          "task_bootstrap_95ci": [
+            137.0,
+            175.02499999999998
+          ]
+        },
+        "started_attempts": {
+          "mean": 156.893,
+          "task_bootstrap_95ci": [
+            138.0,
+            176.0
+          ]
+        },
+        "seconds_used": {
+          "mean": 43160.16021735582,
+          "task_bootstrap_95ci": [
+            43200.0,
+            43200.0
+          ]
+        },
+        "breaker_stops": {
+          "mean": 30.243,
+          "task_bootstrap_95ci": [
+            18.0,
+            43.0
+          ]
+        },
+        "distinct_issues_started": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        }
+      },
+      "fuse_schema_3": {
+        "solved": {
+          "mean": 27.806,
+          "task_bootstrap_95ci": [
+            19.0,
+            36.02499999999998
+          ]
+        },
+        "completed_attempts": {
+          "mean": 154.055,
+          "task_bootstrap_95ci": [
+            135.0,
+            174.0
+          ]
+        },
+        "started_attempts": {
+          "mean": 155.039,
+          "task_bootstrap_95ci": [
+            136.0,
+            175.0
+          ]
+        },
+        "seconds_used": {
+          "mean": 43163.32538438487,
+          "task_bootstrap_95ci": [
+            43200.0,
+            43200.0
+          ]
+        },
+        "breaker_stops": {
+          "mean": 27.171,
+          "task_bootstrap_95ci": [
+            16.0,
+            39.0
+          ]
+        },
+        "distinct_issues_started": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        }
+      },
+      "fuse_schema_5": {
+        "solved": {
+          "mean": 30.489,
+          "task_bootstrap_95ci": [
+            22.0,
+            39.0
+          ]
+        },
+        "completed_attempts": {
+          "mean": 151.683,
+          "task_bootstrap_95ci": [
+            135.0,
+            170.02499999999998
+          ]
+        },
+        "started_attempts": {
+          "mean": 152.66,
+          "task_bootstrap_95ci": [
+            136.0,
+            171.0
+          ]
+        },
+        "seconds_used": {
+          "mean": 43156.74617295942,
+          "task_bootstrap_95ci": [
+            43200.0,
+            43200.0
+          ]
+        },
+        "breaker_stops": {
+          "mean": 18.741,
+          "task_bootstrap_95ci": [
+            10.975000000000001,
+            28.0
+          ]
+        },
+        "distinct_issues_started": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        }
+      },
+      "fuse_edit_3": {
+        "solved": {
+          "mean": 28.287,
+          "task_bootstrap_95ci": [
+            20.0,
+            37.0
+          ]
+        },
+        "completed_attempts": {
+          "mean": 166.11,
+          "task_bootstrap_95ci": [
+            147.0,
+            185.0
+          ]
+        },
+        "started_attempts": {
+          "mean": 167.012,
+          "task_bootstrap_95ci": [
+            148.0,
+            186.0
+          ]
+        },
+        "seconds_used": {
+          "mean": 43015.620294385866,
+          "task_bootstrap_95ci": [
+            40484.709596205954,
+            43200.0
+          ]
+        },
+        "breaker_stops": {
+          "mean": 43.997,
+          "task_bootstrap_95ci": [
+            29.0,
+            61.0
+          ]
+        },
+        "distinct_issues_started": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 76,
+          "task_bootstrap_95ci": [
+            76.0,
+            76.0
+          ]
+        }
+      }
+    },
+    "paired_breaker_minus_600_solved": {
+      "fuse_schema_2": {
+        "mean": -1.874,
+        "task_bootstrap_95ci": [
+          -6.0,
+          2.0
+        ]
+      },
+      "fuse_schema_3": {
+        "mean": -1.904,
+        "task_bootstrap_95ci": [
+          -6.0,
+          2.0
+        ]
+      },
+      "fuse_schema_5": {
+        "mean": 0.779,
+        "task_bootstrap_95ci": [
+          -1.0,
+          3.0
+        ]
+      },
+      "fuse_edit_3": {
+        "mean": -1.423,
+        "task_bootstrap_95ci": [
+          -5.0,
+          2.0249999999999773
+        ]
+      }
+    },
+    "paired_breaker_minus_600_distinct_issues": {
+      "fuse_schema_2": {
+        "distinct_issues_started": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "fuse_schema_3": {
+        "distinct_issues_started": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "fuse_schema_5": {
+        "distinct_issues_started": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "fuse_edit_3": {
+        "distinct_issues_started": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        },
+        "distinct_issues_completed": {
+          "mean": 0,
+          "task_bootstrap_95ci": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "observed_trigger_suffixes": {
+      "fuse_schema_2": {
+        "triggered_attempts": 40,
+        "triggered_eventual_successes": 8,
+        "removed_observed_suffix_seconds": 10027.569482898713
+      },
+      "fuse_schema_3": {
+        "triggered_attempts": 37,
+        "triggered_eventual_successes": 7,
+        "removed_observed_suffix_seconds": 9523.366812562943
+      },
+      "fuse_schema_5": {
+        "triggered_attempts": 27,
+        "triggered_eventual_successes": 2,
+        "removed_observed_suffix_seconds": 8084.863390827179
+      },
+      "fuse_edit_3": {
+        "triggered_attempts": 56,
+        "triggered_eventual_successes": 9,
+        "removed_observed_suffix_seconds": 13592.271003341675
+      }
+    },
+    "breaker_is_simulation": "Trigger times and removed suffixes observed; changed outcomes and extra queued completions are replay assumptions, not measured online gains.",
+    "assumed_60min_sensitivity": {
+      "0.0": {
+        "assumed_probability_of_late_recovery": 0.0,
+        "queue": {
+          "solved": {
+            "mean": 17.098,
+            "task_bootstrap_95ci": [
+              8.0,
+              28.0
+            ]
+          },
+          "completed_attempts": {
+            "mean": 67.569,
+            "task_bootstrap_95ci": [
+              45.0,
+              91.0
+            ]
+          },
+          "started_attempts": {
+            "mean": 68.569,
+            "task_bootstrap_95ci": [
+              46.0,
+              92.0
+            ]
+          },
+          "seconds_used": {
+            "mean": 43200.0,
+            "task_bootstrap_95ci": [
+              43200.0,
+              43200.0
+            ]
+          },
+          "breaker_stops": {
+            "mean": 0,
+            "task_bootstrap_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "distinct_issues_started": {
+            "mean": 66.47,
+            "task_bootstrap_95ci": [
+              46.0,
+              76.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 65.751,
+            "task_bootstrap_95ci": [
+              45.0,
+              76.0
+            ]
+          }
+        },
+        "paired_schema3_minus_60_solved": {
+          "mean": 10.708,
+          "task_bootstrap_95ci": [
+            2.0,
+            19.0
+          ]
+        },
+        "paired_schema3_minus_60_distinct_issues": {
+          "distinct_issues_started": {
+            "mean": 9.53,
+            "task_bootstrap_95ci": [
+              0.0,
+              30.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 10.249,
+            "task_bootstrap_95ci": [
+              0.0,
+              31.0
+            ]
+          }
+        }
+      },
+      "0.1": {
+        "assumed_probability_of_late_recovery": 0.1,
+        "queue": {
+          "solved": {
+            "mean": 17.747,
+            "task_bootstrap_95ci": [
+              9.0,
+              28.024999999999977
+            ]
+          },
+          "completed_attempts": {
+            "mean": 67.598,
+            "task_bootstrap_95ci": [
+              45.0,
+              91.0
+            ]
+          },
+          "started_attempts": {
+            "mean": 68.598,
+            "task_bootstrap_95ci": [
+              46.0,
+              92.0
+            ]
+          },
+          "seconds_used": {
+            "mean": 43200.0,
+            "task_bootstrap_95ci": [
+              43200.0,
+              43200.0
+            ]
+          },
+          "breaker_stops": {
+            "mean": 0,
+            "task_bootstrap_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "distinct_issues_started": {
+            "mean": 66.47,
+            "task_bootstrap_95ci": [
+              46.0,
+              76.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 65.751,
+            "task_bootstrap_95ci": [
+              45.0,
+              76.0
+            ]
+          }
+        },
+        "paired_schema3_minus_60_solved": {
+          "mean": 10.059,
+          "task_bootstrap_95ci": [
+            2.0,
+            19.0
+          ]
+        },
+        "paired_schema3_minus_60_distinct_issues": {
+          "distinct_issues_started": {
+            "mean": 9.53,
+            "task_bootstrap_95ci": [
+              0.0,
+              30.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 10.249,
+            "task_bootstrap_95ci": [
+              0.0,
+              31.0
+            ]
+          }
+        }
+      },
+      "0.25": {
+        "assumed_probability_of_late_recovery": 0.25,
+        "queue": {
+          "solved": {
+            "mean": 18.762,
+            "task_bootstrap_95ci": [
+              10.0,
+              29.0
+            ]
+          },
+          "completed_attempts": {
+            "mean": 67.557,
+            "task_bootstrap_95ci": [
+              45.0,
+              91.0
+            ]
+          },
+          "started_attempts": {
+            "mean": 68.557,
+            "task_bootstrap_95ci": [
+              46.0,
+              92.0
+            ]
+          },
+          "seconds_used": {
+            "mean": 43200.0,
+            "task_bootstrap_95ci": [
+              43200.0,
+              43200.0
+            ]
+          },
+          "breaker_stops": {
+            "mean": 0,
+            "task_bootstrap_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "distinct_issues_started": {
+            "mean": 66.47,
+            "task_bootstrap_95ci": [
+              46.0,
+              76.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 65.751,
+            "task_bootstrap_95ci": [
+              45.0,
+              76.0
+            ]
+          }
+        },
+        "paired_schema3_minus_60_solved": {
+          "mean": 9.044,
+          "task_bootstrap_95ci": [
+            1.0,
+            18.0
+          ]
+        },
+        "paired_schema3_minus_60_distinct_issues": {
+          "distinct_issues_started": {
+            "mean": 9.53,
+            "task_bootstrap_95ci": [
+              0.0,
+              30.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 10.249,
+            "task_bootstrap_95ci": [
+              0.0,
+              31.0
+            ]
+          }
+        }
+      },
+      "0.5": {
+        "assumed_probability_of_late_recovery": 0.5,
+        "queue": {
+          "solved": {
+            "mean": 20.536,
+            "task_bootstrap_95ci": [
+              12.0,
+              31.0
+            ]
+          },
+          "completed_attempts": {
+            "mean": 67.574,
+            "task_bootstrap_95ci": [
+              45.0,
+              91.0
+            ]
+          },
+          "started_attempts": {
+            "mean": 68.574,
+            "task_bootstrap_95ci": [
+              46.0,
+              92.0
+            ]
+          },
+          "seconds_used": {
+            "mean": 43200.0,
+            "task_bootstrap_95ci": [
+              43200.0,
+              43200.0
+            ]
+          },
+          "breaker_stops": {
+            "mean": 0,
+            "task_bootstrap_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "distinct_issues_started": {
+            "mean": 66.47,
+            "task_bootstrap_95ci": [
+              46.0,
+              76.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 65.751,
+            "task_bootstrap_95ci": [
+              45.0,
+              76.0
+            ]
+          }
+        },
+        "paired_schema3_minus_60_solved": {
+          "mean": 7.27,
+          "task_bootstrap_95ci": [
+            -1.0,
+            16.0
+          ]
+        },
+        "paired_schema3_minus_60_distinct_issues": {
+          "distinct_issues_started": {
+            "mean": 9.53,
+            "task_bootstrap_95ci": [
+              0.0,
+              30.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 10.249,
+            "task_bootstrap_95ci": [
+              0.0,
+              31.0
+            ]
+          }
+        }
+      },
+      "1.0": {
+        "assumed_probability_of_late_recovery": 1.0,
+        "queue": {
+          "solved": {
+            "mean": 23.833,
+            "task_bootstrap_95ci": [
+              16.0,
+              33.02499999999998
+            ]
+          },
+          "completed_attempts": {
+            "mean": 67.62,
+            "task_bootstrap_95ci": [
+              45.0,
+              91.0
+            ]
+          },
+          "started_attempts": {
+            "mean": 68.62,
+            "task_bootstrap_95ci": [
+              46.0,
+              92.0
+            ]
+          },
+          "seconds_used": {
+            "mean": 43200.0,
+            "task_bootstrap_95ci": [
+              43200.0,
+              43200.0
+            ]
+          },
+          "breaker_stops": {
+            "mean": 0,
+            "task_bootstrap_95ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "distinct_issues_started": {
+            "mean": 66.47,
+            "task_bootstrap_95ci": [
+              46.0,
+              76.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 65.751,
+            "task_bootstrap_95ci": [
+              45.0,
+              76.0
+            ]
+          }
+        },
+        "paired_schema3_minus_60_solved": {
+          "mean": 3.973,
+          "task_bootstrap_95ci": [
+            -4.0,
+            12.0
+          ]
+        },
+        "paired_schema3_minus_60_distinct_issues": {
+          "distinct_issues_started": {
+            "mean": 9.53,
+            "task_bootstrap_95ci": [
+              0.0,
+              30.0
+            ]
+          },
+          "distinct_issues_completed": {
+            "mean": 10.249,
+            "task_bootstrap_95ci": [
+              0.0,
+              31.0
+            ]
+          }
+        }
+      }
+    },
+    "60min_assumptions": "Only timed_out attempts extend to exactly 3600 seconds; all other durations/outcomes unchanged. Late success is Bernoulli at 3600 seconds with stated probability. No early late-success timing modeled; no recovery effects inferred from observed data.",
+    "actual_60min_counterfactual": null,
+    "actual_60min_identification_reason": "No outcomes or event history beyond observed 600-second cap."
+  },
+  "redacted_table_contract": {
+    "attempts": "All 228 rows preserve task clusters, outcomes, error counts, runtime, failure and loop flags, observed error latencies, and all evaluated breaker triggers; enough to recompute p/q, exposure associations, conditional restart and queue simulation without private traces.",
+    "events": "Edit-error event times only; no code, prompts, arguments or observation text. Sums reproduce observed latency and event-gap aggregates.",
+    "reference": "129 reference outcomes and module labels, enough to recompute repository audit.",
+    "draws": "1000 paired task-bootstrap queue draws per policy, enough to independently summarize queue means, percentile intervals and paired differences. Statistical rate and exposure intervals require rerunning seeded task bootstrap on attempts.",
+    "trace_hashes": "Per task and round SHA256 manifest validates private raw sources without exporting them."
+  },
+  "inference_notes": [
+    "Fisher p-values ignore within-task dependence and are descriptive only; task bootstrap and within-task sign test handle task clustering.",
+    "Exposure is post-treatment and may reflect task difficulty or trajectory duration; association is not causal.",
+    "Multiple error modalities overlap; no multiple-testing-adjusted claims made.",
+    "Chronological next-round rates and unordered repeat-pair rates are distinct estimands."
+  ]
+}

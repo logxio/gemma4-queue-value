@@ -1,0 +1,25 @@
+{
+  "purpose": "prospective cross-agent transfer; no Gemma outcome calibration",
+  "source": "SWE-agent Verified, 280 issue-ID-hash training issues",
+  "source_file_sha256": "ded643179ec7d4d92cd1d2879c19f0aad5e594535a840072b49a2a32880c61bb",
+  "checkpoint_actions": 10,
+  "features": [
+    "source_paths"
+  ],
+  "transform": "log1p(source_paths); standardize by mean and scale; clip to [-5,5]; sigmoid",
+  "mean": [
+    0.799346928873623
+  ],
+  "scale": [
+    0.4399311486345584
+  ],
+  "weights": [
+    0.4458101510390421
+  ],
+  "bias": -1.2694203272503093,
+  "threshold": 0.20148492865123807,
+  "training_issue_count": 280,
+  "eligible_training_count": 262,
+  "stop_target_fraction": 0.2,
+  "decision": "stop when score plus hash tie-break is below threshold after 10 actions and task is unresolved"
+}

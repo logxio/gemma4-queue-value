@@ -1,0 +1,342 @@
+{
+  "reproduction_check_vs_committed_summary": {
+    "sweagent": {
+      "checkpoint_match": true,
+      "family_match": true,
+      "baseline_diff": 0.003,
+      "gate_diff": -0.001
+    },
+    "agentless": {
+      "checkpoint_match": true,
+      "family_match": true,
+      "baseline_diff": -0.003,
+      "gate_diff": 0.004
+    },
+    "openhands": {
+      "checkpoint_match": true,
+      "family_match": true,
+      "baseline_diff": 0.0,
+      "gate_diff": -0.003
+    },
+    "mini": {
+      "checkpoint_match": true,
+      "family_match": true,
+      "baseline_diff": -0.002,
+      "gate_diff": -0.001
+    }
+  },
+  "C1_value_identity": {
+    "ratio_form": {
+      "n": 105,
+      "r2_identity_as_prediction": 0.9963545533544197,
+      "slope": 1.0141619584847512,
+      "intercept": -0.05614950715356708,
+      "mean_abs_error": 0.14757850972667988,
+      "max_abs_error": 6.290916580489469,
+      "sign_agreement": 0.9714285714285714
+    },
+    "linear_form": {
+      "n": 105,
+      "r2_identity_as_prediction": 0.7537353302232636,
+      "slope": 1.8010577547919517,
+      "intercept": -0.02464827281653928,
+      "mean_abs_error": 1.642906880857005,
+      "max_abs_error": 31.085427720755312,
+      "sign_agreement": 0.9714285714285714
+    },
+    "breakeven_sign_agreement_same_set": 0.9714285714285714,
+    "sets": "60 Verified held-out candidates + 30 Lite + 15 Multilingual"
+  },
+  "C2_auc_vs_value": {
+    "per_system": {
+      "sweagent": {
+        "spearman_heldout_auc_vs_heldout_gain": 0.1357142857142857,
+        "spearman_cv_auc_vs_heldout_gain": 0.3107142857142856,
+        "spearman_cv_value_vs_heldout_gain": 0.6142857142857142,
+        "spearman_heldout_identity_vs_heldout_gain": 1.0,
+        "selected_by_cv_auc": [
+          15,
+          "footprint",
+          1.025
+        ],
+        "selected_by_cv_value": [
+          10,
+          "source",
+          2.906
+        ],
+        "selected_by_heldout_auc_oracle": [
+          15,
+          "footprint",
+          1.025
+        ],
+        "best_heldout_gain_oracle": 2.906
+      },
+      "agentless": {
+        "spearman_heldout_auc_vs_heldout_gain": 0.6241541038267241,
+        "spearman_cv_auc_vs_heldout_gain": 0.5803538158388837,
+        "spearman_cv_value_vs_heldout_gain": 0.9688481133111976,
+        "spearman_heldout_identity_vs_heldout_gain": 0.9863939238321437,
+        "selected_by_cv_auc": [
+          10,
+          "mentions",
+          -0.705
+        ],
+        "selected_by_cv_value": [
+          5,
+          "footprint",
+          2.837
+        ],
+        "selected_by_heldout_auc_oracle": [
+          10,
+          "footprint",
+          -0.999
+        ],
+        "best_heldout_gain_oracle": 2.837
+      },
+      "openhands": {
+        "spearman_heldout_auc_vs_heldout_gain": 0.2178571428571428,
+        "spearman_cv_auc_vs_heldout_gain": 0.2964285714285714,
+        "spearman_cv_value_vs_heldout_gain": 0.5857142857142856,
+        "spearman_heldout_identity_vs_heldout_gain": 0.9964285714285712,
+        "selected_by_cv_auc": [
+          10,
+          "footprint",
+          0.877
+        ],
+        "selected_by_cv_value": [
+          5,
+          "source",
+          3.307
+        ],
+        "selected_by_heldout_auc_oracle": [
+          10,
+          "footprint",
+          0.877
+        ],
+        "best_heldout_gain_oracle": 6.479
+      },
+      "mini": {
+        "spearman_heldout_auc_vs_heldout_gain": 0.7749999999999999,
+        "spearman_cv_auc_vs_heldout_gain": -0.075,
+        "spearman_cv_value_vs_heldout_gain": 0.7214285714285712,
+        "spearman_heldout_identity_vs_heldout_gain": 1.0,
+        "selected_by_cv_auc": [
+          10,
+          "footprint",
+          -2.414
+        ],
+        "selected_by_cv_value": [
+          5,
+          "source",
+          3.521
+        ],
+        "selected_by_heldout_auc_oracle": [
+          15,
+          "footprint",
+          3.096
+        ],
+        "best_heldout_gain_oracle": 3.521
+      }
+    },
+    "pooled": {
+      "spearman_heldout_auc_vs_heldout_gain_all60": 0.30596247689536615,
+      "spearman_heldout_stop_precision_vs_gain_all60": -0.3306550272015698,
+      "mean_within_system_spearman_heldout_auc": 0.43818138309953814,
+      "repairs_forfeited_selecting_by_cv_auc_instead_of_cv_value_sum4": 13.79
+    }
+  },
+  "C3_breakeven_screen": {
+    "grid": {
+      "train_screen_predicts_heldout_sign": 0.7333333333333333,
+      "always_enable_accuracy_heldout": 0.5333333333333333,
+      "train_screen_enabled_count": 34,
+      "heldout_gain_when_enabled_mean": 1.2775,
+      "heldout_gain_when_disabled_mean": -2.2255
+    },
+    "selected": {
+      "sweagent": {
+        "checkpoint": 10,
+        "family": "source",
+        "train_screen_enable": true,
+        "train_sacrificed_per_saved_call": 0.0013908205841446453,
+        "train_lambda": 0.005952380952380952,
+        "heldout": {
+          "n": 185,
+          "auc": 0.5566078658183922,
+          "stops": 39,
+          "sacrificed": 7.0,
+          "saved_calls": 1640.0,
+          "lambda": 0.007074829931972789,
+          "sacrificed_per_saved_call": 0.00426829268292683,
+          "screen_enable": true,
+          "replay_gain": 2.906,
+          "ratio_form": 2.9623467600700524,
+          "linear_form": 2.3013605442176868,
+          "baseline_mean": 26.003,
+          "gate_mean": 28.909
+        },
+        "lite": {
+          "n": 192,
+          "auc": 0.6073619631901841,
+          "stops": 36,
+          "sacrificed": 2.0,
+          "saved_calls": 1556.0,
+          "lambda": 0.003856382978723404,
+          "sacrificed_per_saved_call": 0.0012853470437017994,
+          "screen_enable": true,
+          "replay_gain": 2.448,
+          "ratio_form": 2.522132796780685,
+          "linear_form": 2.0002659574468082,
+          "baseline_mean": 14.467,
+          "gate_mean": 16.915
+        }
+      },
+      "agentless": {
+        "checkpoint": 5,
+        "family": "footprint",
+        "train_screen_enable": true,
+        "train_sacrificed_per_saved_call": 0.017825311942959002,
+        "train_lambda": 0.02551872167898879,
+        "heldout": {
+          "n": 185,
+          "auc": 0.7411937377690803,
+          "stops": 38,
+          "sacrificed": 5.0,
+          "saved_calls": 377.0,
+          "lambda": 0.026458861906487857,
+          "sacrificed_per_saved_call": 0.013262599469496022,
+          "screen_enable": true,
+          "replay_gain": 2.837,
+          "ratio_form": 2.881192275398827,
+          "linear_form": 2.487495469372961,
+          "baseline_mean": 36.397,
+          "gate_mean": 39.234
+        }
+      },
+      "openhands": {
+        "checkpoint": 5,
+        "family": "source",
+        "train_screen_enable": true,
+        "train_sacrificed_per_saved_call": 0.00892458723784025,
+        "train_lambda": 0.019382911392405063,
+        "heldout": {
+          "n": 185,
+          "auc": 0.49280999528524283,
+          "stops": 40,
+          "sacrificed": 20.0,
+          "saved_calls": 1164.0,
+          "lambda": 0.021804835924006907,
+          "sacrificed_per_saved_call": 0.01718213058419244,
+          "screen_enable": true,
+          "replay_gain": 3.307,
+          "ratio_form": 3.593425605536336,
+          "linear_form": 2.6904145077720205,
+          "baseline_mean": 50.45,
+          "gate_mean": 53.757
+        },
+        "lite": {
+          "n": 192,
+          "auc": 0.5653115840448579,
+          "stops": 59,
+          "sacrificed": 13.0,
+          "saved_calls": 1497.0,
+          "lambda": 0.011372397841171935,
+          "sacrificed_per_saved_call": 0.008684034736138945,
+          "screen_enable": true,
+          "replay_gain": 2.815,
+          "ratio_form": 2.8283662963966396,
+          "linear_form": 2.0122397841171935,
+          "baseline_mean": 29.28,
+          "gate_mean": 32.095
+        }
+      },
+      "mini": {
+        "checkpoint": 5,
+        "family": "source",
+        "train_screen_enable": true,
+        "train_sacrificed_per_saved_call": 0.00908004778972521,
+        "train_lambda": 0.010252237591537835,
+        "heldout": {
+          "n": 185,
+          "auc": 0.5326567785584179,
+          "stops": 35,
+          "sacrificed": 20.0,
+          "saved_calls": 2558.0,
+          "lambda": 0.009942140004889577,
+          "sacrificed_per_saved_call": 0.007818608287724784,
+          "screen_enable": true,
+          "replay_gain": 3.521,
+          "ratio_form": 3.4312776691032636,
+          "linear_form": 2.7159970662537685,
+          "baseline_mean": 60.718,
+          "gate_mean": 64.239
+        },
+        "multilingual": {
+          "n": 300,
+          "auc": 0.4806020403035328,
+          "stops": 23,
+          "sacrificed": 18.0,
+          "saved_calls": 911.0,
+          "lambda": 0.01574864843688788,
+          "sacrificed_per_saved_call": 0.019758507135016465,
+          "screen_enable": false,
+          "replay_gain": -1.939,
+          "ratio_form": -1.9668832264596743,
+          "linear_form": -1.82649063699757,
+          "baseline_mean": 100.099,
+          "gate_mean": 98.16
+        }
+      }
+    },
+    "pilot_probability_of_disabling": {
+      "verified_heldout_sweagent": {
+        "20": 0.258,
+        "40": 0.1935,
+        "80": 0.062
+      },
+      "verified_heldout_agentless": {
+        "20": 0.2005,
+        "40": 0.1085,
+        "80": 0.018
+      },
+      "verified_heldout_openhands": {
+        "20": 0.3735,
+        "40": 0.2925,
+        "80": 0.172
+      },
+      "verified_heldout_mini": {
+        "20": 0.351,
+        "40": 0.2445,
+        "80": 0.1225
+      },
+      "multilingual_mini": {
+        "20": 0.5765,
+        "40": 0.7285,
+        "80": 0.8365
+      }
+    }
+  },
+  "C4_pooled_verified_heldout": {
+    "issues": 185,
+    "replicates": 2000,
+    "replay_bootstrap_mean": 12.794,
+    "replay_bootstrap_95": [
+      -2.0,
+      31.0
+    ],
+    "replay_share_above_zero": 0.949,
+    "identity_bootstrap_mean": 12.920591381397664,
+    "identity_bootstrap_95": [
+      3.6427099967225467,
+      23.554069161052073
+    ],
+    "identity_share_above_zero": 0.9975,
+    "order_averaged_replay_bootstrap_mean": 12.77383,
+    "order_averaged_replay_bootstrap_95": [
+      3.479250000000004,
+      23.32199999999999
+    ],
+    "order_averaged_replay_share_above_zero": 0.997,
+    "note": "replay_* uses one random order per replicate (pre-registered); identity_* is the order-free ratio form (pre-registered); order_averaged_* averages 100 orders per replicate (added after the plan)"
+  }
+}

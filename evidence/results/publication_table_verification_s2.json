@@ -1,0 +1,1604 @@
+{
+  "tables": [
+    [
+      [
+        "Model and scaffold",
+        "Trajectories",
+        "Issues",
+        "Base $p$",
+        "Retry $q$",
+        "Ratio $q/p$",
+        "95% CI"
+      ],
+      [
+        ":--",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "Qwen3.8-27B, OpenHands",
+        "15,168",
+        "5,056",
+        "0.594",
+        "0.273",
+        "0.459",
+        "0.442-0.476"
+      ],
+      [
+        "Qwen3-Coder-480B-A35B, OpenHands",
+        "67,074",
+        "6,282",
+        "0.476",
+        "0.096",
+        "0.203",
+        "0.194-0.211"
+      ],
+      [
+        "Gemma 4 31B IT QAT, competition",
+        "228",
+        "76",
+        "0.298",
+        "0.131",
+        "0.440",
+        "0.294-0.592"
+      ],
+      [
+        "Llama 3 8B, SWE-agent",
+        "4,053",
+        "526",
+        "0.074",
+        "0.036",
+        "0.489",
+        "0.418-0.558"
+      ],
+      [
+        "Llama 3 70B, SWE-agent",
+        "74,792",
+        "3,504",
+        "0.101",
+        "0.040",
+        "0.391",
+        "0.371-0.411"
+      ],
+      [
+        "Llama 3 405B, SWE-agent",
+        "1,191",
+        "100",
+        "0.243",
+        "0.129",
+        "0.529",
+        "0.449-0.609"
+      ]
+    ],
+    [
+      [
+        "Corpus and budget",
+        "Plain breadth",
+        "Ranked breadth",
+        "Deferred control",
+        "Adaptive",
+        "Ordering gain",
+        "Crossing gain",
+        "Total gain vs plain"
+      ],
+      [
+        ":--",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "Qwen3.8-27B, 30%",
+        "1314.0",
+        "1418.4",
+        "1418.4",
+        "1449.3",
+        "0.0 [0.0, 0.0]",
+        "+30.8 [5.2, 56.8]",
+        "+135.3 [90.2, 181.8]"
+      ],
+      [
+        "Qwen3.8-27B, 40%",
+        "1577.2",
+        "1641.8",
+        "1642.0",
+        "1660.6",
+        "+0.2 [0.0, 4.8]",
+        "+18.6 [−1.8, 36.0]",
+        "+83.3 [55.2, 110.0]"
+      ],
+      [
+        "Qwen3.8-27B, 50%",
+        "1744.3",
+        "1752.5",
+        "1802.2",
+        "1804.8",
+        "+49.7 [27.2, 72.0]",
+        "+2.6 [−4.8, 16.8]",
+        "+60.6 [37.0, 82.0]"
+      ],
+      [
+        "Qwen3-Coder-480B, 20%",
+        "907.1",
+        "976.2",
+        "976.2",
+        "976.2",
+        "0.0 [0.0, 0.0]",
+        "0.0 [0.0, 0.0]",
+        "+69.1 [38.0, 105.0]"
+      ],
+      [
+        "Qwen3-Coder-480B, 30%",
+        "1361.5",
+        "1429.5",
+        "1429.5",
+        "1429.5",
+        "0.0 [0.0, 0.0]",
+        "0.0 [0.0, 0.0]",
+        "+68.1 [46.0, 93.0]"
+      ],
+      [
+        "Qwen3-Coder-480B, 50%",
+        "1654.6",
+        "1661.9",
+        "1661.2",
+        "1661.2",
+        "−0.7 [−4.0, 3.0]",
+        "0.0 [0.0, 0.0]",
+        "+6.5 [−4.0, 16.0]"
+      ]
+    ],
+    [
+      [
+        "Audit dimension / failure modality",
+        "Exposed wins (of 68)",
+        "Exposed losses (of 160)",
+        "Total events / tasks",
+        "Restart rate $q$",
+        "95% CI / exact test"
+      ],
+      [
+        ":--",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        ":--"
+      ],
+      [
+        "Reference patch passes in default sandbox",
+        "n/a",
+        "n/a",
+        "76 / 129 tasks",
+        "0.131",
+        "0.080-0.193"
+      ],
+      [
+        "Reference fails: missing `inline_snapshot` / `dirty_equals`",
+        "n/a",
+        "n/a",
+        "23 / 129 tasks",
+        "n/a",
+        "Unsolvable in default wheels"
+      ],
+      [
+        "Reference fails: per-task env / async / cert calibration",
+        "n/a",
+        "n/a",
+        "30 / 129 tasks",
+        "n/a",
+        "Excluded from denominator"
+      ],
+      [
+        "Any `edit_file` tool error",
+        "21",
+        "76",
+        "97 attempts",
+        "0.164",
+        "0.086-0.267"
+      ],
+      [
+        "Schema-rejected `edit_file` (missing `old_string`)",
+        "12",
+        "38",
+        "1,988 calls",
+        "0.197",
+        "0.081-0.353"
+      ],
+      [
+        "Non-schema `edit_file` string mismatch",
+        "13",
+        "53",
+        "66 attempts",
+        "0.123",
+        "0.045-0.216"
+      ],
+      [
+        "Wall-clock timeout at 600s cap",
+        "0",
+        "28",
+        "28 attempts",
+        "0.196",
+        "0.068-0.370"
+      ],
+      [
+        "Context-window overflow (32K limit)",
+        "0",
+        "12",
+        "12 attempts",
+        "0.083",
+        "0.000-0.300"
+      ],
+      [
+        "Early action loop flag",
+        "4",
+        "15",
+        "19 attempts",
+        "0.300",
+        "0.100-0.563"
+      ],
+      [
+        "Exact $\\ge 5$ consecutive identical tool calls",
+        "0",
+        "9",
+        "13 paired tasks",
+        "n/a",
+        "Sign test $p = 0.00391$"
+      ]
+    ],
+    [
+      [
+        "System",
+        "AUC-selected gain",
+        "Value-selected gain",
+        "Selected gate AUC",
+        "Stops / lost $Y$",
+        "Saved calls $R$",
+        "Loss rate $Y/R$ vs $\\lambda$"
+      ],
+      [
+        ":--",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:",
+        "--:"
+      ],
+      [
+        "SWE-agent + GPT-4o",
+        "+1.03",
+        "+2.91",
+        "0.557",
+        "39 / 7.0",
+        "1,640",
+        "0.0043 < 0.0071"
+      ],
+      [
+        "Agentless 1.5 + GPT-4o",
+        "−0.71",
+        "+2.84",
+        "0.741",
+        "38 / 5.0",
+        "377",
+        "0.0133 < 0.0265"
+      ],
+      [
+        "OpenHands + Claude 3.5 Sonnet",
+        "+0.88",
+        "+3.31",
+        "0.493",
+        "40 / 20.0",
+        "1,164",
+        "0.0172 < 0.0218"
+      ],
+      [
+        "Mini SWE Agent + Claude 4.5 Haiku",
+        "−2.41",
+        "+3.52",
+        "0.533",
+        "35 / 20.0",
+        "2,558",
+        "0.0078 < 0.0099"
+      ],
+      [
+        "**Four-system sum (pooled CI)**",
+        "−1.22",
+        "+12.57",
+        "0.581 mean",
+        "152 / 52.0",
+        "5,739",
+        "+13.8 over AUC"
+      ]
+    ]
+  ],
+  "comparisons": [
+    {
+      "table": 1,
+      "row": 1,
+      "column": 2,
+      "manuscript": "15,168",
+      "recomputed": "15,168",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "column": 3,
+      "manuscript": "5,056",
+      "recomputed": "5,056",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "column": 4,
+      "manuscript": "0.594",
+      "recomputed": "0.594",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "column": 5,
+      "manuscript": "0.273",
+      "recomputed": "0.273",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "column": 6,
+      "manuscript": "0.459",
+      "recomputed": "0.459",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "column": 7,
+      "manuscript": "0.442-0.476",
+      "recomputed": "0.442-0.476",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "column": 2,
+      "manuscript": "67,074",
+      "recomputed": "67,074",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "column": 3,
+      "manuscript": "6,282",
+      "recomputed": "6,282",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "column": 4,
+      "manuscript": "0.476",
+      "recomputed": "0.476",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "column": 5,
+      "manuscript": "0.096",
+      "recomputed": "0.096",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "column": 6,
+      "manuscript": "0.203",
+      "recomputed": "0.203",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "column": 7,
+      "manuscript": "0.194-0.211",
+      "recomputed": "0.194-0.211",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "column": 2,
+      "manuscript": "228",
+      "recomputed": "228",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "column": 3,
+      "manuscript": "76",
+      "recomputed": "76",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "column": 4,
+      "manuscript": "0.298",
+      "recomputed": "0.298",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "column": 5,
+      "manuscript": "0.131",
+      "recomputed": "0.131",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "column": 6,
+      "manuscript": "0.440",
+      "recomputed": "0.440",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "column": 7,
+      "manuscript": "0.294-0.592",
+      "recomputed": "0.294-0.592",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "column": 2,
+      "manuscript": "4,053",
+      "recomputed": "4,053",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "column": 3,
+      "manuscript": "526",
+      "recomputed": "526",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "column": 4,
+      "manuscript": "0.074",
+      "recomputed": "0.074",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "column": 5,
+      "manuscript": "0.036",
+      "recomputed": "0.036",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "column": 6,
+      "manuscript": "0.489",
+      "recomputed": "0.489",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "column": 7,
+      "manuscript": "0.418-0.558",
+      "recomputed": "0.418-0.558",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "column": 2,
+      "manuscript": "74,792",
+      "recomputed": "74,792",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "column": 3,
+      "manuscript": "3,504",
+      "recomputed": "3,504",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "column": 4,
+      "manuscript": "0.101",
+      "recomputed": "0.101",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "column": 5,
+      "manuscript": "0.040",
+      "recomputed": "0.040",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "column": 6,
+      "manuscript": "0.391",
+      "recomputed": "0.391",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "column": 7,
+      "manuscript": "0.371-0.411",
+      "recomputed": "0.371-0.411",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "column": 2,
+      "manuscript": "1,191",
+      "recomputed": "1,191",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "column": 3,
+      "manuscript": "100",
+      "recomputed": "100",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "column": 4,
+      "manuscript": "0.243",
+      "recomputed": "0.243",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "column": 5,
+      "manuscript": "0.129",
+      "recomputed": "0.129",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "column": 6,
+      "manuscript": "0.529",
+      "recomputed": "0.529",
+      "match": true
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "column": 7,
+      "manuscript": "0.449-0.609",
+      "recomputed": "0.449-0.609",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "column": 2,
+      "manuscript": "1,314.0",
+      "recomputed": "1314.0",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "column": 3,
+      "manuscript": "1,418.4",
+      "recomputed": "1418.4",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "column": 4,
+      "manuscript": "1,418.4",
+      "recomputed": "1418.4",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "column": 5,
+      "manuscript": "1,449.3",
+      "recomputed": "1449.3",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "column": 6,
+      "manuscript": "0.0 [0.0, 0.0]",
+      "recomputed": "0.0 [0.0, 0.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "column": 7,
+      "manuscript": "+30.8 [5.2, 56.8]",
+      "recomputed": "+30.8 [5.2, 56.8]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "column": 8,
+      "manuscript": "+135.3 [90.2, 181.8]",
+      "recomputed": "+135.3 [90.2, 181.8]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "column": 2,
+      "manuscript": "1,577.2",
+      "recomputed": "1577.2",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "column": 3,
+      "manuscript": "1,641.8",
+      "recomputed": "1641.8",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "column": 4,
+      "manuscript": "1,642.0",
+      "recomputed": "1642.0",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "column": 5,
+      "manuscript": "1,660.6",
+      "recomputed": "1660.6",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "column": 6,
+      "manuscript": "+0.2 [0.0, 4.8]",
+      "recomputed": "+0.2 [0.0, 4.8]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "column": 7,
+      "manuscript": "+18.6 [−1.8, 36.0]",
+      "recomputed": "+18.6 [−1.8, 36.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "column": 8,
+      "manuscript": "+83.3 [55.2, 110.0]",
+      "recomputed": "+83.3 [55.2, 110.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 3,
+      "column": 2,
+      "manuscript": "1,744.3",
+      "recomputed": "1744.3",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 3,
+      "column": 3,
+      "manuscript": "1,752.5",
+      "recomputed": "1752.5",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 3,
+      "column": 4,
+      "manuscript": "1,802.2",
+      "recomputed": "1802.2",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 3,
+      "column": 5,
+      "manuscript": "1,804.8",
+      "recomputed": "1804.8",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 3,
+      "column": 6,
+      "manuscript": "+49.7 [27.2, 72.0]",
+      "recomputed": "+49.7 [27.2, 72.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 3,
+      "column": 7,
+      "manuscript": "+2.6 [−4.8, 16.8]",
+      "recomputed": "+2.6 [−4.8, 16.8]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 3,
+      "column": 8,
+      "manuscript": "+60.6 [37.0, 82.0]",
+      "recomputed": "+60.6 [37.0, 82.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "column": 2,
+      "manuscript": "907.1",
+      "recomputed": "907.1",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "column": 3,
+      "manuscript": "976.2",
+      "recomputed": "976.2",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "column": 4,
+      "manuscript": "976.2",
+      "recomputed": "976.2",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "column": 5,
+      "manuscript": "976.2",
+      "recomputed": "976.2",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "column": 6,
+      "manuscript": "0.0 [0.0, 0.0]",
+      "recomputed": "0.0 [0.0, 0.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "column": 7,
+      "manuscript": "0.0 [0.0, 0.0]",
+      "recomputed": "0.0 [0.0, 0.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "column": 8,
+      "manuscript": "+69.1 [38.0, 105.0]",
+      "recomputed": "+69.1 [38.0, 105.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "column": 2,
+      "manuscript": "1,361.5",
+      "recomputed": "1361.5",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "column": 3,
+      "manuscript": "1,429.5",
+      "recomputed": "1429.5",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "column": 4,
+      "manuscript": "1,429.5",
+      "recomputed": "1429.5",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "column": 5,
+      "manuscript": "1,429.5",
+      "recomputed": "1429.5",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "column": 6,
+      "manuscript": "0.0 [0.0, 0.0]",
+      "recomputed": "0.0 [0.0, 0.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "column": 7,
+      "manuscript": "0.0 [0.0, 0.0]",
+      "recomputed": "0.0 [0.0, 0.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "column": 8,
+      "manuscript": "+68.1 [46.0, 93.0]",
+      "recomputed": "+68.1 [46.0, 93.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 6,
+      "column": 2,
+      "manuscript": "1,654.6",
+      "recomputed": "1654.6",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 6,
+      "column": 3,
+      "manuscript": "1,661.9",
+      "recomputed": "1661.9",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 6,
+      "column": 4,
+      "manuscript": "1,661.2",
+      "recomputed": "1661.2",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 6,
+      "column": 5,
+      "manuscript": "1,661.2",
+      "recomputed": "1661.2",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 6,
+      "column": 6,
+      "manuscript": "−0.7 [−4.0, 3.0]",
+      "recomputed": "−0.7 [−4.0, 3.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 6,
+      "column": 7,
+      "manuscript": "0.0 [0.0, 0.0]",
+      "recomputed": "0.0 [0.0, 0.0]",
+      "match": true
+    },
+    {
+      "table": 2,
+      "row": 6,
+      "column": 8,
+      "manuscript": "+6.5 [−4.0, 16.0]",
+      "recomputed": "+6.5 [−4.0, 16.0]",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "column": 2,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "column": 3,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "column": 4,
+      "manuscript": "76 / 129 tasks",
+      "recomputed": "76 / 129 tasks",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "column": 5,
+      "manuscript": "0.131",
+      "recomputed": "0.131",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "column": 6,
+      "manuscript": "0.080-0.193",
+      "recomputed": "0.080-0.193",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "column": 2,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "column": 3,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "column": 4,
+      "manuscript": "23 / 129 tasks",
+      "recomputed": "23 / 129 tasks",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "column": 5,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "column": 6,
+      "manuscript": "Unsolvable in default wheels",
+      "recomputed": "Unsolvable in default wheels",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 3,
+      "column": 2,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 3,
+      "column": 3,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 3,
+      "column": 4,
+      "manuscript": "30 / 129 tasks",
+      "recomputed": "30 / 129 tasks",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 3,
+      "column": 5,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 3,
+      "column": 6,
+      "manuscript": "Excluded from denominator",
+      "recomputed": "Excluded from denominator",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 4,
+      "column": 2,
+      "manuscript": "21",
+      "recomputed": "21",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 4,
+      "column": 3,
+      "manuscript": "76",
+      "recomputed": "76",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 4,
+      "column": 4,
+      "manuscript": "97 attempts",
+      "recomputed": "97 attempts",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 4,
+      "column": 5,
+      "manuscript": "0.164",
+      "recomputed": "0.164",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 4,
+      "column": 6,
+      "manuscript": "0.086-0.267",
+      "recomputed": "0.086-0.267",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 5,
+      "column": 2,
+      "manuscript": "12",
+      "recomputed": "12",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 5,
+      "column": 3,
+      "manuscript": "38",
+      "recomputed": "38",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 5,
+      "column": 4,
+      "manuscript": "1,988 calls",
+      "recomputed": "1,988 calls",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 5,
+      "column": 5,
+      "manuscript": "0.197",
+      "recomputed": "0.197",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 5,
+      "column": 6,
+      "manuscript": "0.081-0.353",
+      "recomputed": "0.081-0.353",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 6,
+      "column": 2,
+      "manuscript": "13",
+      "recomputed": "13",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 6,
+      "column": 3,
+      "manuscript": "53",
+      "recomputed": "53",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 6,
+      "column": 4,
+      "manuscript": "66 attempts",
+      "recomputed": "66 attempts",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 6,
+      "column": 5,
+      "manuscript": "0.123",
+      "recomputed": "0.123",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 6,
+      "column": 6,
+      "manuscript": "0.045-0.216",
+      "recomputed": "0.045-0.216",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 7,
+      "column": 2,
+      "manuscript": "0",
+      "recomputed": "0",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 7,
+      "column": 3,
+      "manuscript": "28",
+      "recomputed": "28",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 7,
+      "column": 4,
+      "manuscript": "28 attempts",
+      "recomputed": "28 attempts",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 7,
+      "column": 5,
+      "manuscript": "0.196",
+      "recomputed": "0.196",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 7,
+      "column": 6,
+      "manuscript": "0.068-0.370",
+      "recomputed": "0.068-0.370",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 8,
+      "column": 2,
+      "manuscript": "0",
+      "recomputed": "0",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 8,
+      "column": 3,
+      "manuscript": "12",
+      "recomputed": "12",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 8,
+      "column": 4,
+      "manuscript": "12 attempts",
+      "recomputed": "12 attempts",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 8,
+      "column": 5,
+      "manuscript": "0.083",
+      "recomputed": "0.083",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 8,
+      "column": 6,
+      "manuscript": "0.000-0.300",
+      "recomputed": "0.000-0.300",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 9,
+      "column": 2,
+      "manuscript": "4",
+      "recomputed": "4",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 9,
+      "column": 3,
+      "manuscript": "15",
+      "recomputed": "15",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 9,
+      "column": 4,
+      "manuscript": "19 attempts",
+      "recomputed": "19 attempts",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 9,
+      "column": 5,
+      "manuscript": "0.300",
+      "recomputed": "0.300",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 9,
+      "column": 6,
+      "manuscript": "0.100-0.563",
+      "recomputed": "0.100-0.563",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 10,
+      "column": 2,
+      "manuscript": "0",
+      "recomputed": "0",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 10,
+      "column": 3,
+      "manuscript": "9",
+      "recomputed": "9",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 10,
+      "column": 4,
+      "manuscript": "13 paired tasks",
+      "recomputed": "13 paired tasks",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 10,
+      "column": 5,
+      "manuscript": "n/a",
+      "recomputed": "n/a",
+      "match": true
+    },
+    {
+      "table": 3,
+      "row": 10,
+      "column": 6,
+      "manuscript": "Sign test $p = 0.00391$",
+      "recomputed": "Sign test $p = 0.00391$",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 1,
+      "column": 2,
+      "manuscript": "+1.03",
+      "recomputed": "+1.03",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 1,
+      "column": 3,
+      "manuscript": "+2.91",
+      "recomputed": "+2.91",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 1,
+      "column": 4,
+      "manuscript": "0.557",
+      "recomputed": "0.557",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 1,
+      "column": 5,
+      "manuscript": "39 / 7.0",
+      "recomputed": "39 / 7.0",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 1,
+      "column": 6,
+      "manuscript": "1,640",
+      "recomputed": "1,640",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 1,
+      "column": 7,
+      "manuscript": "0.0043 < 0.0071",
+      "recomputed": "0.0043 < 0.0071",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 2,
+      "column": 2,
+      "manuscript": "−0.71",
+      "recomputed": "−0.71",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 2,
+      "column": 3,
+      "manuscript": "+2.84",
+      "recomputed": "+2.84",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 2,
+      "column": 4,
+      "manuscript": "0.741",
+      "recomputed": "0.741",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 2,
+      "column": 5,
+      "manuscript": "38 / 5.0",
+      "recomputed": "38 / 5.0",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 2,
+      "column": 6,
+      "manuscript": "377",
+      "recomputed": "377",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 2,
+      "column": 7,
+      "manuscript": "0.0133 < 0.0265",
+      "recomputed": "0.0133 < 0.0265",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 3,
+      "column": 2,
+      "manuscript": "+0.88",
+      "recomputed": "+0.88",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 3,
+      "column": 3,
+      "manuscript": "+3.31",
+      "recomputed": "+3.31",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 3,
+      "column": 4,
+      "manuscript": "0.493",
+      "recomputed": "0.493",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 3,
+      "column": 5,
+      "manuscript": "40 / 20.0",
+      "recomputed": "40 / 20.0",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 3,
+      "column": 6,
+      "manuscript": "1,164",
+      "recomputed": "1,164",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 3,
+      "column": 7,
+      "manuscript": "0.0172 < 0.0218",
+      "recomputed": "0.0172 < 0.0218",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 4,
+      "column": 2,
+      "manuscript": "−2.41",
+      "recomputed": "−2.41",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 4,
+      "column": 3,
+      "manuscript": "+3.52",
+      "recomputed": "+3.52",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 4,
+      "column": 4,
+      "manuscript": "0.533",
+      "recomputed": "0.533",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 4,
+      "column": 5,
+      "manuscript": "35 / 20.0",
+      "recomputed": "35 / 20.0",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 4,
+      "column": 6,
+      "manuscript": "2,558",
+      "recomputed": "2,558",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 4,
+      "column": 7,
+      "manuscript": "0.0078 < 0.0099",
+      "recomputed": "0.0078 < 0.0099",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 5,
+      "column": 2,
+      "manuscript": "**−1.22**",
+      "recomputed": "−1.22",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 5,
+      "column": 3,
+      "manuscript": "**+12.57**",
+      "recomputed": "+12.57",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 5,
+      "column": 4,
+      "manuscript": "**0.581 mean**",
+      "recomputed": "0.581 mean",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 5,
+      "column": 5,
+      "manuscript": "**152 / 52.0**",
+      "recomputed": "152 / 52.0",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 5,
+      "column": 6,
+      "manuscript": "**5,739**",
+      "recomputed": "5,739",
+      "match": true
+    },
+    {
+      "table": 4,
+      "row": 5,
+      "column": 7,
+      "manuscript": "**+13.8 over AUC**",
+      "recomputed": "+13.8 over AUC",
+      "match": true
+    }
+  ],
+  "mismatches": [],
+  "missing_measurements": [],
+  "all_numeric_cells_match": true,
+  "numeric_cells_checked": 158,
+  "source_sha256": {
+    "openhands_queue_restart.json": "8317385d69374b0df8a689121a5627db5b31650d98e440cf0db3fcf65ef404ba",
+    "gemma4_sandbox_and_schema_audit.json": "97030ebdc002d89a97ec24c75e9689f07504306c4f54f908c165008a9e5411ff",
+    "decision_value.json": "d45a50f407cbd09f9e0743cad05ecea2b683020716da59dcb4277c4e39d2cd9d",
+    "nebius_attempt_costs.csv": "be9d13cd8a90c461498ab79c194cc863e6884754e518fe1972e78d563b43620c",
+    "restart_value.json": "71bbb158d0f5fcfece82de28df70a66becc48cac9809761ef8faefbf6318efe0",
+    "nebius_restart.json": "e27508586a127a44f88fd2266b123091aeccf47edfdc37abdf4d762005767ca4",
+    "queue_restart_decision.json": "a75159d0dcfcb9716bfa210d6dee1c392eb0b7937ab1dc2c077e2e2d8a288948"
+  },
+  "elapsed_seconds": 0.12389095802791417,
+  "scope": "Frozen aggregate evidence and compact attempt data; bootstrap Llama equal-issue rows from CSV; no model calls or new scheduling draws"
+}

@@ -1,0 +1,105 @@
+{
+  "campaign": {
+    "campaign_schema": "qwen38-swe-rebench-bo3-v1",
+    "complete_shards": 61,
+    "id": "qwen38-swe-rebench-verified-all-bo3-ctx262k-seed20260822",
+    "rollouts_per_task": 3,
+    "seed": 20260822,
+    "shard_count": 64
+  },
+  "counts": {
+    "expected_rollout_slots": 18816,
+    "fully_evaluated_tasks": 5056,
+    "invalid_or_missing_rollouts": 3607,
+    "missing_rollouts": 638,
+    "observed_solvable_tasks": 3823,
+    "other_invalid_rollouts": 0,
+    "publication_ready_as_final_pass_at_3": false,
+    "retryable_error_rollouts": 0,
+    "strict_solvable_tasks": 3816,
+    "successful_rollouts": 9026,
+    "tasks": 6272,
+    "terminal_error_rollouts": 2969,
+    "timed_out_valid_failures": 341,
+    "valid_scored_rollouts": 15209
+  },
+  "definitions": {
+    "observed_solvable": "at least one valid evaluator-accepted rollout",
+    "recursive": "at least one materialized child trajectory in the saved rollout tree",
+    "strict_solvable": "all three slots validly scored and at least one accepted rollout",
+    "timeout": "a configured trajectory timeout counts as a valid failed rollout"
+  },
+  "exclusions": [
+    "raw trajectories",
+    "raw exception text",
+    "absolute paths",
+    "credentials and service endpoints",
+    "gold patches and test patches"
+  ],
+  "exporter_git_revision": "95d238e55821d4d0af44864a690c97d58f4f9614",
+  "files": {
+    "README.md": {
+      "bytes": 3916,
+      "sha256": "bc272efbaac32c1b8132f3e90870db3ea1c2f2fe41fcab0e7564d17f7f4adad8"
+    },
+    "data/rollouts-00000-of-00001.parquet": {
+      "bytes": 848983,
+      "sha256": "1840ac7ff04ae4d6198b11c353a49e9b239de0efb6d7b7bc8dc4785926911f15"
+    },
+    "data/tasks-00000-of-00001.parquet": {
+      "bytes": 601991,
+      "sha256": "63d66f8987fc48f46cd6eb9af6df7f4315e1fcfce9ca37dc57aa6ca0fb0a2e17"
+    },
+    "observed_solvable_instance_ids.txt": {
+      "bytes": 99018,
+      "sha256": "6bc9d7193a38ff38bb45279c9edb227ec2592c65ce2b66f4288b549ddb7f7f75"
+    },
+    "strict_solvable_instance_ids.txt": {
+      "bytes": 98861,
+      "sha256": "27ce26fab51b0af24aed00a802321549368e5732f151f4ba80cefd76ddd558b7"
+    },
+    "task_annotations.csv": {
+      "bytes": 3468307,
+      "sha256": "30056de3dae6b5f1ef8eaee867e8c1c012ad090b1a9b8992e285444ca9012cd5"
+    }
+  },
+  "generated_at": "2026-09-09T06:46:00.987625+00:00",
+  "huggingface_configs": {
+    "rollouts": "data/rollouts-*.parquet",
+    "tasks": "data/tasks-*.parquet"
+  },
+  "id_lists": {
+    "observed_solvable_instance_ids": 3823,
+    "strict_solvable_instance_ids": 3816
+  },
+  "publication_ready_as_final_pass_at_3": false,
+  "run_configuration": {
+    "compaction_trigger_fraction": 0.9,
+    "config_sha256": "e6cc2ce022f3a75689579b225797c80d1eefaa3871569e36c3f4563d246ab09f",
+    "max_completion_tokens": 4096,
+    "max_context_tokens": 262144,
+    "max_rollout_attempts": 2,
+    "model_name": "openai/Qwen/Qwen3.8-27B",
+    "recursive_subagents_enabled": true,
+    "rollout_timeout_seconds": 3600,
+    "root_max_steps": 10000,
+    "subagent_max_depth": 2,
+    "subagent_max_steps": 100,
+    "temperature": 1.0,
+    "top_p": 0.95
+  },
+  "schema_version": "swe-rebench-v2-qwen38-bo3-annotations-v1",
+  "source_dataset": {
+    "fingerprint": "task-index-sha256:bfd9e957bc45986f9c1eba96e855e64a467389b4325273900945729301c7ebed;parquet-sha256:7416e352008b35480c82610cf4f5edf160dd269ed6bf382a22bd4c17daed24b9",
+    "id": "nebius/SWE-rebench-V2",
+    "join": {
+      "input_sha256": "7416e352008b35480c82610cf4f5edf160dd269ed6bf382a22bd4c17daed24b9",
+      "mode": "local_parquet",
+      "verified_against_campaign_manifest": true
+    },
+    "parquet_sha256": "7416e352008b35480c82610cf4f5edf160dd269ed6bf382a22bd4c17daed24b9",
+    "revision": "10c49ab856fd0e62097815ba5909dfc4f31e7f93",
+    "split": "train",
+    "task_index_sha256": "bfd9e957bc45986f9c1eba96e855e64a467389b4325273900945729301c7ebed"
+  }
+}

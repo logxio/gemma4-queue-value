@@ -1,0 +1,334 @@
+{
+  "schema": "paper-layout-balance.v1",
+  "created_at": "2026-11-09T06:31:15.660877+00:00",
+  "paper": "paper",
+  "pdf": "paper/gemma4_queue_value_paper.pdf",
+  "pdf_sha256": "ee323afe3dfb6b59fc64be1799da91af3ee8ba2a5a8112dc43e293a57c5faf74",
+  "runtime": {
+    "executable": "python3",
+    "pymupdf": "1.27.2.3"
+  },
+  "page_count": 6,
+  "body_last_page": 6,
+  "body_boundary": {
+    "method": "pdf-heading",
+    "page": 6,
+    "text": "References",
+    "bbox": [
+      51.02399826049805,
+      448.47418212890625,
+      106.56784057617188,
+      460.42938232421875
+    ]
+  },
+  "status": "review",
+  "column_balance": {
+    "status": "not_applicable",
+    "pages": [
+      {
+        "page": 1,
+        "role": "body",
+        "layout": "single-column",
+        "left_y1_pt": 705.297,
+        "right_y1_pt": null,
+        "delta_pt": null,
+        "threshold_pt": 4.0,
+        "bbox_delta_pt": null,
+        "raw_y1_delta_pt": null,
+        "baseline_delta_pt": null,
+        "judged_by": "baseline",
+        "detail": "",
+        "body_tolerance_15pt_ok": null,
+        "final_target_2pt_ok": null,
+        "bottom_elements": [
+          {
+            "bbox": [
+              51.02399826049805,
+              695.33447265625,
+              114.23668670654297,
+              705.2970581054688
+            ],
+            "text": "0.755 observed.",
+            "caption": false,
+            "baseline": 702.8900146484375,
+            "edge_y_pt": 705.0419362511924,
+            "font": "NimbusRomNo9L-Regu",
+            "size_pt": 9.962599754333496,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          },
+          null
+        ],
+        "status": "not_applicable"
+      },
+      {
+        "page": 2,
+        "role": "body",
+        "layout": "single-column",
+        "left_y1_pt": 727.321,
+        "right_y1_pt": 642.657,
+        "delta_pt": 84.183,
+        "threshold_pt": 4.0,
+        "bbox_delta_pt": 84.664,
+        "raw_y1_delta_pt": 84.664,
+        "baseline_delta_pt": 84.183,
+        "judged_by": "baseline",
+        "detail": "",
+        "body_tolerance_15pt_ok": null,
+        "final_target_2pt_ok": null,
+        "bottom_elements": [
+          {
+            "bbox": [
+              51.02399826049805,
+              717.3584594726562,
+              99.45217895507812,
+              727.321044921875
+            ],
+            "text": "2.7 to 20.0).",
+            "caption": false,
+            "baseline": 724.9140014648438,
+            "edge_y_pt": 727.0659230675986,
+            "font": "NimbusRomNo9L-Regu",
+            "size_pt": 9.962599754333496,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          },
+          {
+            "bbox": [
+              307.753662109375,
+              634.6865844726562,
+              331.6639404296875,
+              642.6566772460938
+            ],
+            "text": "1,661.2",
+            "caption": false,
+            "baseline": 640.7310180664062,
+            "edge_y_pt": 642.4525596950763,
+            "font": "NimbusRomNo9L-Regu",
+            "size_pt": 7.970099925994873,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          }
+        ],
+        "status": "not_applicable"
+      },
+      {
+        "page": 3,
+        "role": "body",
+        "layout": "single-column",
+        "left_y1_pt": 781.295,
+        "right_y1_pt": null,
+        "delta_pt": null,
+        "threshold_pt": 4.0,
+        "bbox_delta_pt": null,
+        "raw_y1_delta_pt": null,
+        "baseline_delta_pt": null,
+        "judged_by": "baseline",
+        "detail": "",
+        "body_tolerance_15pt_ok": null,
+        "final_target_2pt_ok": null,
+        "bottom_elements": [
+          {
+            "bbox": [
+              51.02399826049805,
+              771.3324584960938,
+              87.41737365722656,
+              781.2950439453125
+            ],
+            "text": "recovery.",
+            "caption": false,
+            "baseline": 778.8880004882812,
+            "edge_y_pt": 781.0399220910361,
+            "font": "NimbusRomNo9L-Regu",
+            "size_pt": 9.962599754333496,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          },
+          null
+        ],
+        "status": "not_applicable"
+      },
+      {
+        "page": 4,
+        "role": "body",
+        "layout": "single-column",
+        "left_y1_pt": 683.78,
+        "right_y1_pt": 266.997,
+        "delta_pt": 416.988,
+        "threshold_pt": 4.0,
+        "bbox_delta_pt": 416.784,
+        "raw_y1_delta_pt": 416.784,
+        "baseline_delta_pt": 416.543,
+        "judged_by": "float_edge",
+        "detail": "",
+        "body_tolerance_15pt_ok": null,
+        "final_target_2pt_ok": null,
+        "bottom_elements": [
+          {
+            "bbox": [
+              51.02399826049805,
+              674.81396484375,
+              226.42474365234375,
+              683.7803955078125
+            ],
+            "text": "at 13/100 counted tools) burning to the 600s cap.",
+            "caption": true,
+            "baseline": 681.614013671875,
+            "edge_y_pt": 683.7803955078125,
+            "font": "NimbusRomNo9L-Regu",
+            "size_pt": 8.966400146484375,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          },
+          {
+            "bbox": [
+              306.114990234375,
+              259.02655029296875,
+              310.10003662109375,
+              266.99664306640625
+            ],
+            "text": "9",
+            "caption": false,
+            "baseline": 265.07098388671875,
+            "edge_y_pt": 266.79252551538883,
+            "font": "NimbusRomNo9L-Regu",
+            "size_pt": 7.970099925994873,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          }
+        ],
+        "status": "not_applicable"
+      },
+      {
+        "page": 5,
+        "role": "body",
+        "layout": "single-column",
+        "left_y1_pt": 626.51,
+        "right_y1_pt": 365.809,
+        "delta_pt": 260.147,
+        "threshold_pt": 4.0,
+        "bbox_delta_pt": 260.701,
+        "raw_y1_delta_pt": 260.701,
+        "baseline_delta_pt": 260.147,
+        "judged_by": "baseline",
+        "detail": "",
+        "body_tolerance_15pt_ok": null,
+        "final_target_2pt_ok": null,
+        "bottom_elements": [
+          {
+            "bbox": [
+              51.02399826049805,
+              614.3410034179688,
+              252.74668884277344,
+              626.5100708007812
+            ],
+            "text": "pilot verifies 𝑌/𝑅< 𝜆in the binding resource unit.",
+            "caption": false,
+            "baseline": 624.10302734375,
+            "edge_y_pt": 626.2549489465049,
+            "font": "NimbusRomNo9L-Regu",
+            "size_pt": 9.962599754333496,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          },
+          {
+            "bbox": [
+              298.32025146484375,
+              357.8387451171875,
+              336.8397216796875,
+              365.8088684082031
+            ],
+            "text": "0.581 mean",
+            "caption": false,
+            "baseline": 363.9559631347656,
+            "edge_y_pt": 365.6775047634357,
+            "font": "NimbusRomNo9L-Medi",
+            "size_pt": 7.970099925994873,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          }
+        ],
+        "status": "not_applicable"
+      },
+      {
+        "page": 6,
+        "role": "document-final",
+        "layout": "single-column",
+        "left_y1_pt": 594.236,
+        "right_y1_pt": null,
+        "delta_pt": null,
+        "threshold_pt": 12.0,
+        "bbox_delta_pt": null,
+        "raw_y1_delta_pt": null,
+        "baseline_delta_pt": null,
+        "judged_by": "baseline",
+        "detail": "",
+        "body_tolerance_15pt_ok": null,
+        "final_target_2pt_ok": null,
+        "bottom_elements": [
+          {
+            "bbox": [
+              65.09200286865234,
+              585.113525390625,
+              167.524169921875,
+              594.2363891601562
+            ],
+            "text": "Rollouts.arXiv:2610.35971.",
+            "caption": false,
+            "baseline": 592.0700073242188,
+            "edge_y_pt": 594.0067498060966,
+            "font": "NimbusRomNo9L-Regu",
+            "size_pt": 8.966400146484375,
+            "descender": -0.2160000056028366,
+            "descender_font": "NimbusRomNo9L-Regu"
+          },
+          null
+        ],
+        "status": "not_applicable"
+      }
+    ],
+    "ordinary_body_threshold_pt": 4,
+    "body_tolerance_pt": 15,
+    "body_final_threshold_pt": 15,
+    "document_final_threshold_pt": 12
+  },
+  "paragraph_gaps": {
+    "status": "pass",
+    "body_font_pt": 10.0,
+    "prose_lines_checked": 100,
+    "paragraph_gaps_3_5_to_22pt": 7,
+    "anomalies": [],
+    "method": "adjacent prose lines only; headings, captions, math, lists and figure clips excluded; visual review of reported contexts required"
+  },
+  "proof_tombstone": {
+    "status": "review",
+    "floats_inside_proof": [],
+    "orphan_tombstones": [],
+    "unclosed_proofs": [],
+    "source_files": [],
+    "unresolved_inputs": [
+      {
+        "file": "paper/main.tex",
+        "reason": "main.tex not available"
+      }
+    ],
+    "pdf_symbol_coverage": "text-encoded squares only; outlined glyphs require visual inspection",
+    "source_build_association": false
+  },
+  "log_boxes": {
+    "status": "review",
+    "path": "paper/main.log",
+    "reason": "main.log missing",
+    "underfull_vbox": null,
+    "overfull_vbox": null,
+    "overfull_hbox_gt_3pt": null,
+    "vendor": {
+      "status": "review"
+    }
+  },
+  "page_limits": {
+    "body_pages_max": null,
+    "total_pages_max": 6,
+    "status": "pass"
+  }
+}

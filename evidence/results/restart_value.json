@@ -1,0 +1,1814 @@
+{
+  "data": "Qwen3.8-27B + OpenHands, SWE-rebench-V2, three seeded rollouts per task (overlay snapshot, incomplete)",
+  "exclusions": {
+    "tasks_total": 6272,
+    "tasks_all_three_valid": 5056,
+    "tasks_excluded": 1216,
+    "slots_by_status": {
+      "completed": 15209,
+      "error": 2969,
+      "missing": 638
+    },
+    "slots_by_invalid_reason": {
+      "valid": 15209,
+      "terminal_infrastructure_error": 2969,
+      "missing_rollout_artifact": 638
+    },
+    "excluded_tasks_by_valid_slots": {
+      "0": 1191,
+      "1": 9,
+      "2": 16
+    },
+    "success_rate_of_valid_slots_in_excluded_tasks": 0.24390243902439024
+  },
+  "primary": {
+    "tasks": 5056,
+    "attempts": 15168,
+    "tasks_by_successes_of_3": {
+      "0": 1240,
+      "1": 753,
+      "2": 926,
+      "3": 2137
+    },
+    "p": 0.5944092827004219,
+    "q": 0.27291937581274384,
+    "q_over_p": 0.4591438656086622,
+    "one_minus_q_over_p": 0.5408561343913378,
+    "fresh_per_1k_calls": 8.666664103323246,
+    "restart_per_1k_calls": 3.4302934341241667,
+    "restart_over_fresh_calls": 0.3958032056196588,
+    "fresh_per_hour": 2.54237012792478,
+    "restart_per_hour": 0.9700692651935541,
+    "restart_over_fresh_hours": 0.38156099087955264,
+    "mean_calls_success": 57.54403283052351,
+    "mean_calls_failure": 84.7677178153446,
+    "mean_seconds_success": 667.2339710529665,
+    "mean_seconds_failure": 1097.3485603864397,
+    "mean_calls_restart_of_failure": 79.56152470741222,
+    "bootstrap_95": {
+      "p": [
+        0.5826724024261604,
+        0.6058824498945148
+      ],
+      "q": [
+        0.2603724293427613,
+        0.284910747840387
+      ],
+      "q_over_p": [
+        0.44157930408840423,
+        0.4763528346634984
+      ],
+      "one_minus_q_over_p": [
+        0.5236471653365016,
+        0.5584206959115958
+      ],
+      "fresh_per_1k_calls": [
+        8.413203550325315,
+        8.922173142074191
+      ],
+      "restart_per_1k_calls": [
+        3.259572844028843,
+        3.6244237648285105
+      ],
+      "restart_over_fresh_calls": [
+        0.37878326598735307,
+        0.4136165499855159
+      ],
+      "fresh_per_hour": [
+        2.4659267860763205,
+        2.6171225928007624
+      ],
+      "restart_per_hour": [
+        0.9187307857696949,
+        1.0232691446707864
+      ],
+      "restart_over_fresh_hours": [
+        0.36475474860771223,
+        0.3990193292970082
+      ]
+    },
+    "success_by_rollout_index": {
+      "0": 0.5903876582278481,
+      "1": 0.6014636075949367,
+      "2": 0.591376582278481
+    },
+    "icc_anova": 0.5409191528042603,
+    "icc_anova_95": [
+      0.5242717947681635,
+      0.5584097911764195
+    ],
+    "betabinomial": {
+      "alpha": 0.5043598748650706,
+      "beta": 0.3456207096610022,
+      "rho": 0.5405462134923862,
+      "pass_at_k_fit": {
+        "1": 0.5933781124498139,
+        "2": 0.7042353647029498,
+        "3": 0.7565767088011726,
+        "5": 0.8104638248219322,
+        "10": 0.8656710509255097
+      },
+      "pass_at_k_observed": {
+        "1": 0.5944092827004219,
+        "3": 0.754746835443038
+      }
+    },
+    "share_of_failures_on_tasks_with_0_of_3": 0.6046814044213265,
+    "share_of_tasks_mixed_outcome": 0.33208069620253167
+  },
+  "sensitivity_tasks_with_2plus_valid": {
+    "tasks": 5072,
+    "attempts": 15200,
+    "p": 0.59375,
+    "q": 0.27265352478299665,
+    "q_over_p": 0.45920593647662594,
+    "one_minus_q_over_p": 0.5407940635233741,
+    "fresh_per_1k_calls": 8.62242748323523,
+    "restart_per_1k_calls": 3.4134718898914107,
+    "restart_over_fresh_calls": 0.39588293395662616,
+    "fresh_per_hour": 2.5350549181705846,
+    "restart_per_hour": 0.9676100513475366,
+    "restart_over_fresh_hours": 0.38169194853017613,
+    "mean_calls_success": 57.562991689750696,
+    "mean_calls_failure": 85.37376518218623,
+    "mean_seconds_success": 667.2808898727254,
+    "mean_seconds_failure": 1100.255929469109,
+    "mean_calls_restart_of_failure": 79.875719964306
+  },
+  "failure_groups": {
+    "compute_tercile_edges_calls": [
+      49.0,
+      80.0
+    ],
+    "fresh_per_1k_calls": 8.666664103323246,
+    "p": 0.5944092827004219,
+    "rows": [
+      {
+        "family": "timed_out",
+        "group": "not_timed_out",
+        "failure_anchored_pairs": 11638,
+        "tasks": 2836,
+        "q": 0.2716961677264135,
+        "q_ci": [
+          0.25980718365155014,
+          0.2834453674127737
+        ],
+        "restart_per_1k_calls": 3.560129254534605,
+        "restart_per_1k_calls_ci": [
+          3.3720720596429024,
+          3.7448901999337205
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "timed_out",
+        "group": "timed_out",
+        "failure_anchored_pairs": 666,
+        "tasks": 262,
+        "q": 0.29429429429429427,
+        "q_ci": [
+          0.24775869012293344,
+          0.3407714574978375
+        ],
+        "restart_per_1k_calls": 2.1596606247589665,
+        "restart_per_1k_calls_ci": [
+          1.7352195123832317,
+          2.6241432709932693
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "recursive",
+        "group": "not_recursive",
+        "failure_anchored_pairs": 11074,
+        "tasks": 2808,
+        "q": 0.2718981397868882,
+        "q_ci": [
+          0.25826145372936904,
+          0.2842192219589645
+        ],
+        "restart_per_1k_calls": 3.52187221838181,
+        "restart_per_1k_calls_ci": [
+          3.330442554488994,
+          3.7150667015399117
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "recursive",
+        "group": "recursive",
+        "failure_anchored_pairs": 1230,
+        "tasks": 552,
+        "q": 0.2821138211382114,
+        "q_ci": [
+          0.25282707471423693,
+          0.3165106951871658
+        ],
+        "restart_per_1k_calls": 2.798793373231598,
+        "restart_per_1k_calls_ci": [
+          2.39171085344682,
+          3.2880251592335035
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "compute_tercile",
+        "group": "high",
+        "failure_anchored_pairs": 3988,
+        "tasks": 1295,
+        "q": 0.2635406218655968,
+        "q_ci": [
+          0.246552173818414,
+          0.28129946237043535
+        ],
+        "restart_per_1k_calls": 2.3712668340767515,
+        "restart_per_1k_calls_ci": [
+          2.165836613264581,
+          2.571814269918928
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "compute_tercile",
+        "group": "low",
+        "failure_anchored_pairs": 4154,
+        "tasks": 1352,
+        "q": 0.2883967260471834,
+        "q_ci": [
+          0.2693240730703405,
+          0.309230331404621
+        ],
+        "restart_per_1k_calls": 5.445083289775697,
+        "restart_per_1k_calls_ci": [
+          5.074341066323548,
+          5.853599493139747
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "compute_tercile",
+        "group": "mid",
+        "failure_anchored_pairs": 4162,
+        "tasks": 1516,
+        "q": 0.2664584334454589,
+        "q_ci": [
+          0.24785734013437832,
+          0.28366783923906297
+        ],
+        "restart_per_1k_calls": 3.512973293166966,
+        "restart_per_1k_calls_ci": [
+          3.241984800798129,
+          3.7732607553241664
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "language",
+        "group": "c",
+        "failure_anchored_pairs": 30,
+        "tasks": 6,
+        "q": 0.2,
+        "q_ci": [
+          0.058823529411764705,
+          0.38461538461538464
+        ],
+        "restart_per_1k_calls": 2.0611473720371007,
+        "restart_per_1k_calls_ci": [
+          0.4617871161394597,
+          4.777830864787386
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "language",
+        "group": "elixir",
+        "failure_anchored_pairs": 106,
+        "tasks": 27,
+        "q": 0.3584905660377358,
+        "q_ci": [
+          0.23333333333333334,
+          0.490051020408163
+        ],
+        "restart_per_1k_calls": 3.767598651596272,
+        "restart_per_1k_calls_ci": [
+          2.25665761394784,
+          6.107498932180901
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "language",
+        "group": "go",
+        "failure_anchored_pairs": 2104,
+        "tasks": 551,
+        "q": 0.37167300380228135,
+        "q_ci": [
+          0.34073286052009455,
+          0.4027552582919219
+        ],
+        "restart_per_1k_calls": 4.969275642288409,
+        "restart_per_1k_calls_ci": [
+          4.494011928859579,
+          5.523444484612495
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "language",
+        "group": "java",
+        "failure_anchored_pairs": 1044,
+        "tasks": 204,
+        "q": 0.11302681992337164,
+        "q_ci": [
+          0.08687214806528842,
+          0.1440072144288577
+        ],
+        "restart_per_1k_calls": 1.3421444738907404,
+        "restart_per_1k_calls_ci": [
+          1.0036686001694315,
+          1.7458947469998096
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "language",
+        "group": "js",
+        "failure_anchored_pairs": 1252,
+        "tasks": 327,
+        "q": 0.34824281150159747,
+        "q_ci": [
+          0.3085081527142573,
+          0.3939393939393939
+        ],
+        "restart_per_1k_calls": 5.10472889908794,
+        "restart_per_1k_calls_ci": [
+          4.34734007222397,
+          5.959427697971042
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "language",
+        "group": "kotlin",
+        "failure_anchored_pairs": 886,
+        "tasks": 168,
+        "q": 0.10609480812641084,
+        "q_ci": [
+          0.07809110629067245,
+          0.1371261717006398
+        ],
+        "restart_per_1k_calls": 0.9618828344845229,
+        "restart_per_1k_calls_ci": [
+          0.6982227628641471,
+          1.2716496014141234
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "language",
+        "group": "php",
+        "failure_anchored_pairs": 352,
+        "tasks": 91,
+        "q": 0.3693181818181818,
+        "q_ci": [
+          0.2925144939772599,
+          0.45394837746206007
+        ],
+        "restart_per_1k_calls": 4.299794932857048,
+        "restart_per_1k_calls_ci": [
+          3.287656830510641,
+          5.5352720606066885
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "language",
+        "group": "python",
+        "failure_anchored_pairs": 3242,
+        "tasks": 825,
+        "q": 0.33991363355953114,
+        "q_ci": [
+          0.31527887328216486,
+          0.36573862299828097
+        ],
+        "restart_per_1k_calls": 4.453568917160385,
+        "restart_per_1k_calls_ci": [
+          4.025061298707052,
+          4.928081971435833
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "language",
+        "group": "r",
+        "failure_anchored_pairs": 72,
+        "tasks": 21,
+        "q": 0.4444444444444444,
+        "q_ci": [
+          0.27906976744186046,
+          0.6666666666666666
+        ],
+        "restart_per_1k_calls": 6.016168452716676,
+        "restart_per_1k_calls_ci": [
+          3.6554728814635875,
+          9.879674504421466
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "language",
+        "group": "rust",
+        "failure_anchored_pairs": 1694,
+        "tasks": 330,
+        "q": 0.11334120425029516,
+        "q_ci": [
+          0.09299655568312284,
+          0.13681217529796189
+        ],
+        "restart_per_1k_calls": 1.403375410231484,
+        "restart_per_1k_calls_ci": [
+          1.1273701688962896,
+          1.7286118173524085
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "language",
+        "group": "scala",
+        "failure_anchored_pairs": 232,
+        "tasks": 42,
+        "q": 0.05172413793103448,
+        "q_ci": [
+          0.01639344262295082,
+          0.10187564901349945
+        ],
+        "restart_per_1k_calls": 0.4824120603015075,
+        "restart_per_1k_calls_ci": [
+          0.1533965842099012,
+          0.9344213073237513
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "language",
+        "group": "swift",
+        "failure_anchored_pairs": 70,
+        "tasks": 18,
+        "q": 0.34285714285714286,
+        "q_ci": [
+          0.1951219512195122,
+          0.5517241379310345
+        ],
+        "restart_per_1k_calls": 3.603062603212731,
+        "restart_per_1k_calls_ci": [
+          1.6450722005122171,
+          8.296632398002297
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "language",
+        "group": "ts",
+        "failure_anchored_pairs": 1188,
+        "tasks": 302,
+        "q": 0.32491582491582494,
+        "q_ci": [
+          0.2831600843828913,
+          0.3674911660777385
+        ],
+        "restart_per_1k_calls": 4.756506309148265,
+        "restart_per_1k_calls_ci": [
+          4.035715366967558,
+          5.519852669884004
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "source_llm_difficulty",
+        "group": "easy",
+        "failure_anchored_pairs": 3238,
+        "tasks": 788,
+        "q": 0.28227300802964794,
+        "q_ci": [
+          0.25901214174984877,
+          0.3081989502761525
+        ],
+        "restart_per_1k_calls": 4.282916131692642,
+        "restart_per_1k_calls_ci": [
+          3.8771131062927506,
+          4.762512250164642
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "source_llm_difficulty",
+        "group": "hard",
+        "failure_anchored_pairs": 292,
+        "tasks": 67,
+        "q": 0.2534246575342466,
+        "q_ci": [
+          0.18354430379746836,
+          0.33088235294117646
+        ],
+        "restart_per_1k_calls": 2.1869551083133847,
+        "restart_per_1k_calls_ci": [
+          1.4620047422540134,
+          3.2149518446770355
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "source_llm_difficulty",
+        "group": "medium",
+        "failure_anchored_pairs": 8774,
+        "tasks": 2064,
+        "q": 0.2701162525643948,
+        "q_ci": [
+          0.25708131003122514,
+          0.2834045008037606
+        ],
+        "restart_per_1k_calls": 3.2391120732777354,
+        "restart_per_1k_calls_ci": [
+          3.048904846378131,
+          3.451195488557716
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "modified_files",
+        "group": "1",
+        "failure_anchored_pairs": 2676,
+        "tasks": 673,
+        "q": 0.3273542600896861,
+        "q_ci": [
+          0.2988330747960866,
+          0.35583344412999296
+        ],
+        "restart_per_1k_calls": 4.44036678646195,
+        "restart_per_1k_calls_ci": [
+          3.9735233503069107,
+          4.96003343955989
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "modified_files",
+        "group": "2-3",
+        "failure_anchored_pairs": 4494,
+        "tasks": 1087,
+        "q": 0.28749443702714733,
+        "q_ci": [
+          0.26837172369975876,
+          0.3073116687303144
+        ],
+        "restart_per_1k_calls": 3.72687649096694,
+        "restart_per_1k_calls_ci": [
+          3.415984001376974,
+          4.033632604923827
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "modified_files",
+        "group": "4+",
+        "failure_anchored_pairs": 5134,
+        "tasks": 1159,
+        "q": 0.23178807947019867,
+        "q_ci": [
+          0.214994833302553,
+          0.24891421656403792
+        ],
+        "restart_per_1k_calls": 2.7358019923075685,
+        "restart_per_1k_calls_ci": [
+          2.490951437664205,
+          2.9795104262654664
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "1Password/typeshare",
+        "failure_anchored_pairs": 32,
+        "tasks": 6,
+        "q": 0.0625,
+        "q_ci": [
+          0.0,
+          0.25
+        ],
+        "restart_per_1k_calls": 1.3812154696132597,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          5.39568345323741
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "AlecStrong/sql-psi",
+        "failure_anchored_pairs": 36,
+        "tasks": 7,
+        "q": 0.1111111111111111,
+        "q_ci": [
+          0.0,
+          0.35714285714285715
+        ],
+        "restart_per_1k_calls": 1.0498687664041995,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          3.1253512665695453
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "Azure/WALinuxAgent",
+        "failure_anchored_pairs": 30,
+        "tasks": 6,
+        "q": 0.13333333333333333,
+        "q_ci": [
+          0.0,
+          0.36363636363636365
+        ],
+        "restart_per_1k_calls": 1.7316017316017316,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          5.736137667304015
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "BlueBrain/nexus",
+        "failure_anchored_pairs": 44,
+        "tasks": 8,
+        "q": 0.045454545454545456,
+        "q_ci": [
+          0.0,
+          0.16666666666666666
+        ],
+        "restart_per_1k_calls": 0.46490004649000466,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          1.6690610850867156
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "FHIR/sushi",
+        "failure_anchored_pairs": 60,
+        "tasks": 19,
+        "q": 0.5333333333333333,
+        "q_ci": [
+          0.35135135135135137,
+          0.782608695652174
+        ],
+        "restart_per_1k_calls": 6.170458927882761,
+        "restart_per_1k_calls_ci": [
+          4.0304298177913855,
+          9.668002093204354
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "HypothesisWorks/hypothesis",
+        "failure_anchored_pairs": 70,
+        "tasks": 17,
+        "q": 0.2857142857142857,
+        "q_ci": [
+          0.14634146341463414,
+          0.5189484126984123
+        ],
+        "restart_per_1k_calls": 3.6363636363636362,
+        "restart_per_1k_calls_ci": [
+          1.673558628658758,
+          7.654812378617167
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "Microsoft/thrifty",
+        "failure_anchored_pairs": 30,
+        "tasks": 5,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "OpenMDAO/OpenMDAO",
+        "failure_anchored_pairs": 60,
+        "tasks": 14,
+        "q": 0.26666666666666666,
+        "q_ci": [
+          0.1111111111111111,
+          0.47830434782608694
+        ],
+        "restart_per_1k_calls": 2.6666666666666665,
+        "restart_per_1k_calls_ci": [
+          1.1926447037451202,
+          5.183831316632653
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "PHPOffice/PhpSpreadsheet",
+        "failure_anchored_pairs": 32,
+        "tasks": 8,
+        "q": 0.3125,
+        "q_ci": [
+          0.09523809523809523,
+          0.6363636363636364
+        ],
+        "restart_per_1k_calls": 4.105090311986864,
+        "restart_per_1k_calls_ci": [
+          1.3660387633702906,
+          8.873689475498834
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "PennyLaneAI/pennylane",
+        "failure_anchored_pairs": 96,
+        "tasks": 23,
+        "q": 0.25,
+        "q_ci": [
+          0.125,
+          0.42105263157894735
+        ],
+        "restart_per_1k_calls": 2.834199338686821,
+        "restart_per_1k_calls_ci": [
+          1.5115451748795832,
+          4.766984577287346
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "Pyomo/pyomo",
+        "failure_anchored_pairs": 42,
+        "tasks": 11,
+        "q": 0.38095238095238093,
+        "q_ci": [
+          0.19230769230769232,
+          0.6671874999999995
+        ],
+        "restart_per_1k_calls": 3.996003996003996,
+        "restart_per_1k_calls_ci": [
+          2.0593811041864254,
+          9.514419688838293
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "Qiskit/qiskit-terra",
+        "failure_anchored_pairs": 46,
+        "tasks": 13,
+        "q": 0.43478260869565216,
+        "q_ci": [
+          0.2413793103448276,
+          0.7222222222222222
+        ],
+        "restart_per_1k_calls": 5.583472920156337,
+        "restart_per_1k_calls_ci": [
+          2.930694316012798,
+          9.554697305603453
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "RBusarow/ModuleCheck",
+        "failure_anchored_pairs": 30,
+        "tasks": 5,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "aio-libs/aiohttp",
+        "failure_anchored_pairs": 36,
+        "tasks": 8,
+        "q": 0.2222222222222222,
+        "q_ci": [
+          0.045454545454545456,
+          0.5
+        ],
+        "restart_per_1k_calls": 3.2653061224489797,
+        "restart_per_1k_calls_ci": [
+          0.6593643491611991,
+          7.682458386683739
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "alteryx/evalml",
+        "failure_anchored_pairs": 34,
+        "tasks": 8,
+        "q": 0.29411764705882354,
+        "q_ci": [
+          0.09523809523809523,
+          0.5841346153846146
+        ],
+        "restart_per_1k_calls": 4.703668861712136,
+        "restart_per_1k_calls_ci": [
+          1.492537313432836,
+          9.624200380712303
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "amaranth-lang/amaranth",
+        "failure_anchored_pairs": 52,
+        "tasks": 14,
+        "q": 0.46153846153846156,
+        "q_ci": [
+          0.3225518433179723,
+          0.6363636363636364
+        ],
+        "restart_per_1k_calls": 4.930156121610517,
+        "restart_per_1k_calls_ci": [
+          2.3834540687860173,
+          10.575221543215253
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "aristanetworks/anta",
+        "failure_anchored_pairs": 30,
+        "tasks": 6,
+        "q": 0.13333333333333333,
+        "q_ci": [
+          0.0,
+          0.3641608391608387
+        ],
+        "restart_per_1k_calls": 2.588996763754045,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          6.6836547435534435
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "aws-cloudformation/cfn-lint",
+        "failure_anchored_pairs": 98,
+        "tasks": 23,
+        "q": 0.2857142857142857,
+        "q_ci": [
+          0.16071428571428573,
+          0.4390952921157118
+        ],
+        "restart_per_1k_calls": 3.076246978686003,
+        "restart_per_1k_calls_ci": [
+          1.5547364150326972,
+          5.4874255986508595
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "casey/just",
+        "failure_anchored_pairs": 46,
+        "tasks": 9,
+        "q": 0.08695652173913043,
+        "q_ci": [
+          0.0,
+          0.21052631578947367
+        ],
+        "restart_per_1k_calls": 1.4260249554367201,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          3.649676679981477
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "cogent3/cogent3",
+        "failure_anchored_pairs": 34,
+        "tasks": 7,
+        "q": 0.17647058823529413,
+        "q_ci": [
+          0.05,
+          0.38461538461538464
+        ],
+        "restart_per_1k_calls": 2.443991853360489,
+        "restart_per_1k_calls_ci": [
+          0.5797101449275363,
+          6.588670757539361
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "cqfn/diKTat",
+        "failure_anchored_pairs": 150,
+        "tasks": 31,
+        "q": 0.17333333333333334,
+        "q_ci": [
+          0.08536585365853659,
+          0.2727272727272727
+        ],
+        "restart_per_1k_calls": 1.7176455043932086,
+        "restart_per_1k_calls_ci": [
+          0.8638726436696557,
+          2.834017058867813
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "decorators-squad/eo-yaml",
+        "failure_anchored_pairs": 38,
+        "tasks": 7,
+        "q": 0.10526315789473684,
+        "q_ci": [
+          0.0,
+          0.23529411764705882
+        ],
+        "restart_per_1k_calls": 1.2468827930174564,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          3.4978489901003926
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "dtolnay/cxx",
+        "failure_anchored_pairs": 66,
+        "tasks": 12,
+        "q": 0.06060606060606061,
+        "q_ci": [
+          0.0,
+          0.17857142857142858
+        ],
+        "restart_per_1k_calls": 0.47219926809113444,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          1.7039433866903555
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "eclipse-ee4j/yasson",
+        "failure_anchored_pairs": 46,
+        "tasks": 9,
+        "q": 0.13043478260869565,
+        "q_ci": [
+          0.0,
+          0.3
+        ],
+        "restart_per_1k_calls": 2.0484807101399793,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          5.131070105070842
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "effekt-lang/effekt",
+        "failure_anchored_pairs": 30,
+        "tasks": 5,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "ember-cli/eslint-plugin-ember",
+        "failure_anchored_pairs": 30,
+        "tasks": 10,
+        "q": 0.6,
+        "q_ci": [
+          0.35,
+          0.9090909090909091
+        ],
+        "restart_per_1k_calls": 11.39240506329114,
+        "restart_per_1k_calls_ci": [
+          6.553581575233242,
+          21.12044160618606
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "enthought/traits",
+        "failure_anchored_pairs": 42,
+        "tasks": 10,
+        "q": 0.2857142857142857,
+        "q_ci": [
+          0.11538461538461539,
+          0.5625
+        ],
+        "restart_per_1k_calls": 5.719733079122975,
+        "restart_per_1k_calls_ci": [
+          2.247127958738446,
+          10.935601458080194
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "evant/kotlin-inject",
+        "failure_anchored_pairs": 96,
+        "tasks": 17,
+        "q": 0.041666666666666664,
+        "q_ci": [
+          0.0,
+          0.11627906976744186
+        ],
+        "restart_per_1k_calls": 0.23781212841854935,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.6989887722013469
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "getmoto/moto",
+        "failure_anchored_pairs": 156,
+        "tasks": 32,
+        "q": 0.15384615384615385,
+        "q_ci": [
+          0.08045977011494253,
+          0.2535211267605634
+        ],
+        "restart_per_1k_calls": 2.1231422505307855,
+        "restart_per_1k_calls_ci": [
+          1.0409328290177942,
+          3.906865050889757
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "go-swagger/go-swagger",
+        "failure_anchored_pairs": 36,
+        "tasks": 8,
+        "q": 0.2777777777777778,
+        "q_ci": [
+          0.09523809523809523,
+          0.5333333333333333
+        ],
+        "restart_per_1k_calls": 2.479543763947434,
+        "restart_per_1k_calls_ci": [
+          0.935162040887752,
+          4.595412422319234
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "goadesign/goa",
+        "failure_anchored_pairs": 60,
+        "tasks": 13,
+        "q": 0.2,
+        "q_ci": [
+          0.08571428571428572,
+          0.391304347826087
+        ],
+        "restart_per_1k_calls": 1.5007503751875937,
+        "restart_per_1k_calls_ci": [
+          0.5677101891905733,
+          3.2394268422936716
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "google/go-safeweb",
+        "failure_anchored_pairs": 42,
+        "tasks": 9,
+        "q": 0.19047619047619047,
+        "q_ci": [
+          0.04,
+          0.4375
+        ],
+        "restart_per_1k_calls": 3.341687552213868,
+        "restart_per_1k_calls_ci": [
+          0.7914210446576422,
+          8.226087778591856
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "googleapis/java-storage",
+        "failure_anchored_pairs": 36,
+        "tasks": 7,
+        "q": 0.1111111111111111,
+        "q_ci": [
+          0.0,
+          0.2857142857142857
+        ],
+        "restart_per_1k_calls": 1.1716461628588166,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          4.325030144399023
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "knative/client",
+        "failure_anchored_pairs": 52,
+        "tasks": 13,
+        "q": 0.4230769230769231,
+        "q_ci": [
+          0.27586206896551724,
+          0.5652173913043478
+        ],
+        "restart_per_1k_calls": 6.959822840873142,
+        "restart_per_1k_calls_ci": [
+          4.557534633870512,
+          9.853436082524508
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "kroxylicious/kroxylicious",
+        "failure_anchored_pairs": 30,
+        "tasks": 5,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "laravel-shift/blueprint",
+        "failure_anchored_pairs": 32,
+        "tasks": 7,
+        "q": 0.25,
+        "q_ci": [
+          0.10526315789473684,
+          0.5
+        ],
+        "restart_per_1k_calls": 3.8498556304138596,
+        "restart_per_1k_calls_ci": [
+          1.3481631277384563,
+          7.91767810026385
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "mgechev/revive",
+        "failure_anchored_pairs": 32,
+        "tasks": 10,
+        "q": 0.5625,
+        "q_ci": [
+          0.35,
+          0.8333333333333334
+        ],
+        "restart_per_1k_calls": 11.96808510638298,
+        "restart_per_1k_calls_ci": [
+          7.591370998346163,
+          17.36111111111111
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "mitsuhiko/minijinja",
+        "failure_anchored_pairs": 34,
+        "tasks": 6,
+        "q": 0.058823529411764705,
+        "q_ci": [
+          0.0,
+          0.2
+        ],
+        "restart_per_1k_calls": 0.9775171065493646,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          3.9328895176759557
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "mozilla/cargo-vet",
+        "failure_anchored_pairs": 48,
+        "tasks": 9,
+        "q": 0.08333333333333333,
+        "q_ci": [
+          0.0,
+          0.25
+        ],
+        "restart_per_1k_calls": 1.1785503830288744,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          3.760254201512886
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "narwhals-dev/narwhals",
+        "failure_anchored_pairs": 34,
+        "tasks": 10,
+        "q": 0.47058823529411764,
+        "q_ci": [
+          0.26059782608695653,
+          0.7692307692307693
+        ],
+        "restart_per_1k_calls": 7.051564565888056,
+        "restart_per_1k_calls_ci": [
+          3.726161552047158,
+          13.19546483111174
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "nix-community/nixpkgs-fmt",
+        "failure_anchored_pairs": 50,
+        "tasks": 11,
+        "q": 0.2,
+        "q_ci": [
+          0.06666666666666667,
+          0.42105263157894735
+        ],
+        "restart_per_1k_calls": 2.9069767441860463,
+        "restart_per_1k_calls_ci": [
+          0.9152431330553816,
+          6.442005534449603
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "opentripplanner/OpenTripPlanner",
+        "failure_anchored_pairs": 30,
+        "tasks": 5,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "orchestr7/ktoml",
+        "failure_anchored_pairs": 40,
+        "tasks": 8,
+        "q": 0.15,
+        "q_ci": [
+          0.0,
+          0.375
+        ],
+        "restart_per_1k_calls": 1.048951048951049,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          2.5158686421358536
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "pallets/click",
+        "failure_anchored_pairs": 32,
+        "tasks": 11,
+        "q": 0.625,
+        "q_ci": [
+          0.4,
+          0.9166666666666666
+        ],
+        "restart_per_1k_calls": 12.026458208057727,
+        "restart_per_1k_calls_ci": [
+          7.773785769320867,
+          17.800073956350015
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "pallets/werkzeug",
+        "failure_anchored_pairs": 48,
+        "tasks": 14,
+        "q": 0.4583333333333333,
+        "q_ci": [
+          0.26666666666666666,
+          0.7222222222222222
+        ],
+        "restart_per_1k_calls": 10.256410256410257,
+        "restart_per_1k_calls_ci": [
+          6.169307493311389,
+          16.77500677690431
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "phpactor/phpactor",
+        "failure_anchored_pairs": 54,
+        "tasks": 15,
+        "q": 0.4444444444444444,
+        "q_ci": [
+          0.26666666666666666,
+          0.6818181818181818
+        ],
+        "restart_per_1k_calls": 4.224608343601479,
+        "restart_per_1k_calls_ci": [
+          2.4425587781589826,
+          7.1250938071814955
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "platers/obsidian-linter",
+        "failure_anchored_pairs": 46,
+        "tasks": 12,
+        "q": 0.34782608695652173,
+        "q_ci": [
+          0.16666666666666666,
+          0.6470588235294118
+        ],
+        "restart_per_1k_calls": 5.835156819839534,
+        "restart_per_1k_calls_ci": [
+          2.494854740494124,
+          12.304250559284116
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "projectlombok/lombok",
+        "failure_anchored_pairs": 34,
+        "tasks": 6,
+        "q": 0.058823529411764705,
+        "q_ci": [
+          0.0,
+          0.2
+        ],
+        "restart_per_1k_calls": 0.4420866489832007,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          1.4688375865440901
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "pulldown-cmark/pulldown-cmark",
+        "failure_anchored_pairs": 30,
+        "tasks": 5,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "pybamm-team/PyBaMM",
+        "failure_anchored_pairs": 52,
+        "tasks": 15,
+        "q": 0.5,
+        "q_ci": [
+          0.32232862903225806,
+          0.7142857142857143
+        ],
+        "restart_per_1k_calls": 5.062305295950155,
+        "restart_per_1k_calls_ci": [
+          3.0449972553382754,
+          8.16343203948246
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "pyccel/pyccel",
+        "failure_anchored_pairs": 56,
+        "tasks": 11,
+        "q": 0.14285714285714285,
+        "q_ci": [
+          0.03125,
+          0.29198369565217364
+        ],
+        "restart_per_1k_calls": 0.8790242830458191,
+        "restart_per_1k_calls_ci": [
+          0.18774940027688877,
+          2.64376037202289
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "raml-org/raml-java-parser",
+        "failure_anchored_pairs": 48,
+        "tasks": 10,
+        "q": 0.20833333333333334,
+        "q_ci": [
+          0.07142857142857142,
+          0.4
+        ],
+        "restart_per_1k_calls": 1.9160758766047135,
+        "restart_per_1k_calls_ci": [
+          0.6860857762231884,
+          3.5297504298442135
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "rust-analyzer/rust-analyzer",
+        "failure_anchored_pairs": 32,
+        "tasks": 6,
+        "q": 0.0625,
+        "q_ci": [
+          0.0,
+          0.25
+        ],
+        "restart_per_1k_calls": 0.49236829148202854,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          2.541944244456795
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "rust-lang/rust-bindgen",
+        "failure_anchored_pairs": 36,
+        "tasks": 6,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "rust-lang/rustfmt",
+        "failure_anchored_pairs": 120,
+        "tasks": 21,
+        "q": 0.03333333333333333,
+        "q_ci": [
+          0.0,
+          0.09090909090909091
+        ],
+        "restart_per_1k_calls": 0.4152823920265781,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          1.1140512721188713
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "scala-steward-org/scala-steward",
+        "failure_anchored_pairs": 36,
+        "tasks": 6,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "scalameta/scalameta",
+        "failure_anchored_pairs": 116,
+        "tasks": 22,
+        "q": 0.08620689655172414,
+        "q_ci": [
+          0.015625,
+          0.17307692307692307
+        ],
+        "restart_per_1k_calls": 0.7022965095863474,
+        "restart_per_1k_calls_ci": [
+          0.13084296119562996,
+          1.4229611439191907
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "seaofvoices/darklua",
+        "failure_anchored_pairs": 44,
+        "tasks": 8,
+        "q": 0.045454545454545456,
+        "q_ci": [
+          0.0,
+          0.16666666666666666
+        ],
+        "restart_per_1k_calls": 0.7581501137225171,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          3.1488728186551342
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "serverless/serverless",
+        "failure_anchored_pairs": 64,
+        "tasks": 20,
+        "q": 0.53125,
+        "q_ci": [
+          0.3611111111111111,
+          0.7407407407407407
+        ],
+        "restart_per_1k_calls": 7.438197330999781,
+        "restart_per_1k_calls_ci": [
+          4.490971439843358,
+          12.790737379660502
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "shapesecurity/salvation",
+        "failure_anchored_pairs": 30,
+        "tasks": 5,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "sharkdp/fd",
+        "failure_anchored_pairs": 46,
+        "tasks": 8,
+        "q": 0.043478260869565216,
+        "q_ci": [
+          0.0,
+          0.14285714285714285
+        ],
+        "restart_per_1k_calls": 0.819000819000819,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          2.9069767441860463
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "sindresorhus/got",
+        "failure_anchored_pairs": 36,
+        "tasks": 9,
+        "q": 0.3333333333333333,
+        "q_ci": [
+          0.13043478260869565,
+          0.6153846153846154
+        ],
+        "restart_per_1k_calls": 5.527406725011516,
+        "restart_per_1k_calls_ci": [
+          2.464700598872714,
+          10.094388710201851
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "square/anvil",
+        "failure_anchored_pairs": 164,
+        "tasks": 31,
+        "q": 0.12195121951219512,
+        "q_ci": [
+          0.056818181818181816,
+          0.19480519480519481
+        ],
+        "restart_per_1k_calls": 1.0585371017254155,
+        "restart_per_1k_calls_ci": [
+          0.5028462214089858,
+          1.7327161977842978
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "stfc/PSyclone",
+        "failure_anchored_pairs": 86,
+        "tasks": 19,
+        "q": 0.23255813953488372,
+        "q_ci": [
+          0.12244897959183673,
+          0.4
+        ],
+        "restart_per_1k_calls": 1.6299918500407498,
+        "restart_per_1k_calls_ci": [
+          0.8520605839348017,
+          2.8981633532417246
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "swiftlang/swift-syntax",
+        "failure_anchored_pairs": 32,
+        "tasks": 7,
+        "q": 0.25,
+        "q_ci": [
+          0.05263157894736842,
+          0.5
+        ],
+        "restart_per_1k_calls": 2.6058631921824102,
+        "restart_per_1k_calls_ci": [
+          0.5554086200816464,
+          5.970340441260818
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "tipsy/javalin",
+        "failure_anchored_pairs": 36,
+        "tasks": 7,
+        "q": 0.1111111111111111,
+        "q_ci": [
+          0.0,
+          0.2857142857142857
+        ],
+        "restart_per_1k_calls": 1.2296341838303104,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          4.79048845157631
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "typescript-eslint/tslint-to-eslint-config",
+        "failure_anchored_pairs": 30,
+        "tasks": 8,
+        "q": 0.3333333333333333,
+        "q_ci": [
+          0.1,
+          0.7
+        ],
+        "restart_per_1k_calls": 7.209805335255948,
+        "restart_per_1k_calls_ci": [
+          2.322478489243617,
+          15.783540022547914
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "vyperlang/vyper",
+        "failure_anchored_pairs": 46,
+        "tasks": 9,
+        "q": 0.13043478260869565,
+        "q_ci": [
+          0.0,
+          0.3333333333333333
+        ],
+        "restart_per_1k_calls": 0.8065600215082672,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          2.8636859573203313
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "xlate/staedi",
+        "failure_anchored_pairs": 46,
+        "tasks": 9,
+        "q": 0.17391304347826086,
+        "q_ci": [
+          0.038461538461538464,
+          0.35
+        ],
+        "restart_per_1k_calls": 1.2804097311139564,
+        "restart_per_1k_calls_ci": [
+          0.2906230113878572,
+          2.812800737148059
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "yandex/yatagan",
+        "failure_anchored_pairs": 30,
+        "tasks": 5,
+        "q": 0.0,
+        "q_ci": [
+          0.0,
+          0.0
+        ],
+        "restart_per_1k_calls": 0.0,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          0.0
+        ],
+        "call": "issue-level"
+      },
+      {
+        "family": "repo",
+        "group": "yannickcr/eslint-plugin-react",
+        "failure_anchored_pairs": 56,
+        "tasks": 13,
+        "q": 0.25,
+        "q_ci": [
+          0.11764705882352941,
+          0.45454545454545453
+        ],
+        "restart_per_1k_calls": 4.003431512725193,
+        "restart_per_1k_calls_ci": [
+          1.588895823855198,
+          8.709002035988359
+        ],
+        "call": "unresolved"
+      },
+      {
+        "family": "repo",
+        "group": "yshavit/mdq",
+        "failure_anchored_pairs": 32,
+        "tasks": 6,
+        "q": 0.0625,
+        "q_ci": [
+          0.0,
+          0.25
+        ],
+        "restart_per_1k_calls": 1.0845986984815619,
+        "restart_per_1k_calls_ci": [
+          0.0,
+          4.392709025354583
+        ],
+        "call": "issue-level"
+      }
+    ]
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "assistant_calls_definition": "Number of recorded assistant-role messages; not billed API calls and excludes unrecorded retries.",
+  "assistant_calls_total": 4316962,
+  "attempts": 67074,
+  "checkpoints": [
+    {
+      "file": "row_group_0000.csv",
+      "rows": 4096,
+      "sha256": "3593f5929fa4947cd414b9371b31c5799b3992ef287b47d731e3571d8add43a2"
+    },
+    {
+      "file": "row_group_0001.csv",
+      "rows": 4096,
+      "sha256": "e163c1291ae316fd2cc85b1b978c8fa2e3e5579aef0336581041c020d6ab5d7b"
+    },
+    {
+      "file": "row_group_0002.csv",
+      "rows": 4096,
+      "sha256": "43e6a0a77dc32bbe4fdf184e737183f2ca572e8413c19d6b372e5eeb39f70ea9"
+    },
+    {
+      "file": "row_group_0003.csv",
+      "rows": 4096,
+      "sha256": "3a9cb1d793222920741ec4eae2016af7dcc9ae6a95e2408f36952db4542dff4c"
+    },
+    {
+      "file": "row_group_0004.csv",
+      "rows": 4096,
+      "sha256": "fb5a7fdf56804bd234d8318a3561ac16ffb7d849d886184ff6f764c41cbcdcbe"
+    },
+    {
+      "file": "row_group_0005.csv",
+      "rows": 4096,
+      "sha256": "4cbae72d2fed6dfea1e93b40467dab79b8b9791086a7f7d58ca0f33064704ca9"
+    },
+    {
+      "file": "row_group_0006.csv",
+      "rows": 4096,
+      "sha256": "8752296c4be384d1e1ed9cde866ebad8bac168e3e0d872ff81e444229f50c40b"
+    },
+    {
+      "file": "row_group_0007.csv",
+      "rows": 4096,
+      "sha256": "9b4e45b7342aa952176d23b07eefdfc744519ca84ba062f45da1af6c285212df"
+    },
+    {
+      "file": "row_group_0008.csv",
+      "rows": 4096,
+      "sha256": "5694d10ce431bfbe5c0f20767248f700d9c64e6a53df533931ebb2b3e7e36465"
+    },
+    {
+      "file": "row_group_0009.csv",
+      "rows": 4096,
+      "sha256": "f646f643154814aefc4f9d1cc3892df23ca744390cab042864dbda430c46d580"
+    },
+    {
+      "file": "row_group_0010.csv",
+      "rows": 4096,
+      "sha256": "a30d508dddddad3d28fdaf55708b08440fc67400469e148d4c899ca2b765005e"
+    },
+    {
+      "file": "row_group_0011.csv",
+      "rows": 4096,
+      "sha256": "5fc6a124706fb083a719951b1979c3417ea109f6c42fcd6eae607820e80ff024"
+    },
+    {
+      "file": "row_group_0012.csv",
+      "rows": 4096,
+      "sha256": "a474f623589669724aea52c69ecf6167f5e2908f9ee3e9ed02fe3647b1ec75eb"
+    },
+    {
+      "file": "row_group_0013.csv",
+      "rows": 4096,
+      "sha256": "d5682d57d630427cf99302cf53ea1e2c0fe82508019d42fa981f04082530a2c6"
+    },
+    {
+      "file": "row_group_0014.csv",
+      "rows": 4096,
+      "sha256": "7c9e1cc2bc151e6fce18b4e4647f1cc7f7a746a55a370b2a0d607742e2f5298c"
+    },
+    {
+      "file": "row_group_0015.csv",
+      "rows": 4096,
+      "sha256": "e4d5da286d963da8fcb92ae43f0dfe425be3564fd187f8e68361462c031bcb86"
+    },
+    {
+      "file": "row_group_0016.csv",
+      "rows": 1538,
+      "sha256": "d13555affeb39fafcc68089122cdce7a84e37209709df24e856cb41fcf94f318"
+    }
+  ],
+  "csv_bytes": 8654121,
+  "csv_sha256": "e2bdc4af13277fb6869fdb31900d39e63f4170594c0e21e726d36eac3a9e5ba5",
+  "dataset": "nebius/SWE-rebench-openhands-trajectories",
+  "duckdb_version": "2.0.0",
+  "elapsed_seconds": 147.5597775829956,
+  "evaluation_use": "Descriptive extraction only; no final-evaluation outcome used to tune a policy.",
+  "exit_status_counts": {
+    "AgentStuckInLoopError: Agent got stuck in a loop": 252,
+    "AttributeError: 'str' object has no attribute 'get'": 5,
+    "RuntimeError: Agent reached maximum iteration. Current iteration: 100, max iteration: 100": 6003,
+    "RuntimeError: There was an unexpected error while running the agent: ServiceUnavailableError. You can refresh the page or ask the agent to try again.": 29,
+    "Timeout: litellm.Timeout: APITimeoutError - Request timed out. Error_str: Request timed out.": 36,
+    "submit": 60739,
+    "unknown": 10
+  },
+  "issues": 6306,
+  "memory_limit": "2GB",
+  "messages_definition": "Number of all recorded trajectory messages across all roles.",
+  "messages_total": 8701123,
+  "model_EmptyPatch_count": 0,
+  "model_EmptyPatch_definition": "Boolean indicator exit_status == 'model_EmptyPatch'; not derived from model_patch text and does not claim to identify every empty patch.",
+  "patch_column_compressed_bytes": 123001624,
+  "patch_empty_count": 56,
+  "patch_empty_definition": "model_patch is null OR Python str.strip(model_patch) == ''; nulls separately identified by patch_is_null.",
+  "patch_flag_checkpoints": [
+    {
+      "file": "patch_flags_0000.csv",
+      "rows": 4096,
+      "sha256": "e1b8b8c71a559813cf0d84ea80bb88a3c709a5f6a2d0a05819b0c0d458e10498"
+    },
+    {
+      "file": "patch_flags_0001.csv",
+      "rows": 4096,
+      "sha256": "5a31296bf15ddcabd9b1535d53e6cf95fd096c94ba1482f2d2f5961106426244"
+    },
+    {
+      "file": "patch_flags_0002.csv",
+      "rows": 4096,
+      "sha256": "64eeda9e7446db1c478d309044ceaf2c2b12ed5497af3594fd778d73e242dfb2"
+    },
+    {
+      "file": "patch_flags_0003.csv",
+      "rows": 4096,
+      "sha256": "c7233938c084227ecf388e531f3dada84a1011eef78f1cbf21d9f05465b29b17"
+    },
+    {
+      "file": "patch_flags_0004.csv",
+      "rows": 4096,
+      "sha256": "187318d8f6f5c9a2d7c24934efaa6010114ea4ed8f43e18ab2dff018cb9ba430"
+    },
+    {
+      "file": "patch_flags_0005.csv",
+      "rows": 4096,
+      "sha256": "659246166fd5c26e76022b81ed50c9e55a7881c12174d3e9a093f144712ad470"
+    },
+    {
+      "file": "patch_flags_0006.csv",
+      "rows": 4096,
+      "sha256": "e59eee04d6f6feea0dfafa86efc7a3088951da14c7e0b4b7b77803bc2ab01aa0"
+    },
+    {
+      "file": "patch_flags_0007.csv",
+      "rows": 4096,
+      "sha256": "2643e50d746c9670c9cf0d16b548fe92100721aca1bbad6d211532447923b015"
+    },
+    {
+      "file": "patch_flags_0008.csv",
+      "rows": 4096,
+      "sha256": "6cc8dfd602da21b0e94f8905aa087f28b6efb38965ebf1fdd4c4a9b8a51ade12"
+    },
+    {
+      "file": "patch_flags_0009.csv",
+      "rows": 4096,
+      "sha256": "b1f7f68fb77a23d7e8401f2c5b7c083dacac627943130bf20e09cfc0e78b9abb"
+    },
+    {
+      "file": "patch_flags_0010.csv",
+      "rows": 4096,
+      "sha256": "6aec7180fc50f7ca3257baa53c255b509ec9854af2a4368a04be86454d651be7"
+    },
+    {
+      "file": "patch_flags_0011.csv",
+      "rows": 4096,
+      "sha256": "e83175dc5ef1c9b9e33552d1a5355f5f5bdde7ea1c0d0e89e140ebbf17dde1b6"
+    },
+    {
+      "file": "patch_flags_0012.csv",
+      "rows": 4096,
+      "sha256": "56cf56322e8fc3384fe9c70520bb62a38e4e64691dbd7cd0b0049e25d7e65d7a"
+    },
+    {
+      "file": "patch_flags_0013.csv",
+      "rows": 4096,
+      "sha256": "40779c90dd407fe6c8e3c56617d1bc8cc71d810e7baa9c27e1510a4e64ff70cb"
+    },
+    {
+      "file": "patch_flags_0014.csv",
+      "rows": 4096,
+      "sha256": "8bf2ea2011d9dd7c2ddbe02dbc9a9593298006b5791152aa91b95dd6c8078659"
+    },
+    {
+      "file": "patch_flags_0015.csv",
+      "rows": 4096,
+      "sha256": "9734d2de9ed503be24a3756f7fa566fdfb715d371a95a5bd9580b6842b435229"
+    },
+    {
+      "file": "patch_flags_0016.csv",
+      "rows": 1538,
+      "sha256": "c6f8687aba7b998d5a3d0cce905ddd2b344fc2af84c9075fdb383264681af138"
+    }
+  ],
+  "patch_is_null_count": 0,
+  "patch_is_null_definition": "model_patch is null in upstream Parquet.",
+  "patch_phase_this_run_downloaded_bytes": 124831214,
+  "patch_phase_this_run_network_retries": 0,
+  "projection": [
+    "trajectory_id",
+    "instance_id",
+    "repo",
+    "resolved",
+    "exit_status",
+    "trajectory.list.element.role"
+  ],
+  "pyarrow_version": "26.0.1",
+  "repositories": 1823,
+  "resolved": 32161,
+  "sampling_note": "All released attempts; source collection is not a randomized attempt allocation.",
+  "source_commit": "35455389ab51bf5e2306bfd436ef72d0f98bf882",
+  "source_file_bytes": 2079503354,
+  "source_schema_leaves": [
+    "trajectory_id",
+    "instance_id",
+    "repo",
+    "trajectory.list.element.content",
+    "trajectory.list.element.name",
+    "trajectory.list.element.role",
+    "trajectory.list.element.tool_call_id",
+    "trajectory.list.element.tool_calls.list.element.function.arguments",
+    "trajectory.list.element.tool_calls.list.element.function.name",
+    "trajectory.list.element.tool_calls.list.element.id",
+    "trajectory.list.element.tool_calls.list.element.type",
+    "tools.list.element.function.description",
+    "tools.list.element.function.name",
+    "tools.list.element.function.parameters.additionalProperties",
+    "tools.list.element.function.parameters.properties.command.description",
+    "tools.list.element.function.parameters.properties.command.enum.list.element",
+    "tools.list.element.function.parameters.properties.command.type",
+    "tools.list.element.function.parameters.properties.file_text.description",
+    "tools.list.element.function.parameters.properties.file_text.type",
+    "tools.list.element.function.parameters.properties.insert_line.description",
+    "tools.list.element.function.parameters.properties.insert_line.type",
+    "tools.list.element.function.parameters.properties.is_input.description",
+    "tools.list.element.function.parameters.properties.is_input.enum.list.element",
+    "tools.list.element.function.parameters.properties.is_input.type",
+    "tools.list.element.function.parameters.properties.message.description",
+    "tools.list.element.function.parameters.properties.message.type",
+    "tools.list.element.function.parameters.properties.new_str.description",
+    "tools.list.element.function.parameters.properties.new_str.type",
+    "tools.list.element.function.parameters.properties.old_str.description",
+    "tools.list.element.function.parameters.properties.old_str.type",
+    "tools.list.element.function.parameters.properties.path.description",
+    "tools.list.element.function.parameters.properties.path.type",
+    "tools.list.element.function.parameters.properties.task_list.description",
+    "tools.list.element.function.parameters.properties.task_list.items.additionalProperties",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.id.description",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.id.type",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.notes.description",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.notes.type",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.status.description",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.status.enum.list.element",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.status.type",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.title.description",
+    "tools.list.element.function.parameters.properties.task_list.items.properties.title.type",
+    "tools.list.element.function.parameters.properties.task_list.items.required.list.element",
+    "tools.list.element.function.parameters.properties.task_list.items.type",
+    "tools.list.element.function.parameters.properties.task_list.type",
+    "tools.list.element.function.parameters.properties.thought.description",
+    "tools.list.element.function.parameters.properties.thought.type",
+    "tools.list.element.function.parameters.properties.timeout.description",
+    "tools.list.element.function.parameters.properties.timeout.type",
+    "tools.list.element.function.parameters.properties.view_range.description",
+    "tools.list.element.function.parameters.properties.view_range.items.type",
+    "tools.list.element.function.parameters.properties.view_range.type",
+    "tools.list.element.function.parameters.required.list.element",
+    "tools.list.element.function.parameters.type",
+    "tools.list.element.type",
+    "model_patch",
+    "exit_status",
+    "resolved",
+    "gen_tests_correct",
+    "pred_passes_gen_tests"
+  ],
+  "source_url": "https://huggingface.co/datasets/nebius/SWE-rebench-openhands-trajectories/resolve/35455389ab51bf5e2306bfd436ef72d0f98bf882/trajectories.parquet",
+  "this_run_downloaded_bytes": 2975825,
+  "this_run_network_retries": 0,
+  "threads": 2,
+  "upstream_hash_note": "Full 2.08GB file deliberately not downloaded; identity pinned by commit and upstream LFS pointer. Each transferred range validated by length/Content-Range and SHA-256 recorded.",
+  "upstream_hash_verified": false,
+  "upstream_lfs_sha256": "14048dd1fcd22ce094b6e85f8a38f223a9ef1327031aaaad052804870212efa1"
+}

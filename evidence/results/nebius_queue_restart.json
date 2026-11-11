@@ -1,0 +1,879 @@
+{
+  "source": "nebius/SWE-agent-trajectories, swe-agent-llama-70b",
+  "cost": "trajectory message count (proxy, not calls/tokens/seconds)",
+  "split": "SHA-256(instance_id + ':nebius-queue') < 128 for training",
+  "attempts_per_issue": 3,
+  "train_issues": 1701,
+  "heldout_issues": 1803,
+  "category_min_train_issues": 10,
+  "categories": 13,
+  "replicates": 150,
+  "train_fresh_per_1000_messages": {
+    "pydicom__pydicom": 1.557,
+    "PyCQA__pyflakes": 1.366,
+    "tobymao__sqlglot": 0.575,
+    "Textualize__textual": 3.32,
+    "oasis-open__cti-python-stix2": 3.003,
+    "pydantic__pydantic": 1.458,
+    "planetlabs__planet-client-python": 3.079,
+    "PyCQA__flake8-bugbear": 0.895,
+    "pvlib__pvlib-python": 1.088,
+    "iterative__dvc": 0.393,
+    "sqlfluff__sqlfluff": 1.71,
+    "asottile__pyupgrade": 1.517,
+    "other": 1.963,
+    "__global__": 1.7
+  },
+  "train_retry_global_per_1000_messages": {
+    "1": 0.632,
+    "2": 0.341
+  },
+  "budgets": {
+    "0.3": {
+      "plain_breadth": {
+        "solved_mean": 166.53,
+        "spent_messages_mean": 93181.2,
+        "early_restarts_mean": 0.0
+      },
+      "ranked_breadth": {
+        "solved_mean": 181.62,
+        "spent_messages_mean": 93145.9,
+        "early_restarts_mean": 0.0
+      },
+      "deferred_rate": {
+        "solved_mean": 181.62,
+        "spent_messages_mean": 93145.9,
+        "early_restarts_mean": 0.0,
+        "minus_ranked_breadth": {
+          "mean": 0.0,
+          "paired_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "adaptive": {
+        "solved_mean": 183.98,
+        "spent_messages_mean": 93202.7,
+        "early_restarts_mean": 61.18,
+        "minus_plain_breadth": {
+          "mean": 17.45,
+          "paired_95": [
+            7.0,
+            27.28
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 2.36,
+          "paired_95": [
+            -2.0,
+            8.0
+          ]
+        },
+        "minus_deferred_rate": {
+          "mean": 2.36,
+          "paired_95": [
+            -2.0,
+            8.0
+          ]
+        }
+      }
+    },
+    "0.4": {
+      "plain_breadth": {
+        "solved_mean": 197.77,
+        "spent_messages_mean": 124256.1,
+        "early_restarts_mean": 0.0
+      },
+      "ranked_breadth": {
+        "solved_mean": 208.53,
+        "spent_messages_mean": 124266.0,
+        "early_restarts_mean": 0.0
+      },
+      "deferred_rate": {
+        "solved_mean": 208.53,
+        "spent_messages_mean": 124266.0,
+        "early_restarts_mean": 0.0,
+        "minus_ranked_breadth": {
+          "mean": 0.0,
+          "paired_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "adaptive": {
+        "solved_mean": 215.59,
+        "spent_messages_mean": 124271.2,
+        "early_restarts_mean": 678.47,
+        "minus_plain_breadth": {
+          "mean": 17.83,
+          "paired_95": [
+            7.0,
+            29.28
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 7.06,
+          "paired_95": [
+            -0.27,
+            14.0
+          ]
+        },
+        "minus_deferred_rate": {
+          "mean": 7.06,
+          "paired_95": [
+            -0.27,
+            14.0
+          ]
+        }
+      }
+    },
+    "0.5": {
+      "plain_breadth": {
+        "solved_mean": 219.14,
+        "spent_messages_mean": 155336.4,
+        "early_restarts_mean": 0.0
+      },
+      "ranked_breadth": {
+        "solved_mean": 232.94,
+        "spent_messages_mean": 155344.3,
+        "early_restarts_mean": 0.0
+      },
+      "deferred_rate": {
+        "solved_mean": 233.28,
+        "spent_messages_mean": 155339.9,
+        "early_restarts_mean": 0.0,
+        "minus_ranked_breadth": {
+          "mean": 0.34,
+          "paired_95": [
+            -2.0,
+            4.0
+          ]
+        }
+      },
+      "adaptive": {
+        "solved_mean": 236.39,
+        "spent_messages_mean": 155310.6,
+        "early_restarts_mean": 1129.42,
+        "minus_plain_breadth": {
+          "mean": 17.25,
+          "paired_95": [
+            5.0,
+            30.28
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 3.45,
+          "paired_95": [
+            -3.0,
+            10.0
+          ]
+        },
+        "minus_deferred_rate": {
+          "mean": 3.11,
+          "paired_95": [
+            -3.0,
+            10.0
+          ]
+        }
+      }
+    }
+  },
+  "curve": {
+    "fractions": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75
+    ],
+    "replicates": 150,
+    "solved_mean": {
+      "plain_breadth": [
+        27.83,
+        56.97,
+        84.87,
+        112.63,
+        140.69,
+        168.34,
+        191.01,
+        201.09,
+        211.83,
+        222.11,
+        232.39,
+        242.83,
+        252.82,
+        258.83,
+        264.45
+      ],
+      "ranked_breadth": [
+        33.44,
+        65.9,
+        97.93,
+        129.04,
+        160.63,
+        183.79,
+        193.2,
+        211.2,
+        223.71,
+        235.57,
+        242.95,
+        248.93,
+        254.05,
+        263.67,
+        272.13
+      ],
+      "deferred_rate": [
+        33.44,
+        65.9,
+        97.93,
+        129.04,
+        160.63,
+        183.79,
+        193.2,
+        211.2,
+        223.71,
+        235.87,
+        244.85,
+        250.82,
+        258.55,
+        268.01,
+        274.13
+      ],
+      "adaptive": [
+        33.44,
+        65.9,
+        97.93,
+        129.04,
+        160.62,
+        185.95,
+        204.05,
+        217.92,
+        229.34,
+        239.87,
+        244.85,
+        250.82,
+        258.55,
+        268.01,
+        274.13
+      ]
+    },
+    "early_restarts_mean": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.03,
+      54.33,
+      377.49,
+      668.91,
+      934.55,
+      1127.48,
+      1135.93,
+      1135.93,
+      1135.93,
+      1135.93,
+      1135.93
+    ],
+    "adaptive_minus_deferred_rate": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.01,
+        2.16,
+        10.85,
+        6.72,
+        5.63,
+        4.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.27,
+        2.72,
+        -1.0,
+        -1.27,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        8.0,
+        20.0,
+        14.0,
+        13.28,
+        10.28,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "deferred_rate_minus_ranked_breadth": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.31,
+        1.9,
+        1.89,
+        4.5,
+        4.34,
+        1.99
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        -2.28,
+        -3.0,
+        -1.55,
+        -1.0,
+        -3.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.0,
+        7.0,
+        8.0,
+        10.28,
+        10.0,
+        6.28
+      ]
+    },
+    "adaptive_minus_ranked_breadth": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.01,
+        2.16,
+        10.85,
+        6.72,
+        5.63,
+        4.31,
+        1.9,
+        1.89,
+        4.5,
+        4.34,
+        1.99
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.27,
+        2.72,
+        -1.0,
+        -1.27,
+        -1.0,
+        -2.28,
+        -3.0,
+        -1.55,
+        -1.0,
+        -3.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        8.0,
+        20.0,
+        14.0,
+        13.28,
+        11.0,
+        7.0,
+        8.0,
+        10.28,
+        10.0,
+        6.28
+      ]
+    }
+  },
+  "decomposition": {
+    "0.3": {
+      "adaptive_only_restart": {
+        "attempts": 54.34,
+        "solved": 3.31,
+        "by_category": {
+          "Textualize__textual": {
+            "attempts": 3.59,
+            "solved": 0.21
+          },
+          "asottile__pyupgrade": {
+            "attempts": 7.05,
+            "solved": 0.08
+          },
+          "oasis-open__cti-python-stix2": {
+            "attempts": 2.27,
+            "solved": 0.17
+          },
+          "other": {
+            "attempts": 24.16,
+            "solved": 1.41
+          },
+          "pydantic__pydantic": {
+            "attempts": 17.27,
+            "solved": 1.44
+          }
+        }
+      },
+      "deferred_rate_only_fresh": {
+        "attempts": 39.97,
+        "solved": 1.15,
+        "by_category": {
+          "PyCQA__flake8-bugbear": {
+            "attempts": 3.51,
+            "solved": 0.39
+          },
+          "PyCQA__pyflakes": {
+            "attempts": 0.06,
+            "solved": 0.0
+          },
+          "iterative__dvc": {
+            "attempts": 11.31,
+            "solved": 0.33
+          },
+          "pvlib__pvlib-python": {
+            "attempts": 1.79,
+            "solved": 0.11
+          },
+          "pydantic__pydantic": {
+            "attempts": 0.11,
+            "solved": 0.01
+          },
+          "tobymao__sqlglot": {
+            "attempts": 23.19,
+            "solved": 0.31
+          }
+        }
+      }
+    },
+    "0.4": {
+      "adaptive_only_restart": {
+        "attempts": 237.1,
+        "solved": 10.73,
+        "by_category": {
+          "asottile__pyupgrade": {
+            "attempts": 7.23,
+            "solved": 0.09
+          },
+          "other": {
+            "attempts": 226.47,
+            "solved": 10.63
+          },
+          "planetlabs__planet-client-python": {
+            "attempts": 0.95,
+            "solved": 0.0
+          },
+          "pvlib__pvlib-python": {
+            "attempts": 2.45,
+            "solved": 0.01
+          }
+        }
+      },
+      "deferred_rate_only_fresh": {
+        "attempts": 156.91,
+        "solved": 4.0,
+        "by_category": {
+          "iterative__dvc": {
+            "attempts": 125.63,
+            "solved": 3.6
+          },
+          "tobymao__sqlglot": {
+            "attempts": 31.28,
+            "solved": 0.4
+          }
+        }
+      }
+    },
+    "0.5": {
+      "adaptive_only_restart": {
+        "attempts": 149.59,
+        "solved": 6.99,
+        "by_category": {
+          "PyCQA__flake8-bugbear": {
+            "attempts": 1.75,
+            "solved": 0.21
+          },
+          "PyCQA__pyflakes": {
+            "attempts": 1.49,
+            "solved": 0.17
+          },
+          "Textualize__textual": {
+            "attempts": 5.8,
+            "solved": 0.19
+          },
+          "oasis-open__cti-python-stix2": {
+            "attempts": 12.35,
+            "solved": 1.24
+          },
+          "other": {
+            "attempts": 1.83,
+            "solved": 0.09
+          },
+          "planetlabs__planet-client-python": {
+            "attempts": 7.03,
+            "solved": 0.0
+          },
+          "pvlib__pvlib-python": {
+            "attempts": 10.16,
+            "solved": 0.03
+          },
+          "pydantic__pydantic": {
+            "attempts": 82.34,
+            "solved": 4.17
+          },
+          "pydicom__pydicom": {
+            "attempts": 5.85,
+            "solved": 0.17
+          },
+          "sqlfluff__sqlfluff": {
+            "attempts": 8.58,
+            "solved": 0.66
+          },
+          "tobymao__sqlglot": {
+            "attempts": 12.41,
+            "solved": 0.06
+          }
+        }
+      },
+      "deferred_rate_only_fresh": {
+        "attempts": 104.52,
+        "solved": 3.0,
+        "by_category": {
+          "iterative__dvc": {
+            "attempts": 104.23,
+            "solved": 3.0
+          },
+          "tobymao__sqlglot": {
+            "attempts": 0.29,
+            "solved": 0.0
+          }
+        }
+      }
+    }
+  },
+  "train_curve": {
+    "fractions": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75
+    ],
+    "replicates": 150,
+    "solved_mean": {
+      "plain_breadth": [
+        25.07,
+        51.51,
+        76.65,
+        101.86,
+        126.86,
+        151.92,
+        171.14,
+        180.72,
+        190.2,
+        199.27,
+        208.73,
+        218.56,
+        227.87,
+        233.63,
+        238.65
+      ],
+      "ranked_breadth": [
+        33.33,
+        62.59,
+        90.89,
+        119.06,
+        146.41,
+        165.12,
+        174.29,
+        190.01,
+        201.63,
+        212.58,
+        218.27,
+        224.03,
+        228.75,
+        236.62,
+        244.89
+      ],
+      "deferred_rate": [
+        33.33,
+        62.59,
+        90.89,
+        119.06,
+        146.41,
+        165.12,
+        174.29,
+        190.01,
+        201.63,
+        212.93,
+        219.69,
+        225.18,
+        232.12,
+        240.59,
+        247.09
+      ],
+      "adaptive": [
+        33.33,
+        62.59,
+        90.89,
+        119.06,
+        146.51,
+        169.5,
+        185.13,
+        196.3,
+        207.59,
+        215.1,
+        219.69,
+        225.18,
+        232.12,
+        240.59,
+        247.09
+      ]
+    },
+    "early_restarts_mean": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.27,
+      104.95,
+      417.93,
+      670.77,
+      918.03,
+      1084.7,
+      1095.5,
+      1095.5,
+      1095.5,
+      1095.5,
+      1095.5
+    ],
+    "adaptive_minus_deferred_rate": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        4.38,
+        10.84,
+        6.29,
+        5.96,
+        2.17,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        -0.27,
+        3.0,
+        -1.0,
+        -1.0,
+        -4.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        11.0,
+        21.28,
+        16.28,
+        14.0,
+        8.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "deferred_rate_minus_ranked_breadth": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.35,
+        1.42,
+        1.15,
+        3.37,
+        3.97,
+        2.2
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -2.28,
+        -3.0,
+        -3.0,
+        -1.0,
+        -1.0,
+        -3.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4.0,
+        5.0,
+        5.0,
+        8.28,
+        9.28,
+        9.0
+      ]
+    },
+    "adaptive_minus_ranked_breadth": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.1,
+        4.38,
+        10.84,
+        6.29,
+        5.96,
+        2.52,
+        1.42,
+        1.15,
+        3.37,
+        3.97,
+        2.2
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        -0.27,
+        3.0,
+        -1.0,
+        -1.0,
+        -4.0,
+        -3.0,
+        -3.0,
+        -1.0,
+        -1.0,
+        -3.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        11.0,
+        21.28,
+        16.28,
+        14.0,
+        8.0,
+        5.0,
+        5.0,
+        8.28,
+        9.28,
+        9.0
+      ]
+    }
+  }
+}

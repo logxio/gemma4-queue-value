@@ -1,0 +1,26 @@
+{
+  "cached_content": "trajectory_id and Boolean flags only; no patch text",
+  "download_ranges": [
+    {
+      "bytes": 87000,
+      "sha256": "c186a9896efd8794a7976eca67743f0d30e9235fddfc8638498d8c0d1b38e304",
+      "start": 1272404412,
+      "stop_exclusive": 1272491412
+    },
+    {
+      "bytes": 7574039,
+      "sha256": "6dabe9a584a0916781580468368b91f0c808a293846f476d3f0700b9f19a2679",
+      "start": 1391654576,
+      "stop_exclusive": 1399228615
+    }
+  ],
+  "network_retries": 0,
+  "projection": [
+    "trajectory_id",
+    "model_patch"
+  ],
+  "row_group": 10,
+  "rows": 4096,
+  "sha256": "6aec7180fc50f7ca3257baa53c255b509ec9854af2a4368a04be86454d651be7",
+  "source_commit": "35455389ab51bf5e2306bfd436ef72d0f98bf882"
+}

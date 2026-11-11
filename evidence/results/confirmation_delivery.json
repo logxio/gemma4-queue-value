@@ -1,0 +1,248 @@
+{
+  "status": "complete",
+  "increment": "New external data: 67074 public OpenHands attempts; existing Gemma traces audited without new GPU runs.",
+  "local_evidence": {
+    "official_local_rmse": null,
+    "rmse_reason": "No paired official submissions were made for this statistical confirmation.",
+    "probabilities": {
+      "p": {
+        "point": 0.4757621302491274,
+        "mean": 0.47584635760241556,
+        "ci95": [
+          0.46455363367348546,
+          0.48722138057142117
+        ]
+      },
+      "q": {
+        "point": 0.09637490765692379,
+        "mean": 0.09627247490262578,
+        "ci95": [
+          0.0915894149910236,
+          0.10135201997812554
+        ]
+      },
+      "q_over_p": {
+        "point": 0.20256952272863368,
+        "mean": 0.20231610987956974,
+        "ci95": [
+          0.19378049108498588,
+          0.21138674112463496
+        ]
+      },
+      "icc": {
+        "point": 0.7974304772713663,
+        "mean": 0.7976838901204303,
+        "ci95": [
+          0.788613258875365,
+          0.8062195089150139
+        ]
+      }
+    },
+    "assistant_calls_budget_0.3": {
+      "plain_breadth_minus_depth_first": {
+        "mean": 600.261,
+        "ci95": [
+          551.0,
+          650.025
+        ]
+      },
+      "adaptive_minus_plain_breadth": {
+        "mean": 68.052,
+        "ci95": [
+          46.0,
+          93.0
+        ]
+      },
+      "adaptive_minus_ranked_breadth": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "adaptive_minus_deferred_rate": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "deferred_rate_minus_ranked_breadth": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "short_nonempty_first_minus_long_empty_first": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "numeric27b_adaptive_minus_numeric27b_deferred": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "numeric27b_adaptive_minus_plain_breadth": {
+        "mean": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "adaptive_minus_numeric27b_adaptive": {
+        "mean": 68.052,
+        "ci95": [
+          46.0,
+          93.0
+        ]
+      }
+    },
+    "queue_replay_seconds": 280.49518329207785
+  },
+  "official_gain": 0,
+  "official_gain_status": "Not officially evaluated; zero counted gain",
+  "notebook_execution": {
+    "command": [
+      "/private/tmp/gemma-paper-confirm-venv/bin/python",
+      "-m",
+      "nbconvert",
+      "--to",
+      "notebook",
+      "--execute",
+      "--inplace",
+      "--ExecutePreprocessor.timeout=60",
+      "paper/reproduce.ipynb"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.911950874957256,
+    "kernel": {
+      "elapsed_seconds": 0.6264746249653399,
+      "kernel_peak_rss_bytes": 196886528,
+      "model_configurations": 6,
+      "attempts_total": 162506,
+      "checks": "passed"
+    },
+    "code_cells_executed": 9,
+    "error_outputs": 0,
+    "notebook_sha256": "9f9920a5261695556e06e1ef9178a0c9ea7cd0781cc4436995e6bae5abce37e7",
+    "versions": {
+      "numpy": "2.5.3",
+      "pandas": "3.1.0",
+      "pyarrow": "26.0.1",
+      "duckdb": "2.0.0",
+      "nbconvert": "7.17.2",
+      "ipykernel": "7.4.0"
+    },
+    "scope": "Offline attempt-level probabilities and task bootstrap; source-hash checks; queue statistics recomputed from saved paired scheduling draws; redacted Gemma table and event validation. Full scheduling draw generation is a separate build."
+  },
+  "material_reconciliations": {
+    "model_configurations": 6,
+    "trajectories": 162506,
+    "successful_edit_error_attempts": 21,
+    "failed_edit_error_attempts": 76,
+    "schema_rejected_calls": 1988,
+    "reference_failures": 53,
+    "failures_with_named_missing_modules": 23,
+    "exact_same_task_repeat_comparison": {
+      "exact_success_flagged_attempts": 0,
+      "exact_failure_flagged_attempts": 9,
+      "near_success_flagged_attempts": 2,
+      "near_failure_flagged_attempts": 9
+    },
+    "causal_schema_wallclock_seconds": null,
+    "schema_budget_counter_exclusion_proven": false,
+    "observed_run_cap_seconds": 600,
+    "unobserved_60minute_results": "Explicit sensitivity scenarios only",
+    "finite_queue_distinct_new_issue_gain": 0
+  },
+  "scope": "Only assigned analysis, evidence/results, paper/reproduce.ipynb changed by this lane; no paper/writeup.md or figures edits.",
+  "artifacts": {
+    "analysis/openhands_attempt_costs.py": {
+      "bytes": 19830,
+      "sha256": "68e722730198eb024c1d6f38c3fe26c6ac5c65d5d0b6b327672a73ca20e5cf60"
+    },
+    "analysis/openhands_queue_restart.py": {
+      "bytes": 15600,
+      "sha256": "34e694cf94d8e2d4b5f47bda1933ea2857577e16e92910a595986e1fb5841914"
+    },
+    "analysis/gemma4_sandbox_and_schema_audit.py": {
+      "bytes": 25774,
+      "sha256": "45b677ac31287534391c232cac1eac047b972041abf1b40e27461ceaf0eb280c"
+    },
+    "analysis/reproduce_confirmation.py": {
+      "bytes": 10769,
+      "sha256": "070beb6d11ae96daaaaaa88ee168eee4b7cf29da4b87b03d853006ca4d4a160c"
+    },
+    "analysis/execute_reproduce_notebook.py": {
+      "bytes": 2189,
+      "sha256": "e299091ce59ddb096b4d686cee8aaca24693e9d51ba20c219b8fc3971c418bf4"
+    },
+    "analysis/requirements-confirmation.txt": {
+      "bytes": 166,
+      "sha256": "681e0b2725a738aa1c1720a59cb8b4ae8184b7a74cf4893ffb03e7778ccdfd4d"
+    },
+    "analysis/test_openhands_queue_restart.py": {
+      "bytes": 2543,
+      "sha256": "381d4f5700c61d6b7ff90e3ff28349a0fc4ae7a3f0e8ef3616291d7825e6fbac"
+    },
+    "evidence/results/openhands_attempt_costs.csv": {
+      "bytes": 8654121,
+      "sha256": "e2bdc4af13277fb6869fdb31900d39e63f4170594c0e21e726d36eac3a9e5ba5"
+    },
+    "evidence/results/openhands_attempt_costs_summary.json": {
+      "bytes": 12233,
+      "sha256": "f9ebc6ce74dd67ee47725fa7caa6dec9030ba201c11895fd7944e998665088c1"
+    },
+    "evidence/results/openhands_queue_restart.json": {
+      "bytes": 92887,
+      "sha256": "8317385d69374b0df8a689121a5627db5b31650d98e440cf0db3fcf65ef404ba"
+    },
+    "evidence/results/openhands_queue_restart_replicates.npz": {
+      "bytes": 396090,
+      "sha256": "a9cf5124e039bb830a9e1b49b34bf82efa14730734b2e9508c019a4f2a0a1a88"
+    },
+    "evidence/results/gemma4_sandbox_and_schema_audit.json": {
+      "bytes": 82571,
+      "sha256": "97030ebdc002d89a97ec24c75e9689f07504306c4f54f908c165008a9e5411ff"
+    },
+    "evidence/results/gemma4_sandbox_and_schema_audit_attempts.csv": {
+      "bytes": 31298,
+      "sha256": "99c21cb720d759a981c48b611a7489cdb4af5f3a25e5984d9ced99fb7924eb37"
+    },
+    "evidence/results/gemma4_sandbox_and_schema_audit_events.csv": {
+      "bytes": 273281,
+      "sha256": "e2a205de6d93590748cf7ce0245655173d0a62573ae07a8fd318566e26c8f6d2"
+    },
+    "evidence/results/gemma4_sandbox_and_schema_audit_reference.csv": {
+      "bytes": 3513,
+      "sha256": "1f74e5c94f6943ce89c8d811b4d84de774b00d601f1aac7eedb11ad3a4704bd2"
+    },
+    "evidence/results/gemma4_sandbox_and_schema_audit_paired_attempts.csv": {
+      "bytes": 5754,
+      "sha256": "d57803a4210f94a7310c4442f8054e6968b4007761b3fabf0ed06e4ad385b75d"
+    },
+    "evidence/results/gemma4_sandbox_and_schema_audit_queue_draws.csv": {
+      "bytes": 512540,
+      "sha256": "36ce90bb684fa9a48fa86734de8a9f530d753a069137570ef3de955b83537f60"
+    },
+    "paper/reproduce.ipynb": {
+      "bytes": 66351,
+      "sha256": "9f9920a5261695556e06e1ef9178a0c9ea7cd0781cc4436995e6bae5abce37e7"
+    },
+    "evidence/results/notebook_execution.json": {
+      "bytes": 1072,
+      "sha256": "7b8d42b8a11100eeac0359dd40f53b2cd216cc3fac2777b9c3e816926554e92a"
+    }
+  },
+  "jobs": [
+    "openhands-queue-confirmation-07f4163f",
+    "gemma-sandbox-schema-paired-e8902b5e",
+    "gemma-confirmation-notebook-v2-3a535de2"
+  ]
+}

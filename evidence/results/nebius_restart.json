@@ -1,0 +1,161 @@
+{
+  "source": "nebius/SWE-agent-trajectories, columns instance_id, model_name, target",
+  "models": {
+    "swe-agent-llama-70b": {
+      "issues": 3581,
+      "attempts": 74782,
+      "median_attempts_per_issue": 13,
+      "issues_never_all_mixed": [
+        2750,
+        799,
+        32
+      ],
+      "p": 0.1667,
+      "q": 0.1045,
+      "q_over_p": 0.6268,
+      "icc": 0.5162,
+      "interval_95": {
+        "p": [
+          0.1543,
+          0.1799
+        ],
+        "q": [
+          0.0957,
+          0.1141
+        ],
+        "q_over_p": [
+          0.5953,
+          0.6576
+        ],
+        "icc": [
+          0.4942,
+          0.5373
+        ]
+      },
+      "three_per_issue": {
+        "issues": 3504,
+        "p": 0.101,
+        "q": 0.0398,
+        "q_over_p": 0.3944,
+        "interval_95": {
+          "p": [
+            0.0938,
+            0.1083
+          ],
+          "q": [
+            0.0364,
+            0.0428
+          ],
+          "q_over_p": [
+            0.3697,
+            0.4177
+          ]
+        }
+      }
+    },
+    "swe-agent-llama-8b": {
+      "issues": 528,
+      "attempts": 4053,
+      "median_attempts_per_issue": 5,
+      "issues_never_all_mixed": [
+        441,
+        82,
+        5
+      ],
+      "p": 0.1515,
+      "q": 0.1584,
+      "q_over_p": 1.0458,
+      "icc": 0.4331,
+      "interval_95": {
+        "p": [
+          0.1134,
+          0.1893
+        ],
+        "q": [
+          0.1115,
+          0.2104
+        ],
+        "q_over_p": [
+          0.8519,
+          1.2795
+        ],
+        "icc": [
+          0.3312,
+          0.5266
+        ]
+      },
+      "three_per_issue": {
+        "issues": 526,
+        "p": 0.0738,
+        "q": 0.0363,
+        "q_over_p": 0.492,
+        "interval_95": {
+          "p": [
+            0.0572,
+            0.0943
+          ],
+          "q": [
+            0.0284,
+            0.0453
+          ],
+          "q_over_p": [
+            0.4025,
+            0.5777
+          ]
+        }
+      }
+    },
+    "swe-agent-llama-405b": {
+      "issues": 100,
+      "attempts": 1191,
+      "median_attempts_per_issue": 10,
+      "issues_never_all_mixed": [
+        52,
+        46,
+        2
+      ],
+      "p": 0.2586,
+      "q": 0.1616,
+      "q_over_p": 0.6248,
+      "icc": 0.4415,
+      "interval_95": {
+        "p": [
+          0.2037,
+          0.3165
+        ],
+        "q": [
+          0.1204,
+          0.202
+        ],
+        "q_over_p": [
+          0.5286,
+          0.7236
+        ],
+        "icc": [
+          0.3535,
+          0.5234
+        ]
+      },
+      "three_per_issue": {
+        "issues": 100,
+        "p": 0.2443,
+        "q": 0.1306,
+        "q_over_p": 0.5346,
+        "interval_95": {
+          "p": [
+            0.1867,
+            0.3087
+          ],
+          "q": [
+            0.0933,
+            0.1704
+          ],
+          "q_over_p": [
+            0.4397,
+            0.6178
+          ]
+        }
+      }
+    }
+  }
+}

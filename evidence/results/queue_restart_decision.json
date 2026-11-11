@@ -1,0 +1,948 @@
+{
+  "source": "Qwen3.8-27B OpenHands, 3 complete rollouts per issue",
+  "split": "SHA-256(instance_id + ':schedule') < 128 for training",
+  "train_issues": 2592,
+  "heldout_issues": 2464,
+  "replicates": 250,
+  "fixed_prior_calls": 2000.0,
+  "train_fresh_per_1000_calls": {
+    "__global__": 8.709,
+    "c": 7.341,
+    "elixir": 12.031,
+    "go": 10.174,
+    "java": 3.586,
+    "js": 12.532,
+    "kotlin": 1.992,
+    "php": 8.895,
+    "python": 9.403,
+    "r": 9.536,
+    "rust": 5.324,
+    "scala": 3.361,
+    "swift": 10.791,
+    "ts": 10.629
+  },
+  "train_restart_global_per_1000_calls": {
+    "1": 3.429,
+    "2": 2.066
+  },
+  "failure_call_tercile_edges": [
+    50.0,
+    81.0
+  ],
+  "budgets": {
+    "0.3": {
+      "plain_breadth": {
+        "solved_mean": 1313.97,
+        "spent_calls_mean": 152196.5,
+        "early_restarts_mean": 0.0
+      },
+      "ranked_breadth": {
+        "solved_mean": 1418.43,
+        "spent_calls_mean": 152225.9,
+        "early_restarts_mean": 0.0,
+        "minus_plain": {
+          "mean": 104.46,
+          "paired_95": [
+            70.68,
+            144.78
+          ]
+        }
+      },
+      "deferred_rate": {
+        "solved_mean": 1418.43,
+        "spent_calls_mean": 152225.9,
+        "early_restarts_mean": 0.0,
+        "minus_plain": {
+          "mean": 104.46,
+          "paired_95": [
+            70.68,
+            144.78
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 0.0,
+          "paired_95": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "adaptive": {
+        "solved_mean": 1449.26,
+        "spent_calls_mean": 152209.2,
+        "early_restarts_mean": 280.56,
+        "minus_plain": {
+          "mean": 135.29,
+          "paired_95": [
+            90.22,
+            181.78
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 30.83,
+          "paired_95": [
+            5.22,
+            56.78
+          ]
+        },
+        "minus_deferred_rate": {
+          "mean": 30.83,
+          "paired_95": [
+            5.22,
+            56.78
+          ]
+        }
+      }
+    },
+    "0.4": {
+      "plain_breadth": {
+        "solved_mean": 1577.22,
+        "spent_calls_mean": 202951.1,
+        "early_restarts_mean": 0.0
+      },
+      "ranked_breadth": {
+        "solved_mean": 1641.76,
+        "spent_calls_mean": 202963.2,
+        "early_restarts_mean": 0.0,
+        "minus_plain": {
+          "mean": 64.54,
+          "paired_95": [
+            43.0,
+            85.0
+          ]
+        }
+      },
+      "deferred_rate": {
+        "solved_mean": 1641.97,
+        "spent_calls_mean": 202965.9,
+        "early_restarts_mean": 0.0,
+        "minus_plain": {
+          "mean": 64.75,
+          "paired_95": [
+            43.0,
+            84.78
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 0.22,
+          "paired_95": [
+            0.0,
+            4.78
+          ]
+        }
+      },
+      "adaptive": {
+        "solved_mean": 1660.55,
+        "spent_calls_mean": 202973.6,
+        "early_restarts_mean": 679.45,
+        "minus_plain": {
+          "mean": 83.33,
+          "paired_95": [
+            55.22,
+            110.0
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 18.79,
+          "paired_95": [
+            -1.77,
+            36.0
+          ]
+        },
+        "minus_deferred_rate": {
+          "mean": 18.58,
+          "paired_95": [
+            -1.77,
+            36.0
+          ]
+        }
+      }
+    },
+    "0.5": {
+      "plain_breadth": {
+        "solved_mean": 1744.25,
+        "spent_calls_mean": 253718.5,
+        "early_restarts_mean": 0.0
+      },
+      "ranked_breadth": {
+        "solved_mean": 1752.48,
+        "spent_calls_mean": 253706.6,
+        "early_restarts_mean": 0.0,
+        "minus_plain": {
+          "mean": 8.23,
+          "paired_95": [
+            -2.0,
+            24.1
+          ]
+        }
+      },
+      "deferred_rate": {
+        "solved_mean": 1802.18,
+        "spent_calls_mean": 253741.3,
+        "early_restarts_mean": 0.0,
+        "minus_plain": {
+          "mean": 57.94,
+          "paired_95": [
+            35.22,
+            78.78
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 49.7,
+          "paired_95": [
+            27.22,
+            72.0
+          ]
+        }
+      },
+      "adaptive": {
+        "solved_mean": 1804.8,
+        "spent_calls_mean": 253727.3,
+        "early_restarts_mean": 1186.43,
+        "minus_plain": {
+          "mean": 60.55,
+          "paired_95": [
+            37.0,
+            82.0
+          ]
+        },
+        "minus_ranked_breadth": {
+          "mean": 52.32,
+          "paired_95": [
+            28.0,
+            78.78
+          ]
+        },
+        "minus_deferred_rate": {
+          "mean": 2.62,
+          "paired_95": [
+            -4.77,
+            16.78
+          ]
+        }
+      }
+    }
+  },
+  "curve": {
+    "fractions": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75
+    ],
+    "replicates": 250,
+    "solved_mean": {
+      "plain_breadth": [
+        219.52,
+        438.67,
+        656.22,
+        874.36,
+        1093.97,
+        1313.9,
+        1487.7,
+        1575.84,
+        1663.76,
+        1744.89,
+        1797.68,
+        1848.4,
+        1855.15,
+        1855.15,
+        1855.15
+      ],
+      "ranked_breadth": [
+        278.4,
+        541.36,
+        791.33,
+        1037.98,
+        1285.89,
+        1418.1,
+        1518.33,
+        1641.18,
+        1710.57,
+        1752.26,
+        1830.69,
+        1853.64,
+        1855.15,
+        1855.15,
+        1855.15
+      ],
+      "deferred_rate": [
+        278.4,
+        541.36,
+        791.33,
+        1037.98,
+        1285.89,
+        1418.1,
+        1518.33,
+        1641.41,
+        1727.96,
+        1803.71,
+        1836.08,
+        1853.64,
+        1855.15,
+        1855.15,
+        1855.15
+      ],
+      "adaptive": [
+        278.4,
+        541.36,
+        791.33,
+        1037.98,
+        1286.12,
+        1449.5,
+        1566.57,
+        1659.1,
+        1743.5,
+        1805.24,
+        1836.08,
+        1853.64,
+        1855.15,
+        1855.15,
+        1855.15
+      ]
+    },
+    "early_restarts_mean": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.09,
+      280.29,
+      475.73,
+      679.83,
+      930.49,
+      1189.0,
+      1195.14,
+      1195.14,
+      1195.14,
+      1195.14,
+      1195.14
+    ],
+    "adaptive_minus_deferred_rate": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.24,
+        31.4,
+        48.24,
+        17.69,
+        15.54,
+        1.53,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        18.0,
+        0.23,
+        1.0,
+        -5.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        6.0,
+        52.55,
+        79.55,
+        35.78,
+        31.78,
+        14.78,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "deferred_rate_minus_ranked_breadth": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.23,
+        17.38,
+        51.45,
+        5.39,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -6.78,
+        27.22,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4.0,
+        38.78,
+        76.78,
+        22.78,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "adaptive_minus_ranked_breadth": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.24,
+        31.4,
+        48.24,
+        17.92,
+        32.92,
+        52.98,
+        5.39,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        10.0,
+        18.0,
+        0.23,
+        9.23,
+        27.22,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        6.0,
+        52.55,
+        79.55,
+        35.78,
+        57.0,
+        79.0,
+        22.78,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "decomposition": {
+    "0.3": {
+      "adaptive_only_restart": {
+        "attempts": 280.29,
+        "solved": 96.16,
+        "by_category": {
+          "go": {
+            "attempts": 60.86,
+            "solved": 22.55
+          },
+          "js": {
+            "attempts": 57.88,
+            "solved": 19.6
+          },
+          "php": {
+            "attempts": 6.38,
+            "solved": 1.93
+          },
+          "python": {
+            "attempts": 103.17,
+            "solved": 37.38
+          },
+          "r": {
+            "attempts": 1.55,
+            "solved": 0.6
+          },
+          "ts": {
+            "attempts": 50.45,
+            "solved": 14.1
+          }
+        }
+      },
+      "deferred_rate_only_fresh": {
+        "attempts": 181.69,
+        "solved": 64.75,
+        "by_category": {
+          "java": {
+            "attempts": 55.45,
+            "solved": 18.03
+          },
+          "rust": {
+            "attempts": 126.19,
+            "solved": 46.7
+          },
+          "scala": {
+            "attempts": 0.05,
+            "solved": 0.02
+          }
+        }
+      }
+    },
+    "0.4": {
+      "adaptive_only_restart": {
+        "attempts": 158.69,
+        "solved": 44.48,
+        "by_category": {
+          "c": {
+            "attempts": 2.09,
+            "solved": 0.0
+          },
+          "dart": {
+            "attempts": 0.18,
+            "solved": 0.09
+          },
+          "elixir": {
+            "attempts": 5.2,
+            "solved": 0.88
+          },
+          "go": {
+            "attempts": 127.28,
+            "solved": 36.24
+          },
+          "js": {
+            "attempts": 1.71,
+            "solved": 0.66
+          },
+          "lua": {
+            "attempts": 0.72,
+            "solved": 0.17
+          },
+          "ocaml": {
+            "attempts": 0.57,
+            "solved": 0.0
+          },
+          "php": {
+            "attempts": 17.1,
+            "solved": 5.22
+          },
+          "python": {
+            "attempts": 0.55,
+            "solved": 0.2
+          },
+          "r": {
+            "attempts": 0.08,
+            "solved": 0.01
+          },
+          "swift": {
+            "attempts": 0.19,
+            "solved": 0.08
+          },
+          "ts": {
+            "attempts": 3.02,
+            "solved": 0.93
+          }
+        }
+      },
+      "deferred_rate_only_fresh": {
+        "attempts": 134.58,
+        "solved": 26.8,
+        "by_category": {
+          "java": {
+            "attempts": 27.53,
+            "solved": 9.01
+          },
+          "kotlin": {
+            "attempts": 81.94,
+            "solved": 12.13
+          },
+          "scala": {
+            "attempts": 25.11,
+            "solved": 5.66
+          }
+        }
+      }
+    },
+    "0.5": {
+      "adaptive_only_restart": {
+        "attempts": 51.25,
+        "solved": 6.12,
+        "by_category": {
+          "dart": {
+            "attempts": 0.18,
+            "solved": 0.18
+          },
+          "js": {
+            "attempts": 4.26,
+            "solved": 0.91
+          },
+          "lua": {
+            "attempts": 1.12,
+            "solved": 0.0
+          },
+          "ocaml": {
+            "attempts": 1.21,
+            "solved": 0.0
+          },
+          "python": {
+            "attempts": 0.04,
+            "solved": 0.01
+          },
+          "rust": {
+            "attempts": 22.87,
+            "solved": 1.39
+          },
+          "scala": {
+            "attempts": 0.87,
+            "solved": 0.0
+          },
+          "swift": {
+            "attempts": 0.03,
+            "solved": 0.0
+          },
+          "ts": {
+            "attempts": 20.67,
+            "solved": 3.63
+          }
+        }
+      },
+      "deferred_rate_only_fresh": {
+        "attempts": 29.8,
+        "solved": 4.35,
+        "by_category": {
+          "kotlin": {
+            "attempts": 29.8,
+            "solved": 4.35
+          }
+        }
+      },
+      "deferred_rate_only_restart": {
+        "attempts": 4.28,
+        "solved": 0.23,
+        "by_category": {
+          "kotlin": {
+            "attempts": 4.28,
+            "solved": 0.23
+          }
+        }
+      }
+    }
+  },
+  "train_curve": {
+    "fractions": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75
+    ],
+    "replicates": 250,
+    "solved_mean": {
+      "plain_breadth": [
+        232.87,
+        464.25,
+        696.17,
+        928.1,
+        1157.64,
+        1389.09,
+        1575.04,
+        1665.24,
+        1756.81,
+        1841.67,
+        1897.11,
+        1951.4,
+        1962.21,
+        1962.21,
+        1962.21
+      ],
+      "ranked_breadth": [
+        327.74,
+        605.22,
+        872.62,
+        1121.88,
+        1369.65,
+        1507.56,
+        1603.09,
+        1738.44,
+        1806.69,
+        1850.74,
+        1930.36,
+        1959.42,
+        1962.21,
+        1962.21,
+        1962.21
+      ],
+      "deferred_rate": [
+        327.74,
+        605.22,
+        872.62,
+        1121.88,
+        1369.65,
+        1507.56,
+        1603.09,
+        1738.46,
+        1834.6,
+        1899.56,
+        1937.08,
+        1959.42,
+        1962.21,
+        1962.21,
+        1962.21
+      ],
+      "adaptive": [
+        327.74,
+        605.22,
+        872.62,
+        1121.88,
+        1369.9,
+        1539.07,
+        1670.64,
+        1766.68,
+        1844.64,
+        1901.74,
+        1937.08,
+        1959.42,
+        1962.21,
+        1962.21,
+        1962.21
+      ]
+    },
+    "early_restarts_mean": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      2.55,
+      280.8,
+      519.92,
+      707.98,
+      985.76,
+      1231.32,
+      1238.44,
+      1238.44,
+      1238.44,
+      1238.44,
+      1238.44
+    ],
+    "adaptive_minus_deferred_rate": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.26,
+        31.51,
+        67.55,
+        28.22,
+        10.04,
+        2.19,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        9.23,
+        41.22,
+        11.0,
+        -3.77,
+        -7.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4.0,
+        54.78,
+        102.0,
+        48.55,
+        23.78,
+        14.78,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "deferred_rate_minus_ranked_breadth": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.02,
+        27.92,
+        48.81,
+        6.72,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -2.0,
+        6.45,
+        26.22,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.78,
+        47.0,
+        72.55,
+        23.33,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "adaptive_minus_ranked_breadth": {
+      "mean": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.26,
+        31.51,
+        67.55,
+        28.24,
+        37.96,
+        51.0,
+        6.72,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "lo": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        9.23,
+        41.22,
+        10.23,
+        16.0,
+        25.45,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hi": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4.0,
+        54.78,
+        102.0,
+        48.55,
+        57.78,
+        78.55,
+        23.33,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  }
+}

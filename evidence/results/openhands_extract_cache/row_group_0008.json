@@ -1,0 +1,53 @@
+{
+  "download_ranges": [
+    {
+      "bytes": 86950,
+      "sha256": "4f61863d0b717a959e949a1408f89807a43a6c888c68a2f68a97907608217f5b",
+      "start": 1018287224,
+      "stop_exclusive": 1018374174
+    },
+    {
+      "bytes": 33079,
+      "sha256": "ae5e677f1e1f09b40085a9fff112c906f2e954506d0bcaa2d13e42f9cb27d76c",
+      "start": 1018374337,
+      "stop_exclusive": 1018407416
+    },
+    {
+      "bytes": 20082,
+      "sha256": "4aae1c16eb338606433f45c3e4ea76d3b7a72cf1efd8a1bf46a5d7f030893128",
+      "start": 1018407536,
+      "stop_exclusive": 1018427618
+    },
+    {
+      "bytes": 647,
+      "sha256": "76e2b3441619619d0382efb84e76c7ead9db7172ca0db578bb66777700adeedf",
+      "start": 1145689513,
+      "stop_exclusive": 1145690160
+    },
+    {
+      "bytes": 910,
+      "sha256": "2bb173e8313aa6d2b3de436115331f4dc7fffdf2707f128ea5ed17a31540a1cf",
+      "start": 1145688471,
+      "stop_exclusive": 1145689381
+    },
+    {
+      "bytes": 15033,
+      "sha256": "b16897321e5226cf328996addf47bac9d7009212343de40954928cee47548fc5",
+      "start": 1103551026,
+      "stop_exclusive": 1103566059
+    }
+  ],
+  "network_retries": 0,
+  "projection": [
+    "trajectory_id",
+    "instance_id",
+    "repo",
+    "resolved",
+    "exit_status",
+    "trajectory.list.element.role"
+  ],
+  "row_group": 8,
+  "rows": 4096,
+  "sha256": "5694d10ce431bfbe5c0f20767248f700d9c64e6a53df533931ebb2b3e7e36465",
+  "source_commit": "35455389ab51bf5e2306bfd436ef72d0f98bf882"
+}

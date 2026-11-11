@@ -1,0 +1,124 @@
+{
+  "schema": "pdf_and_notebook_verification_s2.v1",
+  "pdf_sha256": "853bf34afad05ad7b1ef761a7f0caca1bfe8e37c3dc5cb6f14eaf42d013d9d51",
+  "tex_sha256": "9426d3315b26e1d11c49d0e4ba133f4313811360017becae8e022a45e7403c21",
+  "source_sha256": {
+    "paper/writeup.md": "6b81c1b0c81551cfc535294b3b622ba8b98729a15373f0ddc981a0e9f325316d"
+  },
+  "protected_sources_unchanged_from_start": null,
+  "initial_source_sha256": null,
+  "writer_protected_source_writes": 0,
+  "source_refresh": "This execution only reads the locked manuscript and root README; protected source writes were not performed",
+  "current_manuscript_matches_build": true,
+  "build_hashes_match": true,
+  "content_sync": {
+    "missing_prose_tokens": {},
+    "extra_prose_tokens": {},
+    "missing_numeric_tokens": {},
+    "extra_numeric_tokens": {},
+    "normalization": "NFKC, line hyphenation, alphabetic hyphens, TeX macro names and page footers; images omitted from source AST",
+    "passed": true
+  },
+  "pdf": {
+    "pages": 6,
+    "words_before_references_whitespace": 2991,
+    "word_limit": 3000,
+    "within_word_limit": true,
+    "word_scope": "Title, subtitle, abstract, prose, tables and all three captions; vector figure glyphs outlined; References and page footers excluded",
+    "all_captions_before_references": true,
+    "overfull_hbox_widths_pt": [],
+    "overfull_hbox_above_3pt": 0,
+    "unresolved_question_marks": 0,
+    "em_dash_count": 0,
+    "en_dash_count": 0,
+    "cross_line_word_overlap_hits": [],
+    "overlap_threshold": "Intersection exceeds 35 percent of the smaller word box across different lines",
+    "metadata_dictionary": {},
+    "metadata_stream_present": false,
+    "raster_images": 0,
+    "last_page_fill": 0.8573158926960466,
+    "last_page_fill_minimum": 0.78,
+    "last_page_fill_maximum": 0.94,
+    "visual_review": "All six pages inspected in rendered contact sheet, final reference page inspected at full page scale",
+    "pdfinfo": "Custom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           6\nEncrypted:       no\nPage size:       595.276 x 841.89 pts (A4)\nPage rot:        0\nFile size:       987314 bytes\nOptimized:       no\nPDF version:     1.3\n",
+    "passed": true
+  },
+  "notebook": {
+    "command": [
+      "jupyter",
+      "nbconvert",
+      "--to",
+      "notebook",
+      "--execute",
+      "--inplace",
+      "--ExecutePreprocessor.timeout=60",
+      "paper/reproduce.ipynb"
+    ],
+    "returncode": 0,
+    "wall_seconds": 1.8348055419046432,
+    "kernel": {
+      "elapsed_seconds": 0.8425104999914765,
+      "table_seconds": 0.812479916960001,
+      "kernel_peak_rss_bytes": 202620928,
+      "model_configurations": 6,
+      "attempts_total": 162506,
+      "numeric_cells_checked": 158,
+      "all_numeric_cells_match": true,
+      "mismatch_count": 0,
+      "figure_returncode": 0,
+      "execution_checks": "passed",
+      "publication_checks": "passed"
+    },
+    "code_cells_executed": 7,
+    "error_outputs": 0,
+    "notebook_sha256": "9cc221bdd534eef292f2a38ad051cc5a49e96462426c24781a3634ddffa42cad",
+    "versions": {
+      "numpy": "2.5.3",
+      "pandas": "3.1.1",
+      "pyarrow": "26.0.1",
+      "duckdb": "2.0.0",
+      "nbconvert": "7.17.2",
+      "ipykernel": "7.4.0",
+      "matplotlib": "3.11.2",
+      "Pillow": "12.3.0"
+    },
+    "passed": true,
+    "scope": "Four publication tables; per-cell comparison with the locked manuscript; compact attempt and saved-draw validation; three vector figure builds and checks. Full scheduling draw generation is a separate build."
+  },
+  "tables": {
+    "numeric_cells_checked": 158,
+    "all_numeric_cells_match": true,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "missing_measurements": []
+  },
+  "figures": {
+    "checks": {
+      "fig1_persistence_and_queue_crossing": {
+        "hit_count": 0,
+        "green_px": 0,
+        "pdf_bytes": 51939
+      },
+      "fig2_gemma_xray_and_sandbox_waterline": {
+        "hit_count": 0,
+        "green_px": 0,
+        "pdf_bytes": 47295
+      },
+      "fig3_stopping_value_manifold": {
+        "hit_count": 0,
+        "green_px": 0,
+        "pdf_bytes": 152925
+      }
+    },
+    "original_hashes_match": true,
+    "embedded_hashes_match": true,
+    "passed": true
+  },
+  "layout_audit": {
+    "path": "evidence/results/layout_audit_s2.json",
+    "note": "Single-column balance not applicable; actual named log checked directly above and bound by build receipt"
+  },
+  "official_experiment_gain": 0,
+  "passed": true,
+  "status": "passed"
+}

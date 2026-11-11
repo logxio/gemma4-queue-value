@@ -1,0 +1,827 @@
+{
+ "environment": "vllm/vllm-openai:v0.19.1 image (Python 3.12) + competition wheelhouse + Dockerfile.sandbox base test tools; subprocess sandbox; checked 2026-09-29",
+ "resolved": 76,
+ "total": 129,
+ "tasks": [
+  {
+   "task": "fastapi_11194",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_11355",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_12942",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "dirty_equals"
+   ]
+  },
+  {
+   "task": "fastapi_13207",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_13537",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_13713",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "dirty_equals"
+   ]
+  },
+  {
+   "task": "fastapi_13786",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "dirty_equals"
+   ]
+  },
+  {
+   "task": "fastapi_13920",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14077",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14099",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14186",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14246",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14258",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14262",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14266",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14297",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14301",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14303",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "dirty_equals"
+   ]
+  },
+  {
+   "task": "fastapi_14306",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14349",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14356",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "dirty_equals"
+   ]
+  },
+  {
+   "task": "fastapi_14360",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "dirty_equals"
+   ]
+  },
+  {
+   "task": "fastapi_14361",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14371",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14372",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14419",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14430",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14448",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14455",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14458",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14459",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14463",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14479",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14482",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14485",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14487",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14492",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14512",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14583",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14605",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14609",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14616",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14786",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14791",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14794",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14851",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14873",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14953",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14962",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14964",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_14978",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_14986",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_15023",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_15030",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_15280",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_15588",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_15589",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_15661",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_15745",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": [
+    "inline_snapshot"
+   ]
+  },
+  {
+   "task": "fastapi_15763",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_15785",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_15800",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_5077",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_5624",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_9425",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_9555",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "fastapi_9753",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "httpx_3672",
+   "reference_patch_resolved": false,
+   "test_exit_code": 2,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_6589",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_6592",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_6629",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_6644",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_6757",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_7205",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_7309",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_7315",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_7328",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_7427",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_7433",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_7502",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "requests_7505",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_2725",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_2943",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3006",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3043",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3052",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3061",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3063",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3064",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3067",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3105",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3130",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3180",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3278",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3296",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3454",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3468",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3469",
+   "reference_patch_resolved": false,
+   "test_exit_code": 1,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3470",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3471",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3472",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3480",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3486",
+   "reference_patch_resolved": false,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3506",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3518",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3521",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3535",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3675",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3676",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3718",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3772",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3777",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3782",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3882",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3894",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3905",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3930",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3934",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3935",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3938",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3942",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3944",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_3953",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_4006",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_4070",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_4075",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_4076",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_4077",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  },
+  {
+   "task": "rich_4079",
+   "reference_patch_resolved": true,
+   "test_exit_code": 0,
+   "missing_modules": []
+  }
+ ]
+}
