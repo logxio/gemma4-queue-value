@@ -1,9 +1,9 @@
 # Reproduce the publication tables, figures, and PDF
 
-Open [the notebook](../paper/reproduce.ipynb) and run all cells with Python 3.13. Install the packages in `requirements-confirmation.txt`, plus Matplotlib and Pillow for the vector plates. The notebook locates the repository from the current working directory.
+Open [the notebook](../paper/reproduce.ipynb) and run all cells with Python 3.10+. Install the packages in `requirements-confirmation.txt`, plus Matplotlib and Pillow for the vector plates. The notebook locates the repository from the current working directory.
 
 ```sh
-python3.13 -m pip install -r analysis/requirements-confirmation.txt matplotlib Pillow
+python3 -m pip install -r analysis/requirements-confirmation.txt matplotlib Pillow
 jupyter nbconvert --to notebook --execute --inplace paper/reproduce.ipynb
 ```
 
