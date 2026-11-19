@@ -1599,6 +1599,6 @@
     "nebius_restart.json": "e27508586a127a44f88fd2266b123091aeccf47edfdc37abdf4d762005767ca4",
     "queue_restart_decision.json": "a75159d0dcfcb9716bfa210d6dee1c392eb0b7937ab1dc2c077e2e2d8a288948"
   },
-  "elapsed_seconds": 0.12389095802791417,
+  "elapsed_seconds": 0.6880379590002121,
   "scope": "Frozen aggregate evidence and compact attempt data; bootstrap Llama equal-issue rows from CSV; no model calls or new scheduling draws"
 }

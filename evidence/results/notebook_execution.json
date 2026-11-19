@@ -1,20 +1,15 @@
 {
   "command": [
-    "jupyter",
-    "nbconvert",
-    "--to",
-    "notebook",
-    "--execute",
-    "--inplace",
-    "--ExecutePreprocessor.timeout=60",
-    "paper/reproduce.ipynb"
+    "/usr/local/bin/python",
+    "analysis/execute_reproduce_notebook.py"
   ],
+  "execution_mode": "in-process IPython; every code cell executed in notebook order",
   "returncode": 0,
-  "wall_seconds": 1.8348055419046432,
+  "wall_seconds": 5.007080460999987,
   "kernel": {
-    "elapsed_seconds": 0.8425104999914765,
-    "table_seconds": 0.812479916960001,
-    "kernel_peak_rss_bytes": 202620928,
+    "elapsed_seconds": 4.975833126999987,
+    "table_seconds": 4.871702710000136,
+    "kernel_peak_rss_bytes": 289267712,
     "model_configurations": 6,
     "attempts_total": 162506,
     "numeric_cells_checked": 158,
@@ -26,17 +21,17 @@
   },
   "code_cells_executed": 7,
   "error_outputs": 0,
-  "notebook_sha256": "9cc221bdd534eef292f2a38ad051cc5a49e96462426c24781a3634ddffa42cad",
+  "notebook_sha256": "a742815a69a77c4f2e3f556d993c9a577c96eb697dd4ac33c9965953b86d18f0",
   "versions": {
-    "numpy": "2.5.3",
+    "numpy": "2.4.6",
     "pandas": "3.1.1",
     "pyarrow": "26.0.1",
     "duckdb": "2.0.0",
-    "nbconvert": "7.17.2",
-    "ipykernel": "7.4.0",
+    "nbformat": "5.11.1",
+    "ipython": "9.18.1",
     "matplotlib": "3.11.2",
-    "Pillow": "12.3.0"
+    "Pillow": "13.0.0"
   },
   "passed": true,
-  "scope": "Four publication tables; per-cell comparison with the locked manuscript; compact attempt and saved-draw validation; three vector figure builds and checks. Full scheduling draw generation is a separate build."
+  "scope": "Four publication tables; per-cell comparison with the locked manuscript; compact attempt and saved-draw validation; three read-only vector figure checks. Full scheduling draw generation is a separate build."
 }
